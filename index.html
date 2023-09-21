@@ -83,10 +83,8 @@
             width: 250px;
             position: absolute;
             z-index: 3;
-            left: -250px;
             top: 0;
             opacity: 1;
-            transition: 10s left linear;
         }
 
         #baloon {
@@ -297,22 +295,33 @@
 
         function cloudAnimation() {
             var cloud = document.getElementById('cloud'),
-                randomTop = Math.floor(Math.random() * 300 + 50),
+                randomTop = Math.floor(Math.random() * 200 + 20),
                 interval = null;
+            
 
-            cloud.style.left = '-250px';
-            cloud.style.top = `${randomTop}px`;
-
-            const animate = () => {
-                if(cloud.offsetLeft > window.innerWidth) {
-                    clearInterval(interval);
-                    cloudAnimation();
-                }
-
-                cloud.style.left = `${cloud.offsetLeft + 50}px`;
+            const first = () => {
+                cloud.style.top = `${randomTop}px`;
+                cloud.style.transition = '10s left linear';                
             }
 
-            interval =  setInterval(animate, 10000);
+            const animate = () => {
+                cloud.style.left = `${cloud.offsetLeft + 50}px`;
+
+                if(cloud.offsetLeft > window.innerWidth || cloud.offsetLeft > 500) {                    
+                    clearInterval(interval);
+
+                    cloud.style.transition = "none";
+                    cloud.style.left = '-240px';
+                    
+                    setTimeout(() => {
+                        first();
+                        interval =  setInterval(animate, 10000);
+                    }, 5000);
+                }                
+            }
+
+            interval =  setInterval(animate, 2000);
+            first();
             animate();
         }
 
