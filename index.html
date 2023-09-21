@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Totoro</title>
+
+    <style>
+        body {
+            background-color: #b1fff8;
+        }
+        * {
+            margin: 0;
+        }
+        #bg {
+            width: 350px;
+            height: 700px;
+        }
+
+        .bg {
+            margin-top: 150px;
+            margin-left: -5px;
+        }
+
+        .eyes {
+            width: 28px;
+            height: 28px;
+            background-color: #FFF;
+            position: absolute;
+            top: 252px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            z-index: 1001;
+            border-radius: 50%;
+        }
+
+        .eyes-img {
+            width: 10px;
+            right: 0;
+            position: absolute;            
+            z-index: 1001;
+            top: 262px;
+        }
+
+        #eye1 {
+            left: 125px;
+        }
+
+        #eye2 {
+            left: 215px;            
+        }
+
+        #left-eye {
+            left: 114px;
+        }
+
+        #right-eye {
+            left: 206px;           
+        }
+
+        .sheet {
+            width: 50px;
+            position: absolute;
+            top: 500px;
+            left: -70px;
+            z-index: 4;
+            transition: 1s all linear;
+            transform: rotate(-130deg) rotateX(190deg) rotateZ(10deg)
+        }
+
+        #bg > img.bg {
+            width: 100%;
+            -webkit-user-drag: none;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            position: relative;
+            z-index: 5;
+        }
+
+        #cloud {
+            width: 250px;
+            position: absolute;
+            z-index: 3;
+            left: -250px;
+            top: 0;
+            opacity: 1;
+            transition: 10s left linear;
+        }
+
+        #baloon {
+            width: 200px;
+            top: 50px;
+            left: 200px;
+            position: absolute;
+            z-index: 1004;
+            display: none;
+        }
+
+        #txtBaloon {
+            width: 150px;
+            font-family: 'Times New Roman', Times, serif;
+            position: absolute;
+            top: 100px;
+            left: 225px;
+            font-size: 20px;
+            text-align: center;
+            z-index: 1005;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="bg">
+        <img class="bg" src="totoro.png" alt="">
+
+        <div class="eyes" id="left-eye"></div>
+        <div class="eyes" id="right-eye"></div>
+        <img id="eye1" class="eyes-img" draggable="false" src="olho.png" />
+        <img id="eye2" class="eyes-img" draggable="false" src="olho.png" />
+        <img id="cloud" draggable="false" src="nuvem.png" />
+
+        <img id="baloon" src="balao2.png" alt="">
+        <p id="txtBaloon"></p>
+
+        <!-- <div id="console"></div> -->
+    </div>
+
+    <script type="text/javascript" src="hammer.min.js"></script>
+
+    <script>
+        var bg = document.querySelector('img.bg'),
+            leftEye = document.getElementById('left-eye'),
+            rightEye = document.getElementById('right-eye'),
+            eye1 = document.getElementById('eye1'),
+            eye2 = document.getElementById('eye2'),
+            indexTxt = 0;
+
+        var dialogs = [
+            "Oi, Vito!",
+            "O Ad fez isso para o Sr.",
+            "Gostou?",
+        ]
+
+        var canvas1 = {
+            width: leftEye.offsetWidth,
+            height: leftEye.offsetHeight,
+            top: leftEye.offsetTop,
+            left: leftEye.offsetLeft
+        }
+
+        canvas1.center = [canvas1.left + canvas1.width / 2, canvas1.top + canvas1.height / 2];
+        canvas1.radius = canvas1.width / 2;
+
+        var canvas2 = {
+            width: rightEye.offsetWidth,
+            height: rightEye.offsetHeight,
+            top: rightEye.offsetTop,
+            left: rightEye.offsetLeft
+        }
+
+        canvas2.center = [canvas2.left + canvas2.width / 2, canvas2.top + canvas2.height / 2];
+        canvas2.radius = canvas2.width / 2;
+
+        function limit(x, y, canvas) {
+            var dist = distance([x, y], [canvas.center[0] - 5, canvas.center[1] - 5]);
+
+            if (dist <= canvas.radius) {
+                return {x: x, y: y};
+            } 
+            else {
+                x = x - canvas.center[0] - 5;
+                y = y - canvas.center[1] - 5;
+                var radians = Math.atan2(y, x);
+                return {
+                    x: Math.cos(radians) * (canvas.radius - 5) + (canvas.center[0] - 5),
+                    y: Math.sin(radians) * (canvas.radius - 5) + (canvas.center[1] - 5)
+                }
+            }
+        }
+
+        function distance(dot1, dot2) {
+            var x1 = dot1[0],
+                y1 = dot1[1],
+                x2 = dot2[0],
+                y2 = dot2[1];
+
+            return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
+        }
+
+        var area = document.getElementById('bg');
+        var h = new Hammer(area);
+
+        h.get('pan').set({ direction: Hammer.DIRECTION_ALL });
+
+        h.on('panmove', (e) => {
+            bg.src = "totoro.png";
+            var x = e.changedPointers[0].x;
+            var y = e.changedPointers[0].y;
+            
+            var result1 = limit(x, y, canvas1);
+
+            eye1.style.left = result1.x + 'px';
+            eye1.style.top = result1.y + 'px';
+
+            var result2 = limit(x, y, canvas2);
+
+            eye2.style.left = result2.x + 'px';
+            eye2.style.top = result2.y + 'px';
+        });
+
+        h.on('panend', (e) => {
+            bg.src = "totoro2.png";
+
+            setTimeout(() => {
+                bg.src = "totoro.png";
+                hideBaloon();
+                indexTxt++;
+                
+                if(indexTxt == dialogs.length) {
+                    indexTxt = 0;
+                }
+            }, 2000);
+
+            eye1.style.left = '125px';
+            eye1.style.top = '262px';
+
+            eye2.style.left = '215px';
+            eye2.style.top = '262px';
+
+            showBaloon(dialogs[indexTxt]);
+        });
+
+
+        function animate(sheet) {
+            var size = window.innerWidth;
+            var direction = 'left';
+            var defaultTransform = 'rotateX(190deg) rotateZ(10deg)';
+
+            sheet.style.transform = `rotate(-130deg) ${defaultTransform}`;
+
+            var interval1 = setInterval(() => {
+                if(sheet.offsetLeft < size) {
+                    var randomDistance = Math.floor(Math.random() * 40 + 10);
+
+                    sheet.style.left = sheet.offsetLeft + randomDistance + "px";                    
+                }
+                else {
+                    clearInterval(interval1);
+                    clearInterval(interval2);
+                    clearInterval(interval3);
+                    document.body.removeChild(sheet);
+                }
+            }, 500);
+
+            var interval3 = setInterval(() => {
+                var randomTop = Math.floor(Math.random() * 20);
+                sheet.style.top = sheet.offsetTop + randomTop + "px";
+            }, 5000);
+
+            var interval2 = setInterval(() => {
+                if(direction == 'left') {
+                    direction = 'right';
+                    sheet.style.transform = `rotate(-135deg) ${defaultTransform} translateY(-10px)`;
+                }
+                else {
+                    direction = 'left';
+                    sheet.style.transform = `rotate(-125deg) ${defaultTransform}`;
+                }
+            }, 1000);
+        }
+
+        function draw() {
+            var sheet = document.createElement('img');
+            sheet.classList.add('sheet');
+            sheet.src = "folhas.png";
+            var ramdomTop = Math.floor(Math.random() * window.innerHeight + 100);
+            sheet.style.top = ramdomTop + "px";
+
+            var randomTransition = Math.floor(Math.random() * 3 + 1);
+
+            sheet.style.transition = `${randomTransition}s all linear`;
+
+            document.body.appendChild(sheet);
+            animate(sheet);
+        }
+
+        draw();
+
+        setTimeout(() => { draw() }, 2000);
+        setTimeout(() => { draw() }, 4000);
+
+        setInterval(draw, 10000);
+        setInterval(draw, 12000);
+        setInterval(draw, 14000);
+
+        function cloudAnimation() {
+            var cloud = document.getElementById('cloud'),
+                randomTop = Math.floor(Math.random() * 300 + 50),
+                interval = null;
+
+            cloud.style.left = '-250px';
+            cloud.style.top = `${randomTop}px`;
+
+            const animate = () => {
+                if(cloud.offsetLeft > window.innerWidth) {
+                    clearInterval(interval);
+                    cloudAnimation();
+                }
+
+                cloud.style.left = `${cloud.offsetLeft + 50}px`;
+            }
+
+            interval =  setInterval(animate, 10000);
+            animate();
+        }
+
+        cloudAnimation();
+
+        function showBaloon(txt) {
+            var balloon = document.getElementById('baloon');
+            var p = document.getElementById('txtBaloon');
+
+            p.innerText = txt;
+
+            balloon.style.display = 'block';
+            p.style.display = 'block';
+        }
+
+        function hideBaloon() {
+            var balloon = document.getElementById('baloon');
+            var p = document.getElementById('txtBaloon');
+            balloon.style.display = 'none';
+            p.style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>
