@@ -85,6 +85,7 @@
             z-index: 3;
             top: 0;
             opacity: 1;
+            left: -240px;
         }
 
         #baloon {
@@ -289,6 +290,7 @@
         setTimeout(() => { draw() }, 2000);
         setTimeout(() => { draw() }, 4000);
 
+        setInterval(draw, 5000);
         setInterval(draw, 10000);
         setInterval(draw, 12000);
         setInterval(draw, 14000);
@@ -320,9 +322,9 @@
                 }                
             }
 
-            interval =  setInterval(animate, 2000);
             first();
             animate();
+            interval =  setInterval(animate, 10000);
         }
 
         cloudAnimation();
