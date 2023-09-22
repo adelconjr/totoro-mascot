@@ -345,33 +345,41 @@
             hour = date.getHours();
 
             if(hour >= 5 && hour < 12) {
-                document.body.className = "";
+                removeClasses();
                 document.body.classList.add('day');
                 dialogs = dayDialogs;
             }
             else if(hour >= 12 && hour < 15) {
-                document.body.className = "";
+                removeClasses();
                 document.body.classList.add('afternoon1');
                 dialogs = afternoonDialogs1;
             }
             else if(hour >= 15 && hour < 18) {
-                document.body.className = "";
+                removeClasses();
                 document.body.classList.add('afternoon2');
                 dialogs = afternoonDialogs2;
             }
             else if(hour >= 18 && hour < 21) {
-                document.body.className = "";
+                removeClasses();
                 document.body.classList.add('night1');
                 night();
             }
             else if(hour >= 21 && hour < 5) {
-                document.body.className = "";
+                removeClasses();
                 document.body.classList.add('night2');
                 night();
             }
         }
 
-        setTimeout(time, 5000);
+        function removeClasses() {
+            document.body.classList.remove('day');
+            document.body.classList.remove('afternoon1');
+            document.body.classList.remove('afternoon2');
+            document.body.classList.remove('night1');
+            document.body.classList.remove('night2');
+        }
+
+        setInterval(time, 5000);
         time();
 
     </script>
