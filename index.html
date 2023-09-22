@@ -77,7 +77,8 @@
             rightEye = document.getElementById('right-eye'),
             eye1 = document.getElementById('eye1'),
             eye2 = document.getElementById('eye2'),
-            indexTxt = 0;
+            indexTxt = 0
+            showStars = false;
 
         var dialogs = [];
 
@@ -326,17 +327,20 @@
                 dialogs = nightDialogs2;
             }
 
-            var sky = document.getElementById('starsSky');
+            if(!showStars) {
+                showStars = true;
+                var sky = document.getElementById('starsSky');
 
-            for(var i=0;i< 100; i++) {
-                var star = document.createElement('span');
-                star.classList.add('star');
-                var randomLeft = Math.floor(Math.random() * window.innerWidth);
-                var randomTop = Math.floor(Math.random() * 600);
+                for(var i=0;i< 100; i++) {
+                    var star = document.createElement('span');
+                    star.classList.add('star');
+                    var randomLeft = Math.floor(Math.random() * window.innerWidth);
+                    var randomTop = Math.floor(Math.random() * 600);
 
-                star.style.left = `${randomLeft}px`;
-                star.style.top = `${randomTop}px`;
-                sky.appendChild(star);
+                    star.style.left = `${randomLeft}px`;
+                    star.style.top = `${randomTop}px`;
+                    sky.appendChild(star);
+                }
             }
         }
 
