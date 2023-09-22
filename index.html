@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="bg">
-        <img class="bg" src="totoro.png" alt="">
+        <img class="bg" src="2023-09-2023_totoro.png" alt="">
         <img id="rabo" src="rabo.png" alt="">
 
         <div id="starsSky"></div>
@@ -135,7 +135,7 @@
         h.on('panmove', (e) => {
             hideBaloon();
 
-            bg.src = "totoro.png";
+            bg.src = "2023-09-2023_totoro.png";
             var x = e.changedPointers[0].x;
             var y = e.changedPointers[0].y;
             
@@ -151,7 +151,7 @@
         });
 
         h.on('panend', (e) => {
-            bg.src = "totoro2.png";
+            bg.src = "2023-09-2023_totoro2.png";
             showBaloon(dialogs[indexTxt]);
 
             if(hour >= 5 && hour < 12 && indexTxt == dialogs.length - 1) {
@@ -165,7 +165,7 @@
             }
 
             setTimeout(() => {
-                bg.src = "totoro.png";
+                bg.src = "2023-09-2023_totoro.png";
                 hideBaloon();
             }, 2000);
 
