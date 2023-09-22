@@ -4,115 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
     <title>Totoro</title>
-
-    <style>
-        body {
-            background-color: #b1fff8;
-        }
-        * {
-            margin: 0;
-        }
-        #bg {
-            width: 350px;
-            height: 700px;
-        }
-
-        .bg {
-            margin-top: 150px;
-            margin-left: -5px;
-        }
-
-        .eyes {
-            width: 28px;
-            height: 28px;
-            background-color: #FFF;
-            position: absolute;
-            top: 252px;
-            border: 1px solid #000;
-            margin: 0 auto;
-            z-index: 1001;
-            border-radius: 50%;
-        }
-
-        .eyes-img {
-            width: 10px;
-            right: 0;
-            position: absolute;            
-            z-index: 1001;
-            top: 262px;
-        }
-
-        #eye1 {
-            left: 125px;
-        }
-
-        #eye2 {
-            left: 215px;            
-        }
-
-        #left-eye {
-            left: 114px;
-        }
-
-        #right-eye {
-            left: 206px;           
-        }
-
-        .sheet {
-            width: 50px;
-            position: absolute;
-            top: 500px;
-            left: -70px;
-            z-index: 4;
-            transition: 1s all linear;
-            transform: rotate(-130deg) rotateX(190deg) rotateZ(10deg)
-        }
-
-        #bg > img.bg {
-            width: 100%;
-            -webkit-user-drag: none;
-            user-select: none;
-            -moz-user-select: none;
-            -webkit-user-select: none;
-            -ms-user-select: none;
-            position: relative;
-            z-index: 5;
-        }
-
-        #cloud {
-            width: 250px;
-            position: absolute;
-            z-index: 3;
-            top: 0;
-            opacity: 1;
-            left: -240px;
-        }
-
-        #baloon {
-            width: 200px;
-            top: 50px;
-            left: 200px;
-            position: absolute;
-            z-index: 1004;
-            display: none;
-        }
-
-        #txtBaloon {
-            width: 150px;
-            font-family: 'Times New Roman', Times, serif;
-            position: absolute;
-            top: 100px;
-            left: 225px;
-            font-size: 20px;
-            text-align: center;
-            z-index: 1005;
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="bg">
         <img class="bg" src="totoro.png" alt="">
+        <img id="rabo" src="rabo.png" alt="">
+
+        <div id="starsSky"></div>
 
         <div class="eyes" id="left-eye"></div>
         <div class="eyes" id="right-eye"></div>
@@ -120,8 +19,13 @@
         <img id="eye2" class="eyes-img" draggable="false" src="olho.png" />
         <img id="cloud" draggable="false" src="nuvem.png" />
 
+        <img id="rose" src="rosa.png" alt="">
+
         <img id="baloon" src="balao2.png" alt="">
-        <p id="txtBaloon"></p>
+
+        <div class="containerBalloon">
+            <p id="txtBaloon"></p>
+        </div>
 
         <!-- <div id="console"></div> -->
     </div>
@@ -129,6 +33,45 @@
     <script type="text/javascript" src="hammer.min.js"></script>
 
     <script>
+        var hour = 0;
+
+        const dayDialogs = [
+            "Bom dia, Vito!",
+            "O Ad te desejou um bom dia de trabalho",
+            "Pra vc",
+        ];
+
+        const afternoonDialogs1 = [
+            "Hey Vito!",
+            "Tudo bem?",
+            "O Sr. Já almoçou?",
+            "Espero que seu dia esteja tão incrível...",
+            "Quanto você 😘",
+        ];
+
+        const afternoonDialogs2 = [
+            "Hey!",
+            "Já saiu do trabalho?",
+            "Volta com cuidado",
+            "Acho que o Ad quer te fazer companhia...",
+            "Deixa o espaço dele no trem",
+            "^^",
+        ];
+
+        const nightDialogs1 = [
+            "Boa noite, Sr. Vito!",
+            "Já chegou em casa?",
+            "O Ad quer saber como foi o seu dia",
+        ];
+
+        const nightDialogs2 = [
+            "Boa noite Vito",
+            "Durma bem :)",
+            "Bom descanso",
+        ];       
+
+        
+
         var bg = document.querySelector('img.bg'),
             leftEye = document.getElementById('left-eye'),
             rightEye = document.getElementById('right-eye'),
@@ -136,11 +79,7 @@
             eye2 = document.getElementById('eye2'),
             indexTxt = 0;
 
-        var dialogs = [
-            "Oi, Vito!",
-            "O Ad fez isso para o Sr.",
-            "Gostou?",
-        ]
+        var dialogs = [];
 
         var canvas1 = {
             width: leftEye.offsetWidth,
@@ -194,6 +133,8 @@
         h.get('pan').set({ direction: Hammer.DIRECTION_ALL });
 
         h.on('panmove', (e) => {
+            hideBaloon();
+
             bg.src = "totoro.png";
             var x = e.changedPointers[0].x;
             var y = e.changedPointers[0].y;
@@ -211,15 +152,21 @@
 
         h.on('panend', (e) => {
             bg.src = "totoro2.png";
+            showBaloon(dialogs[indexTxt]);
+
+            if(hour >= 5 && hour < 12 && indexTxt == dialogs.length - 1) {
+                showRose();
+            }
+
+            indexTxt++;
+
+            if(indexTxt == dialogs.length) {
+                indexTxt = 0;
+            }
 
             setTimeout(() => {
                 bg.src = "totoro.png";
                 hideBaloon();
-                indexTxt++;
-                
-                if(indexTxt == dialogs.length) {
-                    indexTxt = 0;
-                }
             }, 2000);
 
             eye1.style.left = '125px';
@@ -228,8 +175,32 @@
             eye2.style.left = '215px';
             eye2.style.top = '262px';
 
-            showBaloon(dialogs[indexTxt]);
+            
         });
+
+        function showRose() {
+            var interval  = null;
+
+            var rose = document.getElementById('rose');
+            rose.classList.add('show');
+
+            setInterval(() => {
+                if(rose.offsetTop == 400) {
+                    rose.style.top = `${410}px`;
+                }
+                else {
+                    rose.style.top = `${400}px`;
+                }
+            }, 1000);
+
+            rose.addEventListener('click', () => {
+                rose.classList.remove('show');
+            });
+
+            setTimeout(() => {
+                rose.classList.remove('show');
+            }, 10000);
+        }
 
 
         function animate(sheet) {
@@ -345,6 +316,63 @@
             balloon.style.display = 'none';
             p.style.display = 'none';
         }
+
+
+        function night() {            
+            if(hour >= 18 && hour <= 21) {
+                dialogs = nightDialogs1
+            }
+            else {
+                dialogs = nightDialogs2;
+            }
+
+            var sky = document.getElementById('starsSky');
+
+            for(var i=0;i< 100; i++) {
+                var star = document.createElement('span');
+                star.classList.add('star');
+                var randomLeft = Math.floor(Math.random() * window.innerWidth);
+                var randomTop = Math.floor(Math.random() * 600);
+
+                star.style.left = `${randomLeft}px`;
+                star.style.top = `${randomTop}px`;
+                sky.appendChild(star);
+            }
+        }
+
+        const time = () => {
+            var date = new Date();
+            hour = date.getHours();
+
+            if(hour >= 5 && hour < 12) {
+                document.body.className = "";
+                document.body.classList.add('day');
+                dialogs = dayDialogs;
+            }
+            else if(hour >= 12 && hour <= 15) {
+                document.body.className = "";
+                document.body.classList.add('afternoon1');
+                dialogs = afternoonDialogs1;
+            }
+            else if(hour >= 15 && hour < 18) {
+                document.body.className = "";
+                document.body.classList.add('afternoon2');
+                dialogs = afternoonDialogs2;
+            }
+            else if(hour >= 18 && hour < 21) {
+                document.body.className = "";
+                document.body.classList.add('night1');
+                night();
+            }
+            else if(hour >= 21 && hour < 5) {
+                document.body.className = "";
+                document.body.classList.add('night2');
+                night();
+            }
+        }
+
+        setTimeout(time, 5000);
+        time();
 
     </script>
 </body>
