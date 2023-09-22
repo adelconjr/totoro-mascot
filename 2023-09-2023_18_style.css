@@ -92,7 +92,7 @@ body.night {
     opacity: 1;
 }
 
-body.night1 #cloud {
+body.night #cloud {
     opacity: 0.5;
 }
 
