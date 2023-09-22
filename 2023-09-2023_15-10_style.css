@@ -66,7 +66,7 @@ body.night {
     position: absolute;
     top: 500px;
     left: -70px;
-    z-index: 4;
+    z-index: 2;
     transition: 1s all linear;
     transform: rotate(-130deg) rotateX(190deg) rotateZ(10deg)
 }
@@ -85,7 +85,7 @@ body.night {
 #cloud {
     width: 250px;
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     top: 0;
     opacity: 1;
     left: -240px;
@@ -142,7 +142,7 @@ body.night1 #cloud {
     position: absolute;
     left: 127px;
     top: 589px;
-    z-index: 2;
+    z-index: 3;
     animation: rabo 8s 0s infinite;
 }
 
