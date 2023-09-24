@@ -137,9 +137,14 @@
 
         h.on('panend', (e) => {
             bg.src = "images/2023-09-2023_totoro2.png";
+            var countdownDialog = 2000;
 
             if(dialogs.length > 0) {
                 showBaloon(dialogs[indexTxt]);
+
+                if(dialogs[indexTxt].length > 20) {
+                    countdownDialog = 3000;
+                }
 
                 if(hour >= 5 && hour < 12 && indexTxt == dialogs.length - 1) {
                     showRose();
@@ -157,7 +162,7 @@
             timeoutDialog = setTimeout(() => {
                 bg.src = "images/2023-09-2023_totoro.png";
                 hideBaloon();
-            }, 3000);
+            }, countdownDialog);
 
             eye1.style.left = '125px';
             eye1.style.top = '262px';
