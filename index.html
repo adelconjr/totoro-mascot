@@ -8,20 +8,21 @@
 </head>
 <body>
     <div id="bg">
-        <img class="bg" src="2023-09-2023_totoro.png" alt="">
-        <img id="rabo" src="rabo.png" alt="">
+        <p id="loading">Atualizando dialogos...</p>
+        <img class="bg" src="images/2023-09-2023_totoro.png" alt="">
+        <img id="rabo" src="images/rabo.png" alt="">
 
         <div id="starsSky"></div>
 
         <div class="eyes" id="left-eye"></div>
         <div class="eyes" id="right-eye"></div>
-        <img id="eye1" class="eyes-img" draggable="false" src="olho.png" />
-        <img id="eye2" class="eyes-img" draggable="false" src="olho.png" />
-        <img id="cloud" draggable="false" src="nuvem.png" />
+        <img id="eye1" class="eyes-img" draggable="false" src="images/olho.png" />
+        <img id="eye2" class="eyes-img" draggable="false" src="images/olho.png" />
+        <img id="cloud" draggable="false" src="images/nuvem.png" />
 
-        <img id="rose" src="rosa.png" alt="">
+        <img id="rose" src="images/rosa.png" alt="">
 
-        <img id="baloon" src="balao2.png" alt="">
+        <img id="baloon" src="images/balao2.png" alt="">
 
         <div class="containerBalloon">
             <p id="txtBaloon"></p>
@@ -35,42 +36,23 @@
     <script>
         var hour = 0;
 
-        const dayDialogs = [
-            "Bom dia, Vito!",
-            "O Ad te desejou um bom dia de trabalho",
-            "Pra vc",
-        ];
+        var CONFIGS = {
+            MORNING: "MORNING",
+            AFTERNOON_1: "AFTERNOON_1",
+            AFTERNOON_2: "AFTERNOON_2",
+            NIGHT: "NIGHT",
+        };
 
-        const afternoonDialogs1 = [
-            "Hey Vito!",
-            "Tudo bem?",
-            "O Sr. Já almoçou?",
-            "Espero que seu dia esteja tão incrível...",
-            "Quanto você 😘",
-        ];
+        function loading(op) {
+            var elem = document.getElementById('loading');
 
-        const afternoonDialogs2 = [
-            "Hey!",
-            "Já saiu do trabalho?",
-            "Volta com cuidado",
-            "Acho que o Ad quer te fazer companhia...",
-            "Deixa o espaço dele no trem",
-            "^^",
-        ];
-
-        const nightDialogs1 = [
-            "Boa noite, Sr. Vito!",
-            "Já chegou em casa?",
-            "O Ad quer saber como foi o seu dia",
-        ];
-
-        const nightDialogs2 = [
-            "Boa noite Vito",
-            "Durma bem :)",
-            "Bom descanso",
-        ];       
-
-        
+            if(op) {
+                elem.style.display = 'block'
+            }
+            else {
+                elem.style.display = 'none'
+            }
+        }
 
         var bg = document.querySelector('img.bg'),
             leftEye = document.getElementById('left-eye'),
@@ -78,7 +60,9 @@
             eye1 = document.getElementById('eye1'),
             eye2 = document.getElementById('eye2'),
             indexTxt = 0
-            showStars = false;
+            showStars = false,
+            allDialogs = []
+            timeoutDialog = null;
 
         var dialogs = [];
 
@@ -136,7 +120,7 @@
         h.on('panmove', (e) => {
             hideBaloon();
 
-            bg.src = "2023-09-2023_totoro.png";
+            bg.src = "images/2023-09-2023_totoro.png";
             var x = e.changedPointers[0].x;
             var y = e.changedPointers[0].y;
             
@@ -152,23 +136,28 @@
         });
 
         h.on('panend', (e) => {
-            bg.src = "2023-09-2023_totoro2.png";
-            showBaloon(dialogs[indexTxt]);
+            bg.src = "images/2023-09-2023_totoro2.png";
 
-            if(hour >= 5 && hour < 12 && indexTxt == dialogs.length - 1) {
-                showRose();
+            if(dialogs.length > 0) {
+                showBaloon(dialogs[indexTxt]);
+
+                if(hour >= 5 && hour < 12 && indexTxt == dialogs.length - 1) {
+                    showRose();
+                }
+
+                indexTxt++;
+
+                if(indexTxt == dialogs.length) {
+                    indexTxt = 0;
+                }
             }
 
-            indexTxt++;
+            clearTimeout(timeoutDialog);
 
-            if(indexTxt == dialogs.length) {
-                indexTxt = 0;
-            }
-
-            setTimeout(() => {
-                bg.src = "2023-09-2023_totoro.png";
+            timeoutDialog = setTimeout(() => {
+                bg.src = "images/2023-09-2023_totoro.png";
                 hideBaloon();
-            }, 2000);
+            }, 3000);
 
             eye1.style.left = '125px';
             eye1.style.top = '262px';
@@ -245,7 +234,7 @@
         function draw() {
             var sheet = document.createElement('img');
             sheet.classList.add('sheet');
-            sheet.src = "folhas.png";
+            sheet.src = "images/folhas.png";
             var ramdomTop = Math.floor(Math.random() * window.innerHeight + 100);
             sheet.style.top = ramdomTop + "px";
 
@@ -348,36 +337,46 @@
             var date = new Date();
             hour = date.getHours();
 
-            if(hour >= 5 && hour < 12) {
-                removeClasses();
-                document.body.classList.add('day');
-                dialogs = dayDialogs;
+            var xhr = new XMLHttpRequest();
+            xhr.open("GET", 'dialogs.json', true);
+
+            xhr.onreadystatechange = function() {
+                if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+                    console.log(this.responseText);
+
+                    loading(false);
+                    allDialogs = JSON.parse(this.responseText);
+
+                    allDialogs.forEach((dialog) => {
+                        if(hour >= dialog.period[0] && hour < dialog.period[1]) {
+                            removeClasses();
+                            dialogs = dialog.dialogs;
+
+                            switch(dialog.config) {
+                                default:
+                                case CONFIGS.MORNING: 
+                                    document.body.classList.add('day');
+                                    break;
+
+                                case CONFIGS.AFTERNOON_1: 
+                                    document.body.classList.add('afternoon1');
+                                    break;
+
+                                case CONFIGS.AFTERNOON_2: 
+                                    document.body.classList.add('afternoon2');
+                                    break;
+
+                                case CONFIGS.NIGHT: 
+                                    document.body.classList.add('night');
+                                    night();
+                                    break;
+                            }                    
+                        }
+                    
+                    });
+                }
             }
-            else if(hour >= 12 && hour < 15) {
-                removeClasses();
-                document.body.classList.add('afternoon1');
-                dialogs = afternoonDialogs1;
-            }
-            else if(hour >= 15 && hour < 18) {
-                removeClasses();
-                document.body.classList.add('afternoon2');
-                dialogs = afternoonDialogs2;
-            }
-            else if(hour >= 18 && hour < 21) {
-                removeClasses();
-                document.body.classList.add('night');
-                night();
-            }
-            else if(hour >= 21 && hour <= 24) {
-                removeClasses();
-                document.body.classList.add('night');
-                night();
-            }
-            else if (hour >= 0 && hour < 5) {
-                removeClasses();
-                document.body.classList.add('night');
-                night();
-            }
+            xhr.send();            
         }
 
         function removeClasses() {
@@ -388,7 +387,10 @@
         }
 
         setInterval(time, 5000);
+
+        document.body.classList.add('day');
         time();
+        loading(true);
 
     </script>
 </body>

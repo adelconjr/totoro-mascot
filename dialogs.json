@@ -1,0 +1,76 @@
+[
+    {
+        "period": [5, 12],
+        "config": "MORNING",
+        "week": "ANY",
+        "dialogs": [
+            "Bom dia, Vito!",
+            "O Ad te desejou um bom dia de trabalho",
+            "Pra vc"
+        ]
+    },
+    {
+        "period": [12, 15],
+        "config": "AFTERNOON_1",
+        "week": "ANY",
+        "dialogs": [
+            "Hey Vito!",
+            "Tudo bem?",
+            "O Sr. Já almoçou?",
+            "Espero que seu dia esteja tão incrível...",
+            "Quanto você 😘"
+        ]
+    },
+    {
+        "period": [15, 20],
+        "config": "AFTERNOON_2",
+        "week": "ANY",
+        "dialogs": [
+            "Hey!",
+            "Já saiu do trabalho?",
+            "Volta com cuidado, viu?",
+            "Hoje o Ad não está aí...",
+            "Mas ele deixou algo pra vc não se sentir sozinho",
+            "Quando sentir saudades só pegar seu Totoro",
+            "Ah...",
+            "Já ia me esquecendo",
+            "O Ad disse que ele gosta muito de vc",
+            "^^"
+        ]
+    },
+    {
+        "period": [20, 21],
+        "config": "NIGHT",
+        "week": "ANY",
+        "dialogs": [
+            "Boa noite, Sr. Vito!",
+            "Já chegou em casa?",
+            "O Ad quer saber como foi o seu dia"
+        ]
+    },
+    {
+        "period": [21, 24],
+        "config": "NIGHT",
+        "week": "ANY",
+        "dialogs": [
+            "Boa noite, Vito",
+            "Durma bem :)",
+            "Bom descanso",
+            "Não esquece do meu boa noite",
+            "(E do mini Totoro também...)"
+        ]
+    },
+    {
+        "period": [0, 5],
+        "config": "NIGHT",
+        "week": "ANY",
+        "dialogs": [
+            "Hey",
+            "Tá fazendo o que acordado ?",
+            "Sentiu saudades foi?",
+            "Te peguei né?",
+            "Gosto muito de você, mocinho",
+            "Agora vai descansar..."
+        ]
+    }
+]

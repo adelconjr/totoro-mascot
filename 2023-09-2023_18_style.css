@@ -164,6 +164,24 @@ body.night #cloud {
     animation: rose 0.8s 0.2s forwards;
 }
 
+#loading {
+    width: 150px;
+    background-color: #FFF;
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 20px;
+    font-size: 12px;
+    color: #000;
+    z-index: 6;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 @keyframes rose {
     50% {
         transform: scale(1.1);
