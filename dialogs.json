@@ -4,9 +4,16 @@
         "config": "MORNING",
         "week": "ANY",
         "dialogs": [
-            "Bom dia, Vito!",
-            "O Ad te desejou um bom dia de trabalho",
-            "Pra vc"
+            "Bom dia",
+            "O sol já nasceu lá na fazendinha",
+            "Acorda o bezerro e a vaquinha",
+            "Que já cocoricou dona galinha.",
+            "Bom dia, flor do dia ><",
+            "Dormiu bem?",
+            "O Ad te desejou um ótimo dia de trabalho",
+            "E disse que você é incrível ❤️",
+            "Como disse Tim Maia...",
+            "Trago essa rosa 🎶"
         ]
     },
     {
@@ -32,6 +39,7 @@
             "Hoje o Ad não está aí...",
             "Mas ele deixou algo pra vc não se sentir sozinho",
             "Quando sentir saudades só pegar seu Totoro",
+            "Cuida bem dele, tá?",
             "Ah...",
             "Já ia me esquecendo",
             "O Ad disse que ele gosta muito de vc",

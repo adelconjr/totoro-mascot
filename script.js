@@ -210,14 +210,7 @@ function hideBaloon() {
 }
 
 
-function night() {            
-    if(hour >= 18 && hour < 21) {
-        dialogs = nightDialogs1
-    }
-    else {
-        dialogs = nightDialogs2;
-    }
-
+function night() {
     if(!showStars) {
         showStars = true;
         var sky = document.getElementById('starsSky');
