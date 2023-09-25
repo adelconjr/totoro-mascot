@@ -29,7 +29,7 @@
         ]
     },
     {
-        "period": [15, 20],
+        "period": [15, 18],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "dialogs": [
@@ -42,13 +42,14 @@
         ]
     },
     {
-        "period": [20, 21],
+        "period": [18, 21],
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
             "Boa noite, Sr. Vito!",
             "Já chegou em casa?",
-            "O Ad quer saber como foi o seu dia"
+            "O Ad quer saber como foi o seu dia",
+            "E disse que quer jogar contigo hoje..."
         ]
     },
     {

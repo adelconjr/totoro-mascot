@@ -233,7 +233,8 @@ const time = () => {
     hour = date.getHours();
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", 'dialogs.json', true);
+
+    xhr.open("GET", `dialogs.json?timestamp=${date.getTime()}`, true);
 
     xhr.onreadystatechange = function() {
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
