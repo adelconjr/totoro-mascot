@@ -200,6 +200,8 @@ body.night #cloud {
 #status p {
     font-size: 12px;
     margin-bottom: 0;
+    color: #FFF;
+    letter-spacing: 1px;
 }
 
 #friendship-status {

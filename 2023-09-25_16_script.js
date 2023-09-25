@@ -390,7 +390,7 @@ function gameStatus() {
                     addFriendship(5);
                 }
                 else {
-                    var diffHours = diff / 60;
+                    var diffHours = Math.floor(diff / 60);
     
                     if(diffHours >= 1) {
                         subtractFriendship(diffHours * 2);
