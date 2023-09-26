@@ -98,7 +98,7 @@ function showRose() {
     rose.addEventListener('click', () => {
         rose.classList.remove('show');
 
-        var now = new Date():
+        var now = new Date();
 
         if (localStorage.getItem('ROSE')) {
             var lastRose = Number(localStorage.getItem('ROSE'));
