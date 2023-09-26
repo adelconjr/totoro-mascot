@@ -11,6 +11,7 @@ var bg = document.querySelector('img.bg'),
     eye1 = document.getElementById('eye1'),
     eye2 = document.getElementById('eye2'),
     area = document.getElementById('bg'),
+    moon = document.getElementById('moon'),
     indexTxt = 0
     showStars = false,
     allDialogs = []
@@ -178,7 +179,7 @@ function draw() {
     var sheet = document.createElement('img');
     sheet.classList.add('sheet');
     sheet.src = "images/folhas.png";
-    var ramdomTop = Math.floor(Math.random() * window.innerHeight + 100);
+    var ramdomTop = Math.floor(Math.random() * window.innerHeight + 250);
     sheet.style.top = ramdomTop + "px";
 
     var randomTransition = Math.floor(Math.random() * 3 + 1);
@@ -240,6 +241,8 @@ function hideBaloon() {
 
 
 function night() {
+    showMoon();
+
     if(!showStars) {
         showStars = true;
         var sky = document.getElementById('starsSky');
@@ -275,6 +278,7 @@ const time = () => {
                     removeClasses();
                     currentConfig = dialog.config;
                     dialogs = dialog.dialogs;
+                    hideMoon();
 
                     switch(dialog.config) {
                         default:
@@ -504,10 +508,10 @@ function main() {
         }, countdownDialog);
 
         eye1.style.left = '125px';
-        eye1.style.top = '262px';
+        eye1.style.top = '362px';
 
         eye2.style.left = '215px';
-        eye2.style.top = '262px';
+        eye2.style.top = '362px';
     });
 
     cloudAnimation();
@@ -561,7 +565,7 @@ function createHeart() {
 
 function hearts() {
     clearInterval(heartsInterval);
-    
+
     const showHearts = () => {
         setTimeout(createHeart, 1000);
         setTimeout(createHeart, 2000);
@@ -573,4 +577,29 @@ function hearts() {
     showHearts();
     heartsInterval = setInterval(showHearts, 10000);
 }
+
+function showMoon() {
+    moon.classList.add('show');
+
+    var hours = (new Date()).getHours();
+
+    if(hours >= 0 && hours < 3) {
+        moon.classList.add('middle');
+    }
+    else if(hours >= 3 && hours < 5) {
+        moon.classList.add('right');
+    }
+    else if(hours >= 18 && hours < 22) {
+        moon.classList.add('left');
+    }
+    else if(hours == 22 || hours == 23) {
+        moon.classList.add('middle');
+    }
+}
+
+function hideMoon () {
+    moon.classList.remove('show');
+}
+
+
 main();

@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 body.day {
     background-color: #87CEFA;
     
@@ -21,7 +25,7 @@ body.night {
 }
 
 .bg {
-    margin-top: 150px;
+    margin-top: 250px;
     margin-left: -5px;
 }
 
@@ -30,7 +34,7 @@ body.night {
     height: 28px;
     background-color: #FFF;
     position: absolute;
-    top: 252px;
+    top: 352px;
     border: 1px solid #000;
     margin: 0 auto;
     z-index: 1001;
@@ -42,7 +46,7 @@ body.night {
     right: 0;
     position: absolute;            
     z-index: 1001;
-    top: 262px;
+    top: 362px;
 }
 
 #eye1 {
@@ -98,7 +102,7 @@ body.night #cloud {
 
 #baloon {
     width: 200px;
-    top: 50px;
+    top: 150px;
     left: 200px;
     position: absolute;
     z-index: 1004;
@@ -109,7 +113,7 @@ body.night #cloud {
     width: 180px;
     height: 120px;
     position: absolute;
-    top: 60px;
+    top: 160px;
     left: 210px;
     display: flex;
     align-items: center;
@@ -141,7 +145,7 @@ body.night #cloud {
     width: 89px;
     position: absolute;
     left: 127px;
-    top: 589px;
+    top: 690px;
     z-index: 3;
     animation: rabo 8s 0s infinite;
 }
@@ -154,7 +158,7 @@ body.night #cloud {
     margin: 0 auto;
     top: 400px;
     z-index: 1001;
-    opacity: 0;
+    opacity: 1;
     transition: all 1s;
     transform: scale(0);
     
@@ -191,6 +195,7 @@ body.night #cloud {
     position: absolute;
     top: 5px;
     font-family: serif;
+    z-index: 2000;
 }
 
 #status > div {
@@ -238,7 +243,7 @@ body.night #cloud {
     box-sizing: border-box;
     padding: 20px;
     border-radius: 10px;
-    bottom: 100px;
+    bottom: 50px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -272,6 +277,100 @@ body.night #cloud {
     opacity: 0;
     transform: scale(0);
     animation: heart 5s forwards;
+}
+
+#moon {
+    width: 200px;
+    height: 200px;
+    top: 70px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(255, 255, 250);
+    z-index: 1;
+    box-shadow: 0 0 50px 20px rgba(255, 255, 250, 0.8);
+    animation: moon 5s infinite;
+    overflow: hidden;
+    display: none;
+}
+
+#moon.left {
+    left: 40px;
+}
+
+#moon.middle {
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+#moon.right {
+    right: 40px;
+}
+
+#moon.show {
+    display: block;
+}
+
+.shadow1 {
+    width: 50px;
+    height: 50px;
+    left: 100px;
+    top: 110px;
+    border-radius: 50%;
+    background-color: rgba(240, 240, 240, 0.3);
+    position: absolute;
+}
+
+.shadow2 {
+    width: 20px;
+    height: 20px;
+    left: 50px;
+    top: 140px;
+    border-radius: 50%;
+    background-color: rgba(240, 240, 240, 0.3);
+    position: absolute;
+}
+
+.shadow3 {
+    width: 70px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    border-radius: 50%;
+    background-color: rgba(240, 240, 240, 0.3);
+    position: absolute;
+}
+
+.shadow4 {
+    width: 50px;
+    height: 50px;
+    left: 70px;
+    bottom: -20px;
+    border-radius: 50%;
+    background-color: rgba(240, 240, 240, 0.3);
+    position: absolute;
+}
+
+.shadow5 {
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    top: 40px;
+    border-radius: 50%;
+    background-color: rgba(240, 240, 240, 0.3);
+    position: absolute;
+}
+
+@keyframes moon {
+    0% {
+        box-shadow: 0 0 50px 20px rgba(255, 255, 250, 0.8);
+    }
+    50% {
+        box-shadow: 0 0 50px 21px rgba(255, 255, 250, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 50px 20px rgba(255, 255, 250, 0.8);
+    }
 }
 
 @keyframes heart {
