@@ -560,6 +560,8 @@ function createHeart() {
 }
 
 function hearts() {
+    clearInterval(heartsInterval);
+    
     const showHearts = () => {
         setTimeout(createHeart, 1000);
         setTimeout(createHeart, 2000);
