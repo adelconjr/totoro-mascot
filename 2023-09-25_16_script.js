@@ -97,7 +97,22 @@ function showRose() {
 
     rose.addEventListener('click', () => {
         rose.classList.remove('show');
-        addFriendship(20);
+
+        var now = new Date():
+
+        if (localStorage.getItem('ROSE')) {
+            var lastRose = Number(localStorage.getItem('ROSE'));
+            var diffRose = Math.abs(lastRose - now.getDay());
+            
+            if (diffRose > 0) {
+                localStorage.removeItem('ROSE');
+            }
+        }
+        
+        if(localStorage.getItem('ROSE') == null) {
+            localStorage.setItem('ROSE', now.getDay());
+            addFriendship(20);
+        }
     });
 
     setTimeout(() => {
