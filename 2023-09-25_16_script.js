@@ -97,13 +97,14 @@ function showRose() {
 
     rose.addEventListener('click', () => {
         rose.classList.remove('show');
+        addFriendship(20);
     });
 
     setTimeout(() => {
         clearInterval(interval);
         rose.style.top = `${400}px`;
         rose.classList.remove('show');
-    }, 10000);
+    }, 20000);
 }
 
 
@@ -392,8 +393,9 @@ function gameStatus() {
                 else {
                     var diffHours = Math.floor(diff / 60);
     
-                    if(diffHours >= 1) {
-                        subtractFriendship(diffHours * 2);
+                    if(diffHours >= 4) {
+                        var subtractPoints = Math.floor(diffHours / 4);
+                        subtractFriendship(subtractPoints * 2);
                     }
                 }
 
