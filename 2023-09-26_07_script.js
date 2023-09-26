@@ -17,7 +17,12 @@ var bg = document.querySelector('img.bg'),
     timeoutDialog = null,
     dialogs = []
     hour = 0,
-    currentConfig = "";
+    currentConfig = "",
+    happyImage = "images/2023-09-2023_totoro2.png",
+    defaultImage = "images/2023-09-2023_totoro.png",
+    firstImage = defaultImage,
+    secondImage = happyImage,
+    heartsInterval = null;
 
 const statusbar = {
     friendship: 0,
@@ -42,6 +47,14 @@ canvas1.radius = canvas1.width / 2;
 
 canvas2.center = [canvas2.left + canvas2.width / 2, canvas2.top + canvas2.height / 2];
 canvas2.radius = canvas2.width / 2;
+
+function showFirstImage() {
+    bg.src = firstImage;
+}
+
+function showSecondImage() {
+    bg.src = secondImage;
+}
 
 function loading(op) {
     var elem = document.getElementById('loading');
@@ -299,6 +312,8 @@ function removeClasses() {
 }
 
 function loadStatus() {
+    clearInterval(heartsInterval);
+
     if(localStorage.getItem('FRIENDSHIP') != null) {
         statusbar.friendship = Number(localStorage.getItem('FRIENDSHIP'));
     }
@@ -315,6 +330,8 @@ function updateFriendship() {
     var el = document.getElementById('friendship');
     var fStatus = document.getElementById('friendship-status');
 
+    firstImage = defaultImage;
+
     if(statusbar.friendship < 40) {
         color = "#FF0000";
         fStatus.innerText = "☹️";
@@ -326,8 +343,12 @@ function updateFriendship() {
     else if(statusbar.friendship >= 60) {
         color = "#32CD32";
         fStatus.innerText = "🥰";
+
+        firstImage = happyImage;
+        hearts();
     }
 
+    showFirstImage();
     el.style.background = `linear-gradient(to right, ${color} ${statusbar.friendship}%, transparent 5%)`;
 }
 
@@ -431,7 +452,7 @@ function main() {
     h.on('panmove', (e) => {
         hideBaloon();
 
-        bg.src = "images/2023-09-2023_totoro.png";
+        bg.src = defaultImage;
         var x = e.changedPointers[0].x;
         var y = e.changedPointers[0].y;
         
@@ -447,7 +468,7 @@ function main() {
     });
 
     h.on('panend', (e) => {
-        bg.src = "images/2023-09-2023_totoro2.png";
+        showSecondImage();
         var countdownDialog = 2000;
 
         if(dialogs.length > 0) {
@@ -478,7 +499,7 @@ function main() {
         clearTimeout(timeoutDialog);
 
         timeoutDialog = setTimeout(() => {
-            bg.src = "images/2023-09-2023_totoro.png";
+            showFirstImage();
             hideBaloon();
         }, countdownDialog);
 
@@ -510,7 +531,6 @@ function main() {
     gameStatus();
 
     window.addEventListener('focus', function() {
-        console.log('focus');
         gameStatus();
     });
 
@@ -527,4 +547,28 @@ function main() {
     }
 }
 
+function createHeart() {
+    var heart = document.createElement('span');
+    heart.innerHTML = "💖";
+    heart.classList.add('heart');
+
+    var randomLeft = Math.floor(Math.random() * 300);
+
+    heart.style.left = `${randomLeft}px`;
+    console.log(heart);
+    document.body.appendChild(heart);
+}
+
+function hearts() {
+    const showHearts = () => {
+        setTimeout(createHeart, 1000);
+        setTimeout(createHeart, 2000);
+        setTimeout(createHeart, 3000);
+        setTimeout(createHeart, 4000);
+    }
+
+    createHeart();
+    showHearts();
+    heartsInterval = setInterval(showHearts, 10000);
+}
 main();

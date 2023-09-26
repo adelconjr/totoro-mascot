@@ -263,6 +263,28 @@ body.night #cloud {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.heart {
+    font-size: 20px;
+    left: 300px;
+    top: 400px;
+    z-index: 2000;
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    animation: heart 5s forwards;
+}
+
+@keyframes heart {
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+        top: 200px;
+        transform: scale(1.5);
+    }
+}
+
 @keyframes score {
     0% {
         opacity: 1;
