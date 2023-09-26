@@ -1,6 +1,6 @@
 [
     {
-        "period": [5, 12],
+        "period": [5, 11],
         "config": "MORNING",
         "week": "ANY",
         "dialogs": [
@@ -17,7 +17,7 @@
         ]
     },
     {
-        "period": [12, 15],
+        "period": [11, 15],
         "config": "AFTERNOON_1",
         "week": "ANY",
         "dialogs": [
