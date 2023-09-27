@@ -23,7 +23,8 @@ var bg = document.querySelector('img.bg'),
     defaultImage = "images/2023-09-2023_totoro.png",
     firstImage = defaultImage,
     secondImage = happyImage,
-    heartsInterval = null;
+    heartsInterval = null,
+    roseTimeout = null;
 
 const statusbar = {
     friendship: 0,
@@ -98,6 +99,8 @@ function showRose() {
     var interval  = null, 
         rose = document.getElementById('rose');
 
+    clearTimeout(roseTimeout);
+
     rose.classList.add('show');
 
     interval = setInterval(() => {
@@ -113,23 +116,15 @@ function showRose() {
         rose.classList.remove('show');
 
         var now = new Date();
-
-        if (localStorage.getItem('ROSE')) {
-            var lastRose = Number(localStorage.getItem('ROSE'));
-            var diffRose = Math.abs(lastRose - now.getDay());
-            
-            if (diffRose > 0) {
-                localStorage.removeItem('ROSE');
-            }
-        }
         
         if(localStorage.getItem('ROSE') == null) {
-            localStorage.setItem('ROSE', now.getDay());
+            localStorage.setItem('ROSE', now.getDate());
+            showRoseIcon(true);
             addFriendship(20);
         }
     });
 
-    setTimeout(() => {
+    roseTimeout = setTimeout(() => {
         clearInterval(interval);
         rose.style.top = `${400}px`;
         rose.classList.remove('show');
@@ -260,6 +255,10 @@ function night() {
     }
 }
 
+function changeMetaColor(color) {
+    document.querySelector('meta[name="theme-color"]').setAttribute("content", color);
+}
+
 const time = () => {
     var date = new Date();
     hour = date.getHours();
@@ -267,6 +266,20 @@ const time = () => {
     var xhr = new XMLHttpRequest();
 
     xhr.open("GET", `dialogs.json?timestamp=${date.getTime()}`, true);
+
+    showRoseIcon(false);
+
+    if (localStorage.getItem('ROSE')) {
+        var lastRose = Number(localStorage.getItem('ROSE'));
+        var diffRose = Math.abs(lastRose - (new Date()).getDate());
+        
+        if (diffRose > 0) {
+            localStorage.removeItem('ROSE');
+        }
+        else {
+            showRoseIcon(true);
+        }
+    }
 
     xhr.onreadystatechange = function() {
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
@@ -284,18 +297,22 @@ const time = () => {
                         default:
                         case CONFIGS.MORNING: 
                             document.body.classList.add('day');
+                            changeMetaColor("#87CEFA");
                             break;
 
                         case CONFIGS.AFTERNOON_1: 
                             document.body.classList.add('afternoon1');
+                            changeMetaColor("#4ad1ff");
                             break;
 
                         case CONFIGS.AFTERNOON_2: 
                             document.body.classList.add('afternoon2');
+                            changeMetaColor("#7aa2cb");
                             break;
 
                         case CONFIGS.NIGHT: 
                             document.body.classList.add('night');
+                            changeMetaColor("#191970");
                             night();
                             break;
                     }                    
@@ -448,6 +465,17 @@ function gameStatus() {
     }
 }
 
+function showRoseIcon(op) {
+    var icon = document.getElementById('img-collected');
+
+    if(op) {
+        icon.classList.add('show');
+    }
+    else {
+        icon.classList.remove('show');
+    }
+}
+
 function main() {
     var h = new Hammer(area);
 
@@ -484,7 +512,7 @@ function main() {
                 countdownDialog = 3000;
             }
 
-            if(hour >= 5 && hour < 12 && indexTxt == dialogs.length - 1) {
+            if(hour >= 21 && hour < 24 && indexTxt == dialogs.length - 1) {
                 showRose();
             }
 
@@ -567,15 +595,15 @@ function hearts() {
     clearInterval(heartsInterval);
 
     const showHearts = () => {
-        setTimeout(createHeart, 1000);
         setTimeout(createHeart, 2000);
-        setTimeout(createHeart, 3000);
         setTimeout(createHeart, 4000);
+        setTimeout(createHeart, 6000);
+        setTimeout(createHeart, 8000);
     }
 
     createHeart();
     showHearts();
-    heartsInterval = setInterval(showHearts, 10000);
+    heartsInterval = setInterval(showHearts, 15000);
 }
 
 function showMoon() {

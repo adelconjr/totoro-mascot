@@ -105,7 +105,7 @@ body.night #cloud {
     top: 150px;
     left: 200px;
     position: absolute;
-    z-index: 1004;
+    z-index: 2001;
     display: none;
 }
 
@@ -118,7 +118,7 @@ body.night #cloud {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1005;
+    z-index: 2002;
 }
 
 #txtBaloon {
@@ -229,6 +229,8 @@ body.night #cloud {
     opacity: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    z-index: 2001;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
 #more-score.show {
@@ -271,7 +273,7 @@ body.night #cloud {
 .heart {
     font-size: 20px;
     left: 300px;
-    top: 400px;
+    top: 500px;
     z-index: 2000;
     position: absolute;
     opacity: 0;
@@ -361,6 +363,21 @@ body.night #cloud {
     position: absolute;
 }
 
+#img-collected img {
+    width: 20px;
+}
+
+#img-collected {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    display: none;
+}
+
+#img-collected.show {
+    display: block;
+}
+
 @keyframes moon {
     0% {
         box-shadow: 0 0 50px 20px rgba(255, 255, 250, 0.8);
@@ -379,7 +396,7 @@ body.night #cloud {
     }
     100% {
         opacity: 0;
-        top: 200px;
+        top: 300px;
         transform: scale(1.5);
     }
 }
