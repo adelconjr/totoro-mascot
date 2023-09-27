@@ -76,12 +76,14 @@
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
-            "Hey",
-            "Tá fazendo o que acordado ?",
-            "Sentiu saudades foi?",
-            "Te peguei né?",
-            "Gosto muito de você, mocinho",
-            "Agora vai descansar..."
+            "🎶 And it's no sacrifice",
+            "Just a simple word",
+            "It's two hearts living",
+            "In two separate worlds",
+            "But it's no sacrifice",
+            "No sacrifice",
+            "It's no sacrifice at all 🎶",
+            "Saudades de ti",
         ]
     }
 ]
