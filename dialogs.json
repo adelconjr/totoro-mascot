@@ -4,14 +4,12 @@
         "config": "MORNING",
         "week": "ANY",
         "dialogs": [
-            "Bom dia, príncipe",
+            "Bom dia, Sr. Vito!",
             "Dormiu bem?",
             "Espero que você tenha um ótimo dia",
-            "Nada de estresse 😌",
-            "Um dia calmo e tranquilo 🍃",
-            "Como você é",
-            "Qualquer coisa tome seu café ☕",
-            "Um abraço e um xêro do Ad 🤗"
+            "Hoje é dia de ver o Ad",
+            "(Não conta pra ele mas...",
+            "Ele disse que está com saudades)"
         ]
     },
     {
@@ -19,11 +17,14 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "dialogs": [
-            "Hey Vito!",
-            "Tudo bem?",
-            "O Sr. Já almoçou?",
-            "Espero que seu dia esteja tão incrível...",
-            "Quanto você 😘"
+            "Acorda preguicinha",
+            "Parece que hoje amanheceu chovendo",
+            "O que achou do meu guarda-chuva?",
+            "Aproveite a folguinha",
+            "Tome um cházinho",
+            "Finalize o cabelo",
+            "E se possível, jogue com um Ad",
+            "Abracinhos do Totoro"
         ]
     },
     {
@@ -31,16 +32,11 @@
         "config": "AFTERNOON_2",
         "week": "ANY",
         "dialogs": [
-            "Hey",
-            "Psiu",
-            "Oioi",
-            "Oie",
-            "Olá",
-            "Oii",
-            "Oi",
-            "Você vem sempre aqui?",
-            "O Ad pediu para eu te dizer...",
-            "Que vc é incrível ❤️"
+            "O Sr. é um homem muito atencioso",
+            "Me dar atenção em plena folguinha",
+            "Que homem incrível",
+            "O Ad teve sorte de te encontrar",
+            "E eu também"
         ]
     },
     {
@@ -49,11 +45,10 @@
         "week": "ANY",
         "dialogs": [
             "Boa noite, Sr. Vito!",
-            "Já chegou em casa?",
-            "O Ad quer saber como foi o seu dia.",
-            "Que tal uma companhia hoje?",
-            "Vamos fazer o que?",
-            "Não me importo de ficar até tarde contigo"
+            "Como foi sua folga? Aproveitou bastante?",
+            "Espero que sim :)",
+            "O Ad me disse que quer jogar hoje",
+            "Joga com ele poxa"
         ]
     },
     {
@@ -61,12 +56,14 @@
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
-            "Boa noite, Vito",
-            "Bom descanso pra ti",
+            "Bom descanso, Vito",
+            "Obrigado pela companhia",
             "Não esquece do meu boa noite",
             "(E do mini Totoro também...)",
-            "E antes de dormir",
-            "Uma flor para o jardim que estou cultivando em vc"
+            "Amanhã é dia de ver o Ad",
+            "Dê essa flor para ele",
+            "(E um beijo também)",
+            "Acho que ele vai gostar"
         ]
     },
     {
