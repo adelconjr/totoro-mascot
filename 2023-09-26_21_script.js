@@ -5,6 +5,10 @@ const CONFIGS = {
     NIGHT: "NIGHT",
 }
 
+const globalConfigs = {
+    rain: false
+};
+
 var bg = document.querySelector('img.bg'),
     leftEye = document.getElementById('left-eye'),
     rightEye = document.getElementById('right-eye'),
@@ -19,12 +23,17 @@ var bg = document.querySelector('img.bg'),
     dialogs = []
     hour = 0,
     currentConfig = "",
-    happyImage = "images/2023-09-2023_totoro2.png",
-    defaultImage = "images/2023-09-2023_totoro.png",
+    happyImage = "images/new/2023-09-2023_totoro2.png",
+    defaultImage = "images/new/2023-09-2023_totoro.png",
+    rainHappyImage = "images/new/totoro_chuva_sorriso.png",
+    rainDefaultImage = "images/new/totoro_chuva.png",
     firstImage = defaultImage,
-    secondImage = happyImage,
+    secondImage = globalConfigs.rain ? rainHappyImage : happyImage,
     heartsInterval = null,
-    roseTimeout = null;
+    roseTimeout = null,
+    rainInterval = null,
+    isRain = false,
+    heartsShowing = false;
 
 const statusbar = {
     friendship: 0,
@@ -322,7 +331,9 @@ const time = () => {
         }
     }
 
-    xhr.send();            
+    xhr.send();  
+    
+    updateRain();
 }
 
 function removeClasses() {
@@ -333,8 +344,6 @@ function removeClasses() {
 }
 
 function loadStatus() {
-    clearInterval(heartsInterval);
-
     if(localStorage.getItem('FRIENDSHIP') != null) {
         statusbar.friendship = Number(localStorage.getItem('FRIENDSHIP'));
     }
@@ -351,21 +360,27 @@ function updateFriendship() {
     var el = document.getElementById('friendship');
     var fStatus = document.getElementById('friendship-status');
 
-    firstImage = defaultImage;
+    firstImage = globalConfigs.rain ? rainDefaultImage : defaultImage ;
 
     if(statusbar.friendship < 40) {
         color = "#FF0000";
         fStatus.innerText = "☹️";
+
+        heartsShowing = false;
+        clearInterval(heartsInterval);
     }
     else if(statusbar.friendship >= 40 && statusbar.friendship < 70) {
         color = "#FFA500";
         fStatus.innerText = "🙂";
+
+        heartsShowing = false;
+        clearInterval(heartsInterval);
     }
     else if(statusbar.friendship >= 60) {
         color = "#32CD32";
         fStatus.innerText = "🥰";
 
-        firstImage = happyImage;
+        firstImage = globalConfigs.rain ? rainHappyImage : happyImage;
         hearts();
     }
 
@@ -484,7 +499,7 @@ function main() {
     h.on('panmove', (e) => {
         hideBaloon();
 
-        bg.src = defaultImage;
+        bg.src = globalConfigs.rain ? rainDefaultImage : defaultImage;
         var x = e.changedPointers[0].x;
         var y = e.changedPointers[0].y;
         
@@ -558,6 +573,8 @@ function main() {
 
     document.body.classList.add('day');
 
+    updateRain();
+
     time();
     loading(true);
     gameStatus();
@@ -592,18 +609,22 @@ function createHeart() {
 }
 
 function hearts() {
-    clearInterval(heartsInterval);
 
-    const showHearts = () => {
-        setTimeout(createHeart, 2000);
-        setTimeout(createHeart, 4000);
-        setTimeout(createHeart, 6000);
-        setTimeout(createHeart, 8000);
+    if(!heartsShowing) {
+        heartsShowing = true;
+        clearInterval(heartsInterval);
+
+        const showHearts = () => {
+            setTimeout(createHeart, 2000);
+            setTimeout(createHeart, 4000);
+            setTimeout(createHeart, 6000);
+            setTimeout(createHeart, 8000);
+        }
+
+        createHeart();
+        showHearts();
+        heartsInterval = setInterval(showHearts, 15000);
     }
-
-    createHeart();
-    showHearts();
-    heartsInterval = setInterval(showHearts, 15000);
 }
 
 function showMoon() {
@@ -629,5 +650,60 @@ function hideMoon () {
     moon.classList.remove('show');
 }
 
+function makeRain() {
+    var el = document.createElement('span');
+    el.classList.add('rain');
+    el.style.left = `${Math.floor(Math.random() * window.innerWidth)}px`;
+
+    document.body.appendChild(el);
+
+    setTimeout(() => {
+        document.body.removeChild(el);
+    }, 5000);
+}
+
+function playRain() {
+    rainInterval = setInterval(makeRain, 50);
+
+    document.querySelector('.rain-cloud-1').classList.add('show');
+    document.querySelector('.rain-cloud-2').classList.add('show');
+}
+
+function updateRain() {
+    var date = new Date();
+    var xhr = new XMLHttpRequest();
+
+    xhr.open("GET", `configs.json?timestamp=${date.getTime()}`, true);
+
+    xhr.onreadystatechange = function() {
+        if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            var configs = JSON.parse(this.responseText);
+
+            globalConfigs.rain = configs.rain;
+
+            firstImage = globalConfigs.rain ? rainDefaultImage : defaultImage;
+            secondImage = globalConfigs.rain ? rainHappyImage : happyImage;
+
+            if(globalConfigs.rain) {
+                if(!isRain) {
+                    isRain = true;
+                    playRain();
+                }
+            }
+            else {
+                isRain = false;
+                rainInterval = null;
+                document.querySelector('.rain-cloud-1').classList.remove('show');
+                document.querySelector('.rain-cloud-2').classList.remove('show');
+            }
+
+            loadStatus();
+        }
+    }
+
+    xhr.send();
+
+    
+}
 
 main();
