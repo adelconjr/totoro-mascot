@@ -689,12 +689,15 @@ function updateRain() {
                     isRain = true;
                     playRain();
                 }
+
+                document.body.classList.add('is-rain');
             }
             else {
                 isRain = false;
                 rainInterval = null;
                 document.querySelector('.rain-cloud-1').classList.remove('show');
                 document.querySelector('.rain-cloud-2').classList.remove('show');
+                document.body.classList.remove('is-rain');
             }
 
             loadStatus();

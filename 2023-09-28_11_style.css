@@ -8,7 +8,6 @@ body {
 
 body.day {
     background-color: #87CEFA;
-    
 }
 body.afternoon1 {
     background-color: #4ad1ff;
@@ -102,6 +101,12 @@ body.night {
 
 body.night #cloud {
     opacity: 0.5;
+}
+
+body.is-rain #cloud,
+body.is-rain.night #cloud {
+    filter: invert(20%);
+    opacity: 0.6;
 }
 
 #baloon {
