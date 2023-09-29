@@ -328,12 +328,12 @@ const time = () => {
                 }
             
             });
+
+            updateRain();
         }
     }
 
     xhr.send();  
-    
-    updateRain();
 }
 
 function removeClasses() {
@@ -694,7 +694,7 @@ function updateRain() {
             }
             else {
                 isRain = false;
-                rainInterval = null;
+                clearInterval(rainInterval);
                 document.querySelector('.rain-cloud-1').classList.remove('show');
                 document.querySelector('.rain-cloud-2').classList.remove('show');
                 document.body.classList.remove('is-rain');
