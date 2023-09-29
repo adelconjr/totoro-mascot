@@ -238,7 +238,7 @@ body.is-rain.night #cloud {
     opacity: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    z-index: 2001;
+    z-index: 6000;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
 
