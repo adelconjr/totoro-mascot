@@ -230,7 +230,7 @@ function showBaloon(txt) {
     var balloon = document.getElementById('baloon');
     var p = document.getElementById('txtBaloon');
 
-    p.innerText = txt;
+    p.innerHTML = txt;
 
     balloon.style.display = 'block';
     p.style.display = 'block';
@@ -527,7 +527,7 @@ function main() {
                 countdownDialog = 3000;
             }
 
-            if(hour >= 21 && hour < 24 && indexTxt == dialogs.length - 1) {
+            if(hour >= 0 && hour < 2 && indexTxt == dialogs.length - 1) {
                 showRose();
             }
 
