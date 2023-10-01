@@ -4,9 +4,11 @@
         "config": "MORNING",
         "week": "ANY",
         "dialogs": [
-            "Hoje o Totoro está de folga",
-            "Aproveite seu dia com o Ad",
-            "Dê um abraço nele por mim"
+            "Bom dia, Vito",
+            "Voltei, sentiu minha falta?",
+            "Aliás, um otimo dia para o sr.",
+            "Compre um guarda chuva",
+            "Ou pegue o meu emprestado"
         ]
     },
     {
