@@ -16,9 +16,12 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "dialogs": [
-            "Hoje o Totoro está de folga",
-            "Aproveite seu dia com o Ad",
-            "Dê um abraço nele por mim"
+            "Oi td bem? oi, td bem? oi... td bem? bem?",
+            "Por acaso o sr. está almoçando?",
+            "Poderia deixar um espaço para mim, sr?",
+            "Obrigado, lhe farei companhia",
+            "Mas eu permito também se o sr quiser falar com o Ad",
+            "(Ele tá esperando lá fora no whats)"
         ]
     },
     {
