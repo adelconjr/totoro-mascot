@@ -12,7 +12,7 @@
         ]
     },
     {
-        "period": [11, 15],
+        "period": [11, 17],
         "config": "AFTERNOON_1",
         "week": "ANY",
         "dialogs": [
@@ -25,37 +25,41 @@
         ]
     },
     {
-        "period": [15, 18],
+        "period": [17, 20],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "dialogs": [
-            "Hoje o Totoro está de folga",
-            "Aproveite seu dia com o Ad",
-            "Dê um abraço nele por mim"
+            "Heeeey ooh",
+            "Listen what I say oh",
+            "Ja saiu Sr. Vito?",
+            "O Ad quer saber como foi o seu dia",
+            "E falou que quer ir escutando música contigo",
+            "Pra você não se sentir sozinho",
+            "<a target='_blank' href='https://spotify.link/2P1iaQDYxDb'>Vem cá</a>"
         ]
     },
     {
-        "period": [18, 21],
+        "period": [20, 24],
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
-            "Hoje o Totoro está de folga",
-            "Aproveite seu dia com o Ad",
-            "Dê um abraço nele por mim"
+            "Tenho uma mensagem do Ad",
+            "Mas é segredo",
+            "Ele pediu pra eu esperar",
+            "Não conta pra ninguém",
+            "E volte aqui meia noite"
         ]
     },
     {
-        "period": [21, 24],
+        "period": [0, 2],
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
-            "Hoje o Totoro está de folga",
-            "Aproveite seu dia com o Ad",
-            "Dê um abraço nele por mim"
+            "Aishitemasu"
         ]
     },
     {
-        "period": [0, 5],
+        "period": [2, 5],
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
