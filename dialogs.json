@@ -12,7 +12,7 @@
         ]
     },
     {
-        "period": [11, 17],
+        "period": [11, 16],
         "config": "AFTERNOON_1",
         "week": "ANY",
         "dialogs": [
@@ -25,7 +25,7 @@
         ]
     },
     {
-        "period": [17, 20],
+        "period": [16, 20],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "dialogs": [
