@@ -426,6 +426,28 @@ body.is-rain.night #cloud {
     display: block;
 }
 
+#sakura {
+    width: 150px;
+    left: 95px;
+    top: 470px;
+    z-index: 1001;
+    position: absolute;
+    opacity: 0;
+    transform: scale(0);
+    transition: 1s all;
+}
+
+#sakura.show {
+    animation: sakura 4s forwards;
+}
+
+@keyframes sakura {
+    100% {
+        opacity: 1;
+        transform: scale(1) rotate(360deg);
+    }
+}
+
 @keyframes rain {
     100% {
         top: calc(100% + 10px);

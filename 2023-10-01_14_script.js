@@ -106,19 +106,22 @@ function distance(dot1, dot2) {
 
 function showRose() {
     var interval  = null, 
-        rose = document.getElementById('rose');
+        rose = document.getElementById('sakura');
 
     clearTimeout(roseTimeout);
 
     rose.classList.add('show');
 
-    interval = setInterval(() => {
-        if(rose.offsetTop == 400) {
-            rose.style.top = `${410}px`;
-        }
-        else {
-            rose.style.top = `${400}px`;
-        }
+    setTimeout(() => {   
+        interval = setInterval(() => {
+            if(rose.offsetTop == 470) {
+                rose.style.top = `${460}px`;
+            }
+            else {
+                rose.style.top = `${470}px`;
+            }
+        }, 1000);
+
     }, 1000);
 
     rose.addEventListener('click', () => {
