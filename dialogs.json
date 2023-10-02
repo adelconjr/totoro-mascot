@@ -4,11 +4,13 @@
         "config": "MORNING",
         "week": "ANY",
         "dialogs": [
+            "🌞",
             "Bom dia, Vito",
-            "Voltei, sentiu minha falta?",
-            "Aliás, um otimo dia para o sr.",
-            "Compre um guarda chuva",
-            "Ou pegue o meu emprestado"
+            "Dormiu bem?",
+            "Boa segunda-feira",
+            "Um otimo dia para o Sr.",
+            "E compre um guarda chuva Sr. 😡",
+            "Ou pegue o meu emprestado 🤭"
         ]
     },
     {
