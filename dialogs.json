@@ -24,12 +24,12 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "dialogs": [
-            "Oi td bem? oi, td bem? oi... td bem? bem?",
-            "Por acaso o sr. está almoçando?",
-            "Poderia deixar um espaço para mim, sr?",
-            "Obrigado, lhe farei companhia",
-            "Mas eu permito também se o sr quiser falar com o Ad",
-            "(Ele tá esperando lá fora no whats)"
+            "Por acaso o Sr. estaria almoçando?",
+            "Gostaria de acompanhá-lo",
+            "Deixe um espaço para mim",
+            "Mesmo que o Ad não esteja aqui",
+            "Ele me deixou para te fazer companhia",
+            "E te mandou um abraço bem quentinho"
         ]
     },
     {
