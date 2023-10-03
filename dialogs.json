@@ -37,13 +37,12 @@
         "config": "AFTERNOON_2",
         "week": "ANY",
         "dialogs": [
-            "Sr. Levilson?",
-            "Foi assim que pediram pra eu te chamar hihi",
-            "Como foi seu dia?",
-            "Espero que tenha sido bom",
-            "Quero fazer companhia no seu Love's Train",
-            "Aliás, ja te disse que tenho sorte de ter você?",
-            "Obrigado pela companhia de sempre"
+            "Mr. Levilson?",
+            "How are you?",
+            "I am fine :) Thanks",
+            "Your friend Totoro Jr. misses you",
+            "Let's listen to music on Love's Train",
+            "The Totoro Jr. loves you company"
         ]
     },
     {
