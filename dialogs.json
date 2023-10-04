@@ -38,7 +38,7 @@
     },
     {
         "period": [15, 19],
-        "config": "AFTERNOON_1",
+        "config": "AFTERNOON_2",
         "week": "ANY",
         "dialogs": [
             "Sr. Levilson?",
