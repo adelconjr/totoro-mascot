@@ -26,29 +26,25 @@
         ]
     },
     {
-        "period": [11, 16],
+        "period": [11, 15],
         "config": "AFTERNOON_1",
         "week": "ANY",
         "dialogs": [
-            "Mr. Levilson?",
-            "How are you?",
-            "I am fine :) Thanks",
-            "Your friend Totoro Jr. misses you",
-            "Let's listen to music on Love's Train",
-            "The Totoro Jr. loves you company"
+            "Sr. Levilson?",
+            "Como foi o seu dia?",
+            "Por favor, aceite a quest do Ad",
+            "(Ele disse que ganha pontos com ele também se aceitar)"
         ]
     },
     {
-        "period": [16, 21],
+        "period": [15, 21],
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
-            "Mr. Levilson?",
-            "How are you?",
-            "I am fine :) Thanks",
-            "Your friend Totoro Jr. misses you",
-            "Let's listen to music on Love's Train",
-            "The Totoro Jr. loves you company"
+            "Sr. Levilson?",
+            "Como foi o seu dia?",
+            "Por favor, aceite a quest do Ad",
+            "(Ele disse que ganha pontos com ele também se aceitar)"
         ]
     },
     {
@@ -56,11 +52,8 @@
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
-            "Tenho uma mensagem do Ad",
-            "Mas é segredo",
-            "Ele pediu pra eu esperar",
-            "Não conta pra ninguém",
-            "E volte aqui meia noite"
+            "Não esqueça do Ad Sr. Levil-san",
+            "A quest vai acabar em pouco tempo..."
         ]
     },
     {
@@ -68,6 +61,9 @@
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
+            "Boa noite Sr. Vito",
+            "Durma bem",
+            "^^",
             "Aishitemasu"
         ]
     },

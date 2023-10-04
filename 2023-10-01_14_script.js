@@ -392,7 +392,6 @@ function updateFriendship() {
 }
 
 function subtractFriendship(value) {
-    console.log('subtract', value);
     var newValue = statusbar.friendship - value;
 
     if(newValue < 5) {
@@ -401,6 +400,8 @@ function subtractFriendship(value) {
     else {
         statusbar.friendship = newValue;
     }
+
+    score(value, false);
 
     updateFriendship();
 }
@@ -425,10 +426,12 @@ function updateLastConfig(current_config) {
     statusbar.lastConfigInteraction = current_config;
 }
 
-function score(score) {
-    const el = document.getElementById('more-score');
+function score(score, plus = true) {
+    const el = plus 
+        ? document.getElementById('more-score') 
+        : document.getElementById('less-score');
 
-    el.innerText = `${score}+`;
+    el.innerText = plus ? `${score}+` : `-${score}`;
     el.classList.add('show');
 
     setTimeout(() => {
@@ -492,6 +495,58 @@ function showRoseIcon(op) {
     else {
         icon.classList.remove('show');
     }
+}
+
+function quest() {
+    var btnNo = document.getElementById('bt-no');
+    var btnYes = document.getElementById('bt-yes');
+    var initialScale = 1;
+
+    localStorage.setItem('QUEST-DAY', 4);
+
+    if(localStorage.getItem('QUEST-STARTED')) {
+        document.getElementById('quest').classList.remove('show');
+        document.getElementById('quest2').classList.add('show');
+    }
+
+    btnNo.addEventListener('click', function() {
+        btnNo.classList.add('hide');
+        subtractFriendship(1);
+
+        initialScale = initialScale - 0.1;
+        btnNo.style.transform = `scale(${initialScale})`;
+
+        setTimeout(() => {
+            btnNo.classList.remove('hide');
+        }, 5000);
+    }); 
+
+    btnYes.addEventListener('click', function() {
+        document.getElementById('quest').classList.remove('show');
+        document.getElementById('quest2').classList.add('show');
+
+        localStorage.setItem('QUEST-STARTED', 1);
+        localStorage.setItem('QUEST-ACCEPTED_IN', (new Date()));
+        addFriendship(10);
+    });
+
+    setInterval(() => {
+        var now = new Date();
+
+        var diff = now.getDate() - parseInt(localStorage.getItem('QUEST-DAY'));
+
+        if(diff == 0) {
+            var restantHours = 24 - now.getHours();
+            var restantMinutes = 59 - now.getMinutes();
+            var restantSeconds = 59 - now.getSeconds();
+
+            document.getElementById('quest-hours').innerHTML = restantHours.toString().padStart(2, '0');
+            document.getElementById('quest-minutes').innerHTML = restantMinutes.toString().padStart(2, '0');
+            document.getElementById('quest-seconds').innerHTML = restantSeconds.toString().padStart(2, '0');
+
+        }
+    }, 1000);
+
 }
 
 function main() {
@@ -597,6 +652,9 @@ function main() {
             banner.classList.remove('show');
         });
     }
+
+
+    quest();
 }
 
 function createHeart() {

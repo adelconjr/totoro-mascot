@@ -229,7 +229,8 @@ body.is-rain.night #cloud {
     border: 1px solid #000;
 }
 
-#more-score {
+#more-score,
+#less-score {
     position: absolute;
     font-size: 12px;
     left:70px;
@@ -241,8 +242,12 @@ body.is-rain.night #cloud {
     z-index: 6000;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
 }
+#less-score {
+    color: #F22;
+}
 
-#more-score.show {
+#more-score.show, 
+#less-score.show {
     animation: score 1.5s forwards;
 }
 
@@ -439,6 +444,118 @@ body.is-rain.night #cloud {
 
 #sakura.show {
     animation: sakura 4s forwards;
+}
+
+#quest,
+#quest2 {
+    width: 350px;
+    height: 210px;
+    background-color: #e8dd99;
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 5000;
+    bottom: 20px;
+    box-sizing: border-box;
+    padding: 1rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: none;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#quest.show,
+#quest2.show {
+    display: block;
+}
+
+#quest hr,
+#quest2 hr {
+    margin: 5px 0;
+    border-color: #AAA;
+    border-style: solid;
+    border-width: 1px;
+    border-width: 0.01em;
+    border-top: 0;
+    padding: 0;
+}
+
+.quest-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+#quest2 .quest-title {
+    font-size: 16px;
+}
+
+.quest-subtitle {
+    font-size: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.quest-content {
+    text-align: center;
+} 
+
+#quest > .quest-body,
+#quest2 > .quest-body {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+#quest > .quest-body p,
+#quest2 > .quest-body p {
+    text-align: center;
+}
+
+#quest > .quest-footer,
+#quest2 > .quest-footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    left: 0;
+
+}
+
+#quest2 > .quest-footer {
+    bottom: 10px;
+}
+
+#quest > .quest-footer > button,
+#quest2 > .quest-footer > button {
+    color:#e8dd99;
+    background-color: #874300;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.5);
+    margin: 0 5px;
+}
+
+#quest > .quest-footer > button:active,
+#quest2 > .quest-footer > button:active {
+    transition: all 0.2s;
+    transform: scale(1.1);
+}
+
+#quest > .quest-footer > button#bt-no.hide,
+#quest2 > .quest-footer > button#bt-no.hide {
+    opacity: 0;
 }
 
 @keyframes sakura {
