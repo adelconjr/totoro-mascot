@@ -37,8 +37,8 @@
         ]
     },
     {
-        "period": [15, 21],
-        "config": "NIGHT",
+        "period": [15, 19],
+        "config": "AFTERNOON_1",
         "week": "ANY",
         "dialogs": [
             "Sr. Levilson?",
@@ -48,7 +48,7 @@
         ]
     },
     {
-        "period": [21, 24],
+        "period": [19, 24],
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
