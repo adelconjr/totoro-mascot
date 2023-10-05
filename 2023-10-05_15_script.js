@@ -6,7 +6,8 @@ const CONFIGS = {
 }
 
 const globalConfigs = {
-    rain: false
+    rain: false,
+    version: "0.1"
 };
 
 var bg = document.querySelector('img.bg'),
@@ -690,7 +691,6 @@ function main() {
         });
     }
 
-
     quest();
 }
 
@@ -746,6 +746,7 @@ function showMoon() {
 
 function hideMoon () {
     moon.classList.remove('show');
+    document.getElementById('starsSky').innerHTML = "";
 }
 
 function makeRain() {
@@ -767,6 +768,20 @@ function playRain() {
     document.querySelector('.rain-cloud-2').classList.add('show');
 }
 
+function updateVersion() {
+    var version = localStorage.getItem('VERSION');
+
+    if(version == null) {
+        localStorage.setItem('VERSION', globalConfigs.version);
+    }
+    else {
+        if(version != globalConfigs.version) {
+            localStorage.setItem('VERSION', globalConfigs.version);
+            location.reload();
+        }
+    }
+}
+
 function updateRain() {
     var date = new Date();
     var xhr = new XMLHttpRequest();
@@ -778,6 +793,8 @@ function updateRain() {
             var configs = JSON.parse(this.responseText);
 
             globalConfigs.rain = configs.rain;
+            globalConfigs.version = configs.version;
+            updateVersion();
 
             firstImage = globalConfigs.rain ? rainDefaultImage : defaultImage;
             secondImage = globalConfigs.rain ? rainHappyImage : happyImage;
