@@ -498,6 +498,13 @@ function showRoseIcon(op) {
 }
 
 function quest() {
+    if(localStorage.getItem('QUEST-COMPLETED') && localStorage.getItem('REWARDED')) {
+        document.getElementById('quest').classList.remove('show');
+        document.getElementById('quest2').classList.remove('show');
+        document.getElementById('popup-new-badge').classList.remove('show');
+        return;
+    }
+
     var btnNo = document.getElementById('bt-no');
     var btnYes = document.getElementById('bt-yes');
     var initialScale = 1;
@@ -532,7 +539,6 @@ function quest() {
 
     setInterval(() => {
         var now = new Date();
-
         var diff = now.getDate() - parseInt(localStorage.getItem('QUEST-DAY'));
 
         if(diff == 0) {
@@ -545,7 +551,26 @@ function quest() {
             document.getElementById('quest-seconds').innerHTML = restantSeconds.toString().padStart(2, '0');
 
         }
+        else {
+            document.getElementById('quest').classList.remove('show');
+            document.getElementById('quest2').classList.remove('show');
+            document.getElementById('popup-new-badge').classList.add('show');
+
+            localStorage.setItem('QUEST-COMPLETED', 1);
+        }
     }, 1000);
+
+
+    document.getElementById('btn-reward').addEventListener('click', function() {
+        addFriendship(100);
+        localStorage.setItem('BADGES', "[1]");
+        localStorage.setItem('REWARDED', 1);
+
+        document.getElementById('quest').classList.remove('show');
+        document.getElementById('quest2').classList.remove('show');
+        document.getElementById('popup-new-badge').classList.remove('show');
+
+    });
 
 }
 
