@@ -4,8 +4,13 @@
         "config": "MORNING",
         "week": "ANY",
         "dialogs": [
-            "Bom dia Sr. Victor Levi",
-            "Aproveite sua folguinha"
+            "Bom dia Levi-san",
+            "Como você está?",
+            "Espero que o Sr. tenha um ótimo dia",
+            "Estarei aqui sempre que precisar",
+            "Ah, tenho um recado do Ad",
+            "Ele disse que está com saudade",
+            "Se o Sr. mandar mensagem talvez ele o acompanhe na viagem"
         ]
     },
     {
@@ -13,10 +18,12 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "dialogs": [
-            "Sr. Levilson?",
-            "Como foi o seu dia?",
-            "Por favor, aceite a quest do Ad",
-            "(Ele disse que ganha pontos com ele também se aceitar)"
+            "Oi oi por acaso foi aqui que pediram companhia pra viagem?",
+            "Pois então estou aqui",
+            "Vai querer para agora ou depois?",
+            "Ok ok pra agora né?",
+            "Então fico por aqui mesmo",
+            "^^"
         ]
     },
     {
@@ -24,10 +31,12 @@
         "config": "AFTERNOON_2",
         "week": "ANY",
         "dialogs": [
-            "Sr. Levilson?",
+            "Levil-san",
             "Como foi o seu dia?",
-            "Por favor, aceite a quest do Ad",
-            "(Ele disse que ganha pontos com ele também se aceitar)"
+            "Gostou da sua badge?",
+            "Você pode acessar elas no menu recomensas",
+            "No topo da tela ao lado esquerdo",
+            "Fique atento para novas recompensas"
         ]
     },
     {
@@ -35,8 +44,9 @@
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
-            "Não esqueça do Ad Sr. Levil-san",
-            "A quest vai acabar em pouco tempo..."
+            "Boa noite Levil-san",
+            "O Ad queria que vocês passassem um tempo juntos",
+            "O que acha?"
         ]
     },
     {
@@ -44,9 +54,8 @@
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
-            "Boa noite Sr. Vito",
-            "Durma bem",
-            "^^",
+            "Boa noite Levi-san",
+            "Bom descanso",
             "Aishitemasu"
         ]
     },
