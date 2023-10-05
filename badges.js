@@ -1,11 +1,36 @@
-function addBadge(src) {
+function addBadge(badge, count = 0) {
     var containerBadges = document.getElementById('badges');
+    var container = document.createElement('div');
+    container.classList.add('badge-item');
 
     var img = document.createElement('img');
     img.classList.add('badge');
-    img.src = src;
+    img.src = badge.image;
 
-    containerBadges.appendChild(img);    
+    var pTitle = document.createElement('p');
+    pTitle.innerText = badge.name;
+
+    var pRarity = document.createElement('p');
+    var rarity = "";
+    for(let i = 0; i < badge.rarity; i++) {
+        rarity += "&star;";
+    }
+
+    pRarity.innerHTML = rarity;
+
+    if(count > 0) {
+        var spnCount = document.createElement('span');
+        spnCount.classList.add('spn-badge-count');
+        spnCount.innerHTML = `&times;${count}`;
+        container.appendChild(spnCount);
+    }
+
+    container.appendChild(img);    
+    container.appendChild(pTitle);
+    container.appendChild(pRarity);
+
+    
+    containerBadges.appendChild(container);
 }
 
 window.addEventListener("DOMContentLoaded", function() {
@@ -26,10 +51,13 @@ window.addEventListener("DOMContentLoaded", function() {
                 
 
                 badges.forEach(badge => {
-                    console.log(userBadges);
-                    var findIndex = userBadges.indexOf(badge.id);
-                    if(findIndex > -1) {
-                        addBadge(badge.image);
+                    var filter = userBadges.filter(id => badge.id == id);
+                    console.log(filter);
+
+                    if(filter.length > 0) {
+                        var count = filter.length;
+
+                        addBadge(badge, count);
                     }
                 });
 

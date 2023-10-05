@@ -130,6 +130,17 @@ function showRose() {
         var now = new Date();
         
         if(localStorage.getItem('ROSE') == null) {
+            var badges = localStorage.getItem('BADGES');
+
+            if(badges == null) {
+                localStorage.setItem('BADGES', "[2]");
+            }
+            else {
+                var attBadges = JSON.parse(badges);
+                attBadges.push(2);
+                localStorage.setItem('BADGES', JSON.stringify(attBadges));
+            }
+
             localStorage.setItem('ROSE', now.getDate());
             showRoseIcon(true);
             addFriendship(20);

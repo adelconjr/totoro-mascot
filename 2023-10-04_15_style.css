@@ -197,7 +197,7 @@ body.is-rain.night #cloud {
 }
 
 #status {
-    width: 100%;
+    width: 70%;
     height: auto;
     display: flex;
     padding: 0 5px;
@@ -384,8 +384,8 @@ body.is-rain.night #cloud {
 
 #img-collected {
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 15px;
+    top: 50px;
     display: none;
 }
 
@@ -632,6 +632,7 @@ body.is-rain.night #cloud {
 .bg-badges {
     background-color: #e8dd99;
     min-height: 100%;
+    padding: 10px;
 }
 
 #btn-back {
@@ -643,7 +644,6 @@ body.is-rain.night #cloud {
     font-weight: bold;
     text-transform: uppercase;
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.5);
-    margin: 0 5px;
     margin-top: 10px;
     display: inline-block;
     text-decoration: none;
@@ -652,11 +652,12 @@ body.is-rain.night #cloud {
 .title-badges {
     font-size: 24px;
     margin: 20px;
+    margin-left: 0;
     font-weight: bold;
 }
 
 .badge-div {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     border-color: #000;
 }
@@ -666,11 +667,49 @@ body.is-rain.night #cloud {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .badge {
     width: 100px;
+}
+
+.badge-item {
+    max-width: 100px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid #000;
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    color: #FFF;
+    background-color: #874300;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.badge-item  img{
+    margin-bottom: 10px;
+}
+
+#btn-badges {
+    width: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: block;
+}
+#btn-badges img {
+    width: 100%;
+}
+
+.spn-badge-count {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    color: #FFF;
+    font-size: 12px;
 }
 
 @keyframes popup-badge {

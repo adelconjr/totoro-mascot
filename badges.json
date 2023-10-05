@@ -4,5 +4,11 @@
         "name": "Totoro com óculos do Ad",
         "rarity": 5,
         "image": "images/badges/badge1.png"
+    },
+    {
+        "id": 2,
+        "name": "Sakura",
+        "rarity": 3,
+        "image": "images/flor-sakura2.png"
     }
 ]
