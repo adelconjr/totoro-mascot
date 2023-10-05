@@ -537,7 +537,7 @@ function quest() {
         addFriendship(10);
     });
 
-    setInterval(() => {
+    var interv = setInterval(() => {
         var now = new Date();
         var diff = now.getDate() - parseInt(localStorage.getItem('QUEST-DAY'));
 
@@ -557,6 +557,7 @@ function quest() {
             document.getElementById('popup-new-badge').classList.add('show');
 
             localStorage.setItem('QUEST-COMPLETED', 1);
+            clearInterval(interv);
         }
     }, 1000);
 
