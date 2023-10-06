@@ -26,21 +26,31 @@
         ]
     },
     {
-        "period": [15, 19],
+        "period": [15, 18],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "dialogs": [
             "Levi-san",
-            "A pedidos do Ad-San irei recepcioná-lo",
-            "Por favor me acompanhe",
-            "O Ad chegará em instantes",
-            "Informações do Ad: ",
+            "<strong>ATUALIZAÇÕES</strong>",
+            "Horário alterado",
             "Ponto de encontro: plataforma de trem da estação Itaquera",
-            "Horário: 19:30 / 20h"
+            "Horário: 21h"
         ]
     },
     {
-        "period": [19, 24],
+        "period": [18, 22],
+        "config": "NIGHT",
+        "week": "ANY",
+        "dialogs": [
+            "Levi-san",
+            "<strong>ATUALIZAÇÕES</strong>",
+            "Horário alterado",
+            "Ponto de encontro: plataforma de trem da estação Itaquera",
+            "Horário: 21h"
+        ]
+    },
+    {
+        "period": [22, 24],
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
