@@ -5,12 +5,11 @@
         "week": "ANY",
         "dialogs": [
             "Bom dia Levi-san",
-            "Como você está?",
-            "Espero que o Sr. tenha um ótimo dia",
-            "Estarei aqui sempre que precisar",
-            "Ah, tenho um recado do Ad",
-            "Ele disse que está com saudade",
-            "Se o Sr. mandar mensagem talvez ele o acompanhe na viagem"
+            "Aproveitou sua noite?",
+            "A pedidos do Ad-San...",
+            "Irei acompanhá-lo a partir daqui",
+            "O Ad ama sua companhia Sr.",
+            "Eu eu tb."
         ]
     },
     {
@@ -31,12 +30,13 @@
         "config": "AFTERNOON_2",
         "week": "ANY",
         "dialogs": [
-            "Levil-san",
-            "Como foi o seu dia?",
-            "Gostou da sua badge?",
-            "Você pode acessar elas no menu recompensas",
-            "No topo da tela ao lado direito",
-            "Fique atento para novas recompensas"
+            "Levi-san",
+            "A pedidos do Ad-San irei recepcioná-lo",
+            "Por favor me acompanhe",
+            "O Ad chegará em instantes",
+            "Informações do Ad: ",
+            "Ponto de encontro: plataforma de trem da estação Itaquera",
+            "Horário: 19:30 / 20h"
         ]
     },
     {
@@ -44,9 +44,9 @@
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
-            "Boa noite Levil-san",
-            "O Ad queria que vocês passassem um tempo juntos",
-            "O que acha?"
+            "Boa noite Levi-san",
+            "Aproveite a companhia do Ad",
+            "Estarei aqui para acompanhá-lo na volta"
         ]
     },
     {
@@ -54,8 +54,6 @@
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
-            "Boa noite Levi-san",
-            "Bom descanso",
             "Aishitemasu"
         ]
     },
@@ -70,8 +68,7 @@
             "In two separate worlds",
             "But it's no sacrifice",
             "No sacrifice",
-            "It's no sacrifice at all 🎶",
-            "Saudades de ti"
+            "It's no sacrifice at all 🎶"
         ]
     }
 ]
