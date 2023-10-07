@@ -21,7 +21,7 @@
         ]
     },
     {
-        "period": [15, 18],
+        "period": [15, 21],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "dialogs": [
@@ -35,7 +35,7 @@
         ]
     },
     {
-        "period": [18, 24],
+        "period": [21, 24],
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
