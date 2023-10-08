@@ -17,46 +17,31 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "dialogs": [
-            "Oi oi por acaso foi aqui que pediram companhia pra viagem?",
-            "Pois então estou aqui",
-            "Vai querer para agora ou depois?",
-            "Ok ok pra agora né?",
-            "Então fico por aqui mesmo",
-            "^^"
+           ""
         ]
     },
     {
-        "period": [15, 18],
+        "period": [15, 21],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "dialogs": [
-            "Levi-san",
-            "<strong>ATUALIZAÇÕES</strong>",
-            "Horário alterado",
-            "Ponto de encontro: plataforma de trem da estação Itaquera",
-            "Horário: 21h"
+            "Levi-San tenho um comunicado do Ad!!",
+            "<strong>Aguarde</strong>",
+            "3",
+            "2",
+            "1",
+            "<span style='color:#e32636;font-weight: bold'>Te amo, vida</span>",
+            "<span style='font-size:10px'>Por favor me leve contigo na sua viagem</span>"
         ]
     },
     {
-        "period": [18, 22],
+        "period": [21, 24],
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
-            "Levi-san",
-            "<strong>ATUALIZAÇÕES</strong>",
-            "Horário alterado",
-            "Ponto de encontro: plataforma de trem da estação Itaquera",
-            "Horário: 21h"
-        ]
-    },
-    {
-        "period": [22, 24],
-        "config": "NIGHT",
-        "week": "ANY",
-        "dialogs": [
-            "Boa noite Levi-san",
-            "Aproveite a companhia do Ad",
-            "Estarei aqui para acompanhá-lo na volta"
+            "Oioioi Sr. Vitu",
+            "Já chegou em casa?",
+            "Vai descansar, aqui está uma recompensa para ti"
         ]
     },
     {
@@ -64,7 +49,7 @@
         "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
-            "Aishitemasu"
+            "Zzz Zzz"
         ]
     },
     {
