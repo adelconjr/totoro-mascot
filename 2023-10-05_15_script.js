@@ -463,39 +463,32 @@ function gameStatus() {
     
     if(localStorage.getItem('LAST_SEEN') != null) {
         lastSeen = new Date(localStorage.getItem('LAST_SEEN'));
+        console.log(localStorage.getItem('LAST_SEEN'));
+
+        var diffMinutes = Math.floor(Math.abs(lastSeen.getTime() - now.getTime()) / 60000);        
+        var diffHours = Math.floor(Math.abs((lastSeen.getTime() - now.getTime()) / 3600000));
+        var diffDays = diffHours / 24;
+
+        if(diffMinutes < 15) {
+            return;
+        }
         
-        var diffDays = lastSeen.getDay() - now.getDay();
-        console.log('diff days', diffDays);
-        
-        if(diffDays >= 1) {
+        if(diffHours >= 24) {
             subtractFriendship(diffDays * 10);
-            localStorage.setItem('LAST_SEEN', new Date());
         }
         else {
-
-            var diff = Math.floor(Math.abs(lastSeen.getTime() - now.getTime()) / 60000);
-            console.log('diff hours', diffDays);
-
-            if(diff >= 15) {
-                if(diff < 60) {
-                    addFriendship(5);
-                }
-                else {
-                    var diffHours = Math.floor(diff / 60);
-    
-                    if(diffHours >= 4) {
-                        var subtractPoints = Math.floor(diffHours / 4);
-                        subtractFriendship(subtractPoints * 2);
-                    }
-                }
-
-                localStorage.setItem('LAST_SEEN', new Date());
-            }            
+            if(diffHours >= 4) {
+                var subtractPoints = Math.floor(diffHours / 4);
+                subtractFriendship(subtractPoints * 2);
+            }
+            else {
+                addFriendship(5);
+                
+            }       
         }        
     }
-    else {
-        localStorage.setItem('LAST_SEEN', new Date());
-    }
+
+    localStorage.setItem('LAST_SEEN', new Date());
 }
 
 function showRoseIcon(op) {
