@@ -13,7 +13,7 @@ function addBadge(badge, count = 0) {
     var pRarity = document.createElement('p');
     var rarity = "";
     for(let i = 0; i < badge.rarity; i++) {
-        rarity += "&star;";
+        rarity += "&starf;";
     }
 
     pRarity.innerHTML = rarity;
@@ -29,8 +29,31 @@ function addBadge(badge, count = 0) {
     container.appendChild(pTitle);
     container.appendChild(pRarity);
 
-    
+    container.addEventListener('click', () => {
+        openPopup(true, badge);
+    });
+
     containerBadges.appendChild(container);
+}
+
+function openPopup(open = false, badge = []) {
+    var popup = document.getElementById('popup-overlay');
+
+    if(open) {
+        var rarity = "";
+        document.querySelector('img.popup-badge-image').src = badge.image;
+        document.querySelector('.popup-badge-name').innerHTML = badge.name;
+
+        for(var i=0;i<badge.rarity;i++) {
+            rarity += "&starf;";
+        }
+
+        document.querySelector('.popup-badge-rarity').innerHTML = rarity;
+        popup.classList.add('show');
+    }
+    else {
+        popup.classList.remove('show');
+    }
 }
 
 window.addEventListener("DOMContentLoaded", function() {
@@ -70,4 +93,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
     xhr.send();
 
+    document.getElementById('close-popup').addEventListener('click', () => {
+        document.getElementById('popup-overlay').classList.remove('show');
+    });
 });

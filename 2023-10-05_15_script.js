@@ -320,16 +320,20 @@ const time = () => {
                     switch(dialog.config) {
                         default:
                         case CONFIGS.MORNING: 
+                            hideStars();
                             document.body.classList.add('day');
                             changeMetaColor("#87CEFA");
                             break;
 
                         case CONFIGS.AFTERNOON_1: 
+                            hideStars();
                             document.body.classList.add('afternoon1');
                             changeMetaColor("#4ad1ff");
                             break;
 
                         case CONFIGS.AFTERNOON_2: 
+                            hideStars();
+                            showStars = false;
                             document.body.classList.add('afternoon2');
                             changeMetaColor("#7aa2cb");
                             break;
@@ -443,7 +447,7 @@ function score(score, plus = true) {
         ? document.getElementById('more-score') 
         : document.getElementById('less-score');
 
-    el.innerText = plus ? `${score}+` : `-${score}`;
+    el.innerText = plus ? `+${score}` : `-${score}`;
     el.classList.add('show');
 
     setTimeout(() => {
@@ -739,6 +743,14 @@ function showMoon() {
 
 function hideMoon () {
     moon.classList.remove('show');
+
+    if(!showStars) {
+        document.getElementById('starsSky').innerHTML = "";
+    }    
+}
+
+function hideStars () {
+    showStars = false;
     document.getElementById('starsSky').innerHTML = "";
 }
 

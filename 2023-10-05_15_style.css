@@ -233,7 +233,7 @@ body.is-rain.night #cloud {
 #more-score,
 #less-score {
     position: absolute;
-    font-size: 12px;
+    font-size: 14px;
     left:70px;
     top: 30px;
     color: #FFF;
@@ -687,6 +687,7 @@ body.is-rain.night #cloud {
     color: #FFF;
     background-color: #874300;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .badge-item  img{
@@ -710,6 +711,79 @@ body.is-rain.night #cloud {
     top: 5px;
     color: #FFF;
     font-size: 12px;
+}
+
+#popup-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+#popup-overlay.show {
+    display: block;
+}
+
+#popup-overlay.show > #popup-show-badge {
+    animation: popup 0.3s forwards;
+}
+@keyframes popup {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#popup-show-badge {
+    width: 90%;
+    height: auto;
+    min-height: 400px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 100px;
+    position: fixed;
+    max-width: 400px;
+    background-color: #874300;
+    border: 2px solid #000;
+    padding: 10px 10px 40px 10px;
+    box-sizing: border-box;
+    opacity: 0;
+}
+
+#popup-show-badge img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#popup-show-badge p {
+    font-size: 20px;
+    color: #FFF;
+    text-align: center;
+}
+
+#close-popup {
+    width: 30px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 30px;
+    display: block;
+    font-size: 30px;
+    padding: 5px;
+    line-height: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    border: 2px solid #000;
 }
 
 @keyframes popup-badge {
