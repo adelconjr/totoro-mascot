@@ -174,8 +174,33 @@ body.is-rain.night #cloud {
     
 }
 
-#rose.show {
-    animation: rose 0.8s 0.2s forwards;
+#monster {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 400px;
+    z-index: 1001;
+    opacity: 1;
+    transition: all 1s;
+    transform: scale(0);
+}
+
+#monster.show {
+    animation: monster 1.2s 0.2s infinite;
+}
+
+@keyframes monster {
+    0% {
+        transform: translateY(-5px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
 }
 
 #loading {

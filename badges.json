@@ -10,5 +10,11 @@
         "name": "Sakura",
         "rarity": 3,
         "image": "images/flor-sakura2.png"
+    },
+    {
+        "id": 3,
+        "name": "Monster Energy",
+        "rarity": 4,
+        "image": "images/badges/monster.png"
     }
 ]

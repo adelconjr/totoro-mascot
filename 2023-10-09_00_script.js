@@ -32,6 +32,7 @@ var bg = document.querySelector('img.bg'),
     secondImage = globalConfigs.rain ? rainHappyImage : happyImage,
     heartsInterval = null,
     roseTimeout = null,
+    monsterTimeout = null,
     rainInterval = null,
     isRain = false,
     heartsShowing = false;
@@ -152,6 +153,43 @@ function showRose() {
         clearInterval(interval);
         rose.style.top = `${400}px`;
         rose.classList.remove('show');
+    }, 20000);
+}
+
+function showMonster() {
+    var interval  = null, 
+        monster = document.getElementById('monster');
+
+    clearTimeout(monsterTimeout);
+
+    monster.classList.add('show');
+
+    monster.addEventListener('click', () => {
+        console.log('teste');
+        monster.classList.remove('show');
+
+        var now = new Date();
+        
+        if(localStorage.getItem('MONSTER') == null) {
+            var badges = localStorage.getItem('BADGES');
+
+            if(badges == null) {
+                localStorage.setItem('BADGES', "[3]");
+            }
+            else {
+                var attBadges = JSON.parse(badges);
+                attBadges.push(3);
+                localStorage.setItem('BADGES', JSON.stringify(attBadges));
+            }
+
+            localStorage.setItem('MONSTER', now.getDate());
+            addFriendship(50);
+        }
+    });
+
+    monsterTimeout = setTimeout(() => {
+        clearInterval(interval);
+        monster.classList.remove('show');
     }, 20000);
 }
 
@@ -302,6 +340,15 @@ const time = () => {
         }
         else {
             showRoseIcon(true);
+        }
+    }
+
+    if (localStorage.getItem('MONSTER')) {
+        var lastRose = Number(localStorage.getItem('MONSTER'));
+        var diffRose = Math.abs(lastRose - (new Date()).getDate());
+        
+        if (diffRose > 0) {
+            localStorage.removeItem('MONSTER');
         }
     }
 
@@ -624,6 +671,10 @@ function main() {
                 showRose();
             }
 
+            if(hour >= 11 && hour < 15 && indexTxt == dialogs.length - 1) {
+                showMonster();
+            }
+
             indexTxt++;
 
             if(indexTxt == dialogs.length) {
@@ -687,8 +738,6 @@ function main() {
             banner.classList.remove('show');
         });
     }
-
-    quest();
 }
 
 function createHeart() {
