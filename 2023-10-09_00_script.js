@@ -144,7 +144,7 @@ function showRose() {
 
             localStorage.setItem('ROSE', now.getDate());
             showRoseIcon(true);
-            addFriendship(20);
+            addFriendship(50);
         }
     });
 
