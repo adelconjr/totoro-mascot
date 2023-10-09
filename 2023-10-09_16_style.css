@@ -182,24 +182,26 @@ body.is-rain.night #cloud {
     margin: 0 auto;
     top: 400px;
     z-index: 1001;
-    opacity: 1;
-    transition: all 1s;
+    opacity: 0;
+    transition: all 0.5s;
     transform: scale(0);
 }
 
 #monster.show {
-    animation: monster 1.2s 0.2s infinite;
+    opacity: 1;
+    transform: scale(1);
+    animation: monster 1.2s 0.6s infinite;
 }
 
 @keyframes monster {
     0% {
-        transform: translateY(-5px);
-    }
-    50% {
         transform: translateY(0);
     }
-    100% {
+    50% {
         transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
 
