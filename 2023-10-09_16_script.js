@@ -667,11 +667,11 @@ function main() {
                 countdownDialog = 3000;
             }
 
-            if(hour >= 0 && hour < 2 && indexTxt == dialogs.length - 1) {
+            if(hour >= 21 && hour < 24 && indexTxt == dialogs.length - 1) {
                 showRose();
             }
 
-            if(hour >= 11 && hour < 18 && indexTxt == dialogs.length - 1) {
+            if(hour >= 15 && hour < 21 && indexTxt == dialogs.length - 1) {
                 showMonster();
             }
 
