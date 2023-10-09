@@ -11,8 +11,8 @@
         ]
     },
     {
-        "period": [11, 15],
-        "config": "AFTERNOON_1",
+        "period": [11, 18],
+        "config": "AFTERNOON_2",
         "week": "ANY",
         "dialogs": [
            "Uaaaargh",
@@ -21,8 +21,8 @@
         ]
     },
     {
-        "period": [15, 21],
-        "config": "AFTERNOON_2",
+        "period": [18, 21],
+        "config": "NIGHT",
         "week": "ANY",
         "dialogs": [
             "Levi-San tenho um comunicado do Ad!!",
