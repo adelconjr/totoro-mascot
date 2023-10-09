@@ -4,12 +4,10 @@
         "config": "MORNING",
         "week": "ANY",
         "dialogs": [
-            "Bom dia Levi-san",
-            "Aproveitou sua noite?",
-            "A pedidos do Ad-San...",
-            "Irei acompanhá-lo a partir daqui",
-            "O Ad ama sua companhia Sr.",
-            "Eu eu tb."
+            "Bom dia Sir Lewis",
+            "Por favor, <b><i>LEVI</i></b> o Ad contigo",
+            "Ele disse para o Sr. mandar mensagens",
+            "<i>Dessa vez ele disse que vai dar certo</i>"
         ]
     },
     {
