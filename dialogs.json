@@ -3,6 +3,7 @@
         "period": [5, 11],
         "config": "MORNING",
         "week": "ANY",
+        "flower": false,
         "dialogs": [
             "Bom dia Sir Lewis",
             "Por favor, <b><i>LEVI</i></b> o Ad contigo",
@@ -11,72 +12,75 @@
         ]
     },
     {
-        "period": [11, 15],
+        "period": [11, 16],
+        "config": "AFTERNOON_1",
+        "week": "ANY",
+        "flower": false,
+        "dialogs": [
+           "Boa tarde Sr. Victor",
+           "Como vc está?",
+           "Gostaria de outro energético?",
+           "Só tome cuidado",
+           "Talvez o Totoro fique um pouco <i><b>DINÂMICO</b></i>..."
+        ]
+    },
+    {
+        "period": [16, 20],
         "config": "AFTERNOON_2",
         "week": "ANY",
+        "flower": false,
         "dialogs": [
-           "Uaaaargh",
-           "Que soninho",
-           "Vai um energético aí Sir Lewis?"
+            "Oi gostaria de falar com o Sr. Levilson",
+            "Ele está por aí?",
+            "Ah, oi Sr. Levilson",
+            "Tudo bem?",
+            "Já saiu do trabalho?",
+            "O Ad quer saber como foi o seu dia",
+            "E acompanhar você na volta",
+            "Providenciarei um <i><b>CatLove's Train</b></i> para o Sr."
         ]
     },
     {
-        "period": [15, 18],
-        "config": "AFTERNOON_2",
-        "week": "ANY",
-        "dialogs": [
-            "Oi Oi",
-            "Recebi permissões para te chamar de:",
-            "<i><b style='font-size: 20px'>Sr. Vivilson</b></i>",
-            "Ou também",
-            "<i><b style='font-size: 20px'>Vivi-san</b></i>",
-            "O que achas?",
-            "Fiquei sabendo que o Sr. trabalhou muito",
-            "Tome um energético e aproveite a viagem com o Ad",
-            "Ah, ele pediu para lembrá-lo: ",
-            "Se arrume, hoje é dia de <b>The OA</b>"
-        ]
-    },
-    {
-        "period": [18, 21],
+        "period": [20, 22],
         "config": "NIGHT",
         "week": "ANY",
-        "dialogs": [
-            "Oi Oi",
-            "Recebi permissões para te chamar de:",
-            "<i><b style='font-size: 20px'>Sr. Vivilson</b></i>",
-            "Ou também",
-            "<i><b style='font-size: 20px'>Vivi-san</b></i>",
-            "O que achas?",
-            "Fiquei sabendo que o Sr. trabalhou muito",
-            "Tome um energético e aproveite a viagem com o Ad",
-            "Ah, ele pediu para lembrá-lo: ",
-            "Se arrume, hoje é dia de <b>The OA</b>"
-        ]
-    },
-    {
-        "period": [21, 24],
-        "config": "NIGHT",
-        "week": "ANY",
+        "flower": false,
         "dialogs": [
             "Oioioi Sr. Vitu",
             "Já chegou em casa?",
-            "Vai descansar, aqui está uma recompensa para ti"
+            "Espero que tenha chegado bem",
+            "Se não, irei providenciar um <b><i>catbus</i></b> para o Sr.",
+            "Se chegou, irei deixá-lo a sós com o Ad",
+            "Até mais tarde Sr. Victor"
+        ]
+    },
+    {
+        "period": [22, 24],
+        "config": "NIGHT",
+        "week": "ANY",
+        "flower": false,
+        "dialogs": [
+            "Boa noite Sr. Victor Levi",
+            "Bom descanso e durma bem",
+            "Amanhã é dia de ver o Ad",
+            "Está ansioso?",
+            "<small>(ele disse que está)</small>"
         ]
     },
     {
         "period": [0, 2],
         "config": "NIGHT",
         "week": "ANY",
+        "flower": true,
         "dialogs": [
-            "Boa noite, Sr. Vito",
-            "O Sr. merece..."
+            "Uma florzinha"
         ]
     },
     {
         "period": [2, 5],
         "config": "NIGHT",
         "week": "ANY",
+        "flower": false,
         "dialogs": [
             "🎶 And it's no sacrifice",
             "Just a simple word",

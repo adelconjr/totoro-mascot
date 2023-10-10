@@ -35,7 +35,14 @@ var bg = document.querySelector('img.bg'),
     monsterTimeout = null,
     rainInterval = null,
     isRain = false,
-    heartsShowing = false;
+    heartsShowing = false,
+    currentDialogConfig = {
+        period: [0, 24],
+        config: "MORNING",
+        week: "ANY",
+        flower: false,
+        dialogs: []
+    };
 
 const statusbar = {
     friendship: 0,
@@ -183,7 +190,7 @@ function showMonster() {
             }
 
             localStorage.setItem('MONSTER', now.getDate());
-            addFriendship(50);
+            addFriendship(20);
         }
     });
 
@@ -360,6 +367,7 @@ const time = () => {
             allDialogs.forEach((dialog) => {
                 if(hour >= dialog.period[0] && hour < dialog.period[1]) {
                     removeClasses();
+                    currentDialogConfig = dialog;
                     currentConfig = dialog.config;
                     dialogs = dialog.dialogs;
                     hideMoon();
@@ -667,11 +675,11 @@ function main() {
                 countdownDialog = 3000;
             }
 
-            if(hour >= 21 && hour < 24 && indexTxt == dialogs.length - 1) {
+            if(currentDialogConfig.flower && indexTxt == dialogs.length - 1) {
                 showRose();
             }
 
-            if(hour >= 15 && hour < 21 && indexTxt == dialogs.length - 1) {
+            if(hour >= 11 && hour < 16 && indexTxt == dialogs.length - 1) {
                 showMonster();
             }
 
