@@ -679,7 +679,7 @@ function main() {
                 showRose();
             }
 
-            if(hour >= 11 && hour < 16 && indexTxt == dialogs.length - 1) {
+            if(hour >= 6 && hour < 16 && indexTxt == dialogs.length - 1) {
                 showMonster();
             }
 
