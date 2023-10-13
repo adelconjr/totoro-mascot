@@ -5,39 +5,32 @@
         "week": "ANY",
         "flower": false,
         "dialogs": [
-            "Bom dia Sr. Victor-San",
-            "<b style='color: #E00'>Isso não é um teste</b>",
-            "Avisa, avisa que hoje é dia de ver o Ad",
-            "Aqui vai um energético para te ajudar"
+            ""
         ]
     },
     {
-        "period": [11, 16],
+        "period": [11, 17],
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
         "dialogs": [
-           "Boa tarde Sr. Victor",
-           "Como vc está?",
-           "Gostaria de outro energético?",
-           "Só tome cuidado",
-           "Talvez o Totoro fique um pouco <i><b>DINÂMICO</b></i>..."
+           "Boa tarde Sr. Victor Levi",
+           "Como está o seu dia?",
+           "Fiquei sabendo que você e o Ad se divertiram ontem",
+           "O Totoro está muito feliz por vocês"
         ]
     },
     {
-        "period": [16, 20],
+        "period": [17, 20],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
         "dialogs": [
-            "Oi gostaria de falar com o Sr. Levilson",
-            "Ele está por aí?",
-            "Ah, oi Sr. Levilson",
-            "Tudo bem?",
-            "Já saiu do trabalho?",
-            "O Ad quer saber como foi o seu dia",
-            "E acompanhar você na volta",
-            "Providenciarei um <i><b>CatLove's Train</b></i> para o Sr."
+            "<i>Tchúúúú Tchúúúú</i>",
+            "Está ouvindo Sr. Levi?",
+            "É o barulho do <i><b>Love's CatTrain</b></i>",
+            "Próxima estação <b><i>next station</i></b>",
+            "<b style='font-size: 20px'>Victor's Jam *__*</b>"
         ]
     },
     {
@@ -46,12 +39,7 @@
         "week": "ANY",
         "flower": false,
         "dialogs": [
-            "Oioioi Sr. Vitu",
-            "Já chegou em casa?",
-            "Espero que tenha chegado bem",
-            "Se não, irei providenciar um <b><i>catbus</i></b> para o Sr.",
-            "Se chegou, irei deixá-lo a sós com o Ad",
-            "Até mais tarde Sr. Victor"
+            ""
         ]
     },
     {
@@ -60,11 +48,7 @@
         "week": "ANY",
         "flower": false,
         "dialogs": [
-            "Boa noite Sr. Victor Levi",
-            "Bom descanso e durma bem",
-            "Amanhã é dia de ver o Ad",
-            "Está ansioso?",
-            "<small>(ele disse que está)</small>"
+            ""
         ]
     },
     {
