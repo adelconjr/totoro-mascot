@@ -34,7 +34,7 @@
         ]
     },
     {
-        "period": [20, 22],
+        "period": [20, 21],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
@@ -43,12 +43,19 @@
         ]
     },
     {
-        "period": [22, 24],
+        "period": [21, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
         "dialogs": [
-            ""
+            "<span style='font-family: monospace'>>_</span>",
+            "<span style='font-family: monospace'>> Baixando dados_</span>",
+            "<span style='font-family: monospace'>> Executando scripts_</span>",
+            "<span style='font-family: monospace'>> Carregando estilos_</span>",
+            "<span style='font-family: monospace'>> Procurando homem gostoso..._</span>",
+            "<span style='font-family: monospace'>> 1/1 resultado encontrado:_</span>",
+            "<span style='font-family: monospace'>> Victor Levi_</span>",
+            "<span style='font-family: monospace'>> Pressione esc para sair..._</span>"
         ]
     },
     {
