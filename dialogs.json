@@ -4,7 +4,7 @@
         "config": "MORNING",
         "week": "ANY",
         "flower": false,
-        "monster": false,
+        "monster": true,
         "dialogs": [
             "Tchúúú Tchúúú",
             "Bom dia senhores passageiros",
@@ -12,7 +12,8 @@
             "Próxima estação...",
             "Victor's Jam",
             "Acesso a linha 1 Ad",
-            "Cuidado para não esquecee de acordá-lo"
+            "Cuidado para não esquecer de acordá-lo",
+            "Patrocínio: Monster Totoro Edition"
         ]
     },
     {
