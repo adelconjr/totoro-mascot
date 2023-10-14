@@ -23,10 +23,14 @@
         "flower": false,
         "monster": false,
         "dialogs": [
-           "Boa tarde Sr. Victor Levi",
-           "Como está o seu dia?",
-           "Fiquei sabendo que você e o Ad se divertiram ontem",
-           "O Totoro está muito feliz por vocês"
+            "Boa tarde Sr. Victor",
+            "Como está o almoço?",
+            "Fique a vontade para chamar o Ad",
+            "Tenho certeza que ele iria amar almoçar contigo",
+            "Aliás tenho uma coisa para te dizer",
+            "Mas não diga ao Ad que eu te contei, hein",
+            "Você gosta de <b>cup noodles</b>?"
+            
         ]
     },
     {
