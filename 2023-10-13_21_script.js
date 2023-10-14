@@ -41,6 +41,7 @@ var bg = document.querySelector('img.bg'),
         config: "MORNING",
         week: "ANY",
         flower: false,
+        monster: false,
         dialogs: []
     };
 
@@ -679,7 +680,7 @@ function main() {
                 showRose();
             }
 
-            if(hour >= 6 && hour < 16 && indexTxt == dialogs.length - 1) {
+            if(currentDialogConfig.monster && indexTxt == dialogs.length - 1) {
                 showMonster();
             }
 

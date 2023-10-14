@@ -4,6 +4,7 @@
         "config": "MORNING",
         "week": "ANY",
         "flower": false,
+        "monster": false,
         "dialogs": [
             ""
         ]
@@ -13,6 +14,7 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
+        "monster": false,
         "dialogs": [
            "Boa tarde Sr. Victor Levi",
            "Como está o seu dia?",
@@ -25,6 +27,7 @@
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
+        "monster": false,
         "dialogs": [
             "<i>Tchúúúú Tchúúúú</i>",
             "Está ouvindo Sr. Levi?",
@@ -38,6 +41,7 @@
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
+        "monster": false,
         "dialogs": [
             ""
         ]
@@ -47,6 +51,7 @@
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
+        "monster": false,
         "dialogs": [
             "<span style='font-family: monospace'>>_</span>",
             "<span style='font-family: monospace'>> Baixando dados_</span>",
@@ -63,6 +68,7 @@
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
+        "monster": false,
         "dialogs": [
             "Uma florzinha"
         ]
@@ -72,6 +78,7 @@
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
+        "monster": false,
         "dialogs": [
             "🎶 And it's no sacrifice",
             "Just a simple word",
