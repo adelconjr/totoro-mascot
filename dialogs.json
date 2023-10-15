@@ -64,7 +64,7 @@
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
-        "monster": false,
+        "monster": true,
         "dialogs": [
             "<span style='font-family: monospace'>>_</span>",
             "<span style='font-family: monospace'>> Baixando dados_</span>",
