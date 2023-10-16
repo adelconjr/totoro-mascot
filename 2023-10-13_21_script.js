@@ -527,7 +527,7 @@ function gameStatus() {
 
         var diffMinutes = Math.floor(Math.abs(lastSeen.getTime() - now.getTime()) / 60000);        
         var diffHours = Math.floor(Math.abs((lastSeen.getTime() - now.getTime()) / 3600000));
-        var diffDays = diffHours / 24;
+        var diffDays = Math.floor(diffHours / 24);
 
         if(diffMinutes < 15) {
             return;
