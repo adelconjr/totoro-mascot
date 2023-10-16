@@ -21,15 +21,12 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
-        "monster": false,
+        "monster": true,
         "dialogs": [
-            "Boa tarde Sr. Victor",
-            "Como está o almoço?",
-            "Fique a vontade para chamar o Ad",
-            "Tenho certeza que ele iria amar almoçar contigo",
-            "Aliás tenho uma coisa para te dizer",
-            "Mas não diga ao Ad que eu te contei, hein",
-            "Você gosta de <b>cup noodles</b>?"
+            "Bom dia Sr. Victor",
+            "O que houve?",
+            "Parece que o Sr. está cansado",
+            "Aqui vai um monster, você vai precisar"
             
         ]
     },
