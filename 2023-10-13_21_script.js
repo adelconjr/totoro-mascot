@@ -43,7 +43,9 @@ var bg = document.querySelector('img.bg'),
         flower: false,
         monster: false,
         dialogs: []
-    };
+    },
+    monsterAudio = null,
+    monsterScreenInterval = null;
 
 const statusbar = {
     friendship: 0,
@@ -68,6 +70,68 @@ canvas1.radius = canvas1.width / 2;
 
 canvas2.center = [canvas2.left + canvas2.width / 2, canvas2.top + canvas2.height / 2];
 canvas2.radius = canvas2.width / 2;
+
+function bubbles() {
+    const monster = document.getElementById('monster-screen');
+    monster.innerHTML = "";
+    let delay = 100;
+
+    const createBubble = () => {
+        const bubble = document.createElement('span');
+        bubble.classList.add('bubble');
+        const left = Math.floor(Math.random() * 400);
+        const bottom = Math.floor(Math.random() * 100);
+        const size = Math.floor(Math.random() * 20 + 5);
+        bubble.style.left = left + 'px';
+        bubble.style.width = size + 'px';
+        bubble.style.height = size + 'px';
+        bubble.style.bottom = bottom + 'px';
+        monster.appendChild(bubble);
+    }
+
+    for(var i=0; i< 50; i++) {
+        delay += 100;
+
+        setTimeout(createBubble, delay);        
+    }
+
+    let scale = 1;
+
+    document.body.style.transition = 'transform 0.1s';
+
+    monsterScreenInterval = setInterval(() => {
+        scale = scale == 1 ? 1.2 : 1;
+        document.body.style.transform = 'scale(' + scale + ')';
+    }, 100);
+
+    setTimeout(() => {
+        clearInterval(monsterScreenInterval);
+        document.body.style.transform = '';
+        document.body.style.transition = '';
+    }, 7000);
+
+}
+
+function showMonsterScreen() {
+    const monster = document.getElementById('monster-screen');
+    monster.classList.add('show');
+    bubbles();
+
+    setTimeout(() => {
+        monster.classList.remove('show');
+    }, 12000);
+}
+
+function playMonsterAudio() {
+    if(monsterAudio) {
+        if(monsterAudio.paused) {
+            monsterAudio.play();
+        }
+        else {
+            monsterAudio.pause();
+        }
+    }
+}
 
 function showFirstImage() {
     bg.src = firstImage;
@@ -168,12 +232,16 @@ function showMonster() {
     var interval  = null, 
         monster = document.getElementById('monster');
 
+    monsterAudio = new Audio('monster.mp3');
+
     clearTimeout(monsterTimeout);
 
     monster.classList.add('show');
 
     monster.addEventListener('click', () => {
-        console.log('teste');
+        playMonsterAudio();
+        showMonsterScreen();
+
         monster.classList.remove('show');
 
         var now = new Date();

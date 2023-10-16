@@ -23,11 +23,10 @@
         "flower": false,
         "monster": true,
         "dialogs": [
-            "Bom dia Sr. Victor",
-            "O que houve?",
+            "Boa tarde Sr. Victor",
             "Parece que o Sr. está cansado",
-            "Aqui vai um monster, você vai precisar"
-            
+            "É hora de <b>Monster Energy</b>",
+            "Aumente o volume do seu celular e abra a latinha"
         ]
     },
     {

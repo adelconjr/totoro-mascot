@@ -834,6 +834,59 @@ body.is-rain.night #cloud {
     border: 2px solid #000;
 }
 
+#monster-screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10000;
+    opacity: 0;
+    background-image: linear-gradient(to top, rgba(103, 247, 181, 0.9) 20%, transparent 100%);
+    bottom: -100%;
+}
+
+#monster-screen.show {
+    animation: monsterscren 7s forwards;
+}
+
+#monster-screen > .bubble{
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+    border: 0.1rem solid rgb(162, 248, 209);
+    position: absolute;
+    left: 100px;
+    bottom: -20px;
+    border-radius: 100px;
+    opacity: 0;
+    animation: bubble 8s 0s forwards;
+}
+
+@keyframes monsterscren {
+    10% {
+        bottom: 0;
+        opacity: 1;
+    }
+    95% {
+        bottom: 0;
+        opacity: 1;
+    }
+    100% {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes bubble {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        bottom: 140%;
+    }
+}
+
 @keyframes popup-badge {
     100% {
         opacity: 1;
