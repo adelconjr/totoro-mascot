@@ -17,7 +17,7 @@
         ]
     },
     {
-        "period": [11, 17],
+        "period": [11, 14],
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
@@ -30,8 +30,21 @@
         ]
     },
     {
-        "period": [17, 20],
+        "period": [14, 18],
         "config": "AFTERNOON_2",
+        "week": "ANY",
+        "flower": false,
+        "monster": true,
+        "dialogs": [
+            "Boa tarde Sr. Victor",
+            "Parece que o Sr. está cansado",
+            "É hora de <b>Monster Energy</b>",
+            "Aumente o volume do seu celular e abra a latinha"
+        ]
+    },
+    {
+        "period": [18, 20],
+        "config": "NIGHT",
         "week": "ANY",
         "flower": false,
         "monster": false,
@@ -46,46 +59,23 @@
         ]
     },
     {
-        "period": [20, 21],
-        "config": "NIGHT",
-        "week": "ANY",
-        "flower": false,
-        "monster": false,
-        "dialogs": [
-            "Oi 👀",
-            "O Ad tá aí ainda?",
-            "Se sim, dê um abraço nele por mim"
-        ]
-    },
-    {
-        "period": [21, 24],
-        "config": "NIGHT",
-        "week": "ANY",
-        "flower": false,
-        "monster": true,
-        "dialogs": [
-            "<span style='font-family: monospace'>>_</span>",
-            "<span style='font-family: monospace'>> Baixando dados_</span>",
-            "<span style='font-family: monospace'>> Executando scripts_</span>",
-            "<span style='font-family: monospace'>> Carregando estilos_</span>",
-            "<span style='font-family: monospace'>> Procurando homem gostoso..._</span>",
-            "<span style='font-family: monospace'>> 1/1 resultado encontrado:_</span>",
-            "<span style='font-family: monospace'>> Victor Levi_</span>",
-            "<span style='font-family: monospace'>> Pressione esc para sair..._</span>"
-        ]
-    },
-    {
-        "period": [0, 2],
+        "period": [20, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
         "monster": false,
         "dialogs": [
+            "Oi Victor",
+            "Já chegou em casa?",
+            "Toma um cházinho",
+            "E vai descansar",
+            "Durma bem",
+            "E antes que eu me esqueça",
             "Uma florzinha"
         ]
     },
     {
-        "period": [2, 5],
+        "period": [0, 5],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
