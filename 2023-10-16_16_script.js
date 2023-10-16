@@ -94,42 +94,41 @@ function bubbles() {
 
         setTimeout(createBubble, delay);        
     }
-
-    let scale = 1;
-
-    document.body.style.transition = 'transform 0.1s';
-
-    monsterScreenInterval = setInterval(() => {
-        scale = scale == 1 ? 1.2 : 1;
-        document.body.style.transform = 'scale(' + scale + ')';
-    }, 100);
-
-    setTimeout(() => {
-        clearInterval(monsterScreenInterval);
-        document.body.style.transform = '';
-        document.body.style.transition = '';
-    }, 7000);
-
 }
 
 function showMonsterScreen() {
+    let scale = 1;
     const monster = document.getElementById('monster-screen');
+    const divBg = document.getElementById('bg');
+
+    const reset = () => {
+        clearInterval(monsterScreenInterval);
+        divBg.style.transform = '';
+        divBg.style.transition = '';
+    }
+
+    reset();
+
     monster.classList.add('show');
     bubbles();
 
     setTimeout(() => {
         monster.classList.remove('show');
-    }, 12000);
+    }, 8000);
+
+    divBg.style.transition = 'transform 0.1s';
+
+    monsterScreenInterval = setInterval(() => {
+        scale = scale == 1 ? 1.2 : 1;
+        divBg.style.transform = 'scale(' + scale + ')';
+    }, 100);
+
+    setTimeout(reset, 7000);
 }
 
 function playMonsterAudio() {
-    if(monsterAudio) {
-        if(monsterAudio.paused) {
-            monsterAudio.play();
-        }
-        else {
-            monsterAudio.pause();
-        }
+    if(monsterAudio && monsterAudio.paused) {
+        monsterAudio.play();
     }
 }
 
