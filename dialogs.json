@@ -23,10 +23,7 @@
         "flower": false,
         "monster": true,
         "dialogs": [
-            "Boa tarde Sr. Victor",
-            "Parece que o Sr. está cansado",
-            "É hora de <b>Monster Energy</b>",
-            "Aumente o volume do seu celular e abra a latinha"
+            "Eu ouvi monster?"
         ]
     },
     {
