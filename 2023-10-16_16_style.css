@@ -21,6 +21,10 @@ body.night {
     background-color: #191970;  
 }
 
+body.is-rain {
+    backdrop-filter: grayscale(80%);
+}
+
 #sun {
     width: 200px;
     height: 200px;
@@ -118,12 +122,6 @@ body.night {
 
 body.night #cloud {
     opacity: 0.5;
-}
-
-body.is-rain #cloud,
-body.is-rain.night #cloud {
-    filter: invert(20%);
-    opacity: 0.6;
 }
 
 #baloon {
@@ -444,8 +442,8 @@ body.is-rain.night #cloud {
     z-index: 3000;
     right: 100px;
     top: 0;
-    background-color: rgba(255, 255, 255, 0.2);
-    animation: rain 5s linear forwards;
+    background-color: rgba(255, 255, 255, 0.4);
+    animation: rain 3s linear forwards;
 }
 
 .rain-cloud-1 {
@@ -453,9 +451,6 @@ body.is-rain.night #cloud {
     left: 180px;
     top: 55px;
     position: absolute;
-    filter: invert(20%) ;
-    z-index: 3005;
-    opacity: 0.6;
     display: none;
 }
 
@@ -464,15 +459,21 @@ body.is-rain.night #cloud {
     left: -50px;
     top: -70px;
     position: absolute;
-    filter: invert(20%) ;
     z-index: 3005;
-    opacity: 0.6;
     display: none;
 }
 
 .rain-cloud-1.show,
 .rain-cloud-2.show {
     display: block;
+}
+
+body.is-rain #cloud,
+body.is-rain.night #cloud,
+.rain-cloud-1, 
+.rain-cloud-2 {
+    filter: invert(20%);
+    opacity: 0.6;
 }
 
 #sakura {
