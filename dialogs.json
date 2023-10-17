@@ -17,46 +17,44 @@
         ]
     },
     {
-        "period": [11, 14],
+        "period": [11, 17],
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
         "monster": true,
         "dialogs": [
-            "Eu ouvi monster?"
+            "<b>Doctor Victor</b>",
+            "Raios e trovões",
+            "Muito triste estar tão longe do Sr.",
+            "Infelizmente nada pode resolver a saudades que eu sinto por vc",
+            "Ela só diminui com um abraço :(",
+            "Mas como um abraço eu não posso te dar",
+            "Talvez um <b class='monster-font'>Monster</b> possa ajudar",
+            "Eu ouvi <b class='monster-font'>MONSTER</b>",
+            "É isso mesmo aumente o volume e pegue seu",
+            "<b class='monster-font'>Monster Energy</b>"
         ]
     },
     {
-        "period": [14, 18],
+        "period": [17, 19],
         "config": "AFTERNOON_2",
-        "week": "ANY",
-        "flower": false,
-        "monster": true,
-        "dialogs": [
-            "Boa tarde Sr. Victor",
-            "Parece que o Sr. está cansado",
-            "É hora de <b>Monster Energy</b>",
-            "Aumente o volume do seu celular e abra a latinha"
-        ]
-    },
-    {
-        "period": [18, 20],
-        "config": "NIGHT",
         "week": "ANY",
         "flower": false,
         "monster": false,
         "dialogs": [
-            "<i>Tchúúúú Tchúúúú</i>",
-            "Está ouvindo Sr. Levi?",
-            "É o barulho do <i><b>Love's CatTrain</b></i>",
-            "Próxima estação <b><i>next station</i></b>",
-            "<b style='font-size: 20px'>Victor's Jam *__*</b>",
-            "Sim Sim?",
-            "Por favorzinho"
+            "Nossa",
+            "É isso mesmo que estou vendo?",
+            "Como pode ser tão perfeito ?",
+            "Acho que nunca vi nada igual",
+            "Um homem muito lindo",
+            "Victor ? Só poderia ser mesmo",
+            "Não tinha dúvidas",
+            "o Ad te aguarda na sala ao lado Sr.",
+            "<a target='_blank' href='https://open.spotify.com/playlist/6zZKJiKxNjdLMnQWNRjhCs?si=e8feb1b5197f4599&pt=1519d271fe0471291d73fff1ff145eed'>>> Spotify <<</a>"
         ]
     },
     {
-        "period": [20, 24],
+        "period": [19, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,

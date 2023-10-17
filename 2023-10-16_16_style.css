@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Monster;
+    src: url(fonts/Green_Energy.ttf);
+}
+
+.monster-font {
+    font-family: Monster;
+    font-size: 18px;
+}
+
 html, body {
     height: 100%;
     min-height: 100%;
