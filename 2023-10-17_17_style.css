@@ -886,7 +886,7 @@ body.is-rain.night #cloud,
 #kiki {
     width: 70px;
     position: absolute;
-    left:90%;
+    left: 100%;
     top: 200px;
     z-index: 3;
     transition: left 1s linear;
