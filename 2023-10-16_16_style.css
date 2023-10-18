@@ -873,6 +873,55 @@ body.is-rain.night #cloud,
     animation: bubble 8s 0s forwards;
 }
 
+.teia-1 {
+    width: 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.8;
+    transform: rotateY(-180deg) ;
+}
+
+#kiki {
+    width: 70px;
+    position: absolute;
+    left:90%;
+    top: 200px;
+    z-index: 3;
+    transition: left 1s linear;
+    animation: kiki 20s infinite;
+}
+
+@keyframes kiki {
+    0%,
+    100% {
+        top: 50px;
+        
+    }
+
+    0%, 20% {
+
+        transform: rotate(-20deg);
+    }
+
+    40%, 45% {
+        transform: rotate(0deg);
+    }
+
+    60%, 70% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    } 
+
+    50% {
+        top: 200px;
+    }
+}
+
 @keyframes monsterscren {
     10% {
         bottom: 0;
