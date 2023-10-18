@@ -42,15 +42,10 @@
         "flower": false,
         "monster": false,
         "dialogs": [
-            "Nossa",
-            "É isso mesmo que estou vendo?",
-            "Como pode ser tão perfeito ?",
-            "Acho que nunca vi nada igual",
-            "Um homem muito lindo",
-            "Victor ? Só poderia ser mesmo",
-            "Não tinha dúvidas",
-            "o Ad te aguarda na sala ao lado Sr.",
-            "<a target='_blank' href='https://open.spotify.com/playlist/6zZKJiKxNjdLMnQWNRjhCs?si=e8feb1b5197f4599&pt=1519d271fe0471291d73fff1ff145eed'>>> Spotify <<</a>"
+            "Oi o Victor está aí?",
+            "Temos companhias",
+            "Espero que esteja preparado para gostosuras ou travessuras",
+            "Aliás qual vc prefere?"
         ]
     },
     {
