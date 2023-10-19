@@ -23,16 +23,13 @@
         "flower": false,
         "monster": true,
         "dialogs": [
-            "<b>Doctor Victor</b>",
-            "Raios e trovões",
-            "Muito triste estar tão longe do Sr.",
-            "Infelizmente nada pode resolver a saudades que eu sinto por vc",
-            "Ela só diminui com um abraço :(",
-            "Mas como um abraço eu não posso te dar",
-            "Talvez um <b class='monster-font'>Monster</b> possa ajudar",
-            "Eu disse <b class='monster-font'>MONSTER</b>",
-            "É isso mesmo aumente o volume e pegue seu",
-            "<b class='monster-font'>Monster Energy</b>"
+            "Bom dia, Sr. Victor",
+            "O Ad pediu para te acordar",
+            "E dizer que você é um homem incrível",
+            "Aliás, dormiu bem?",
+            "Notou que temos companhia?",
+            "Já cumprimentou a Kiki?",
+            "Só não deixe ela se atrasar para suas entregas"
         ]
     },
     {
