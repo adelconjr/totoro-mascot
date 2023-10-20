@@ -25,13 +25,11 @@
         "flower": false,
         "monster": true,
         "dialogs": [
-            "Bom dia, Sr. Victor",
-            "O Ad pediu para te acordar",
-            "E dizer que você é um homem incrível",
-            "Aliás, dormiu bem?",
-            "Notou que temos companhia?",
-            "Já cumprimentou a Kiki?",
-            "Só não deixe ela se atrasar para suas entregas"
+            "Oi Victor",
+            "O Ad disse que vocês vão assitir filmes hoje",
+            "Acho que você vai precisar de um <b class='monster-font'>Monster</b>",
+            "Abra sua latinha e fique só um pouquinho <i>dinâmico</i>",
+            "⚡⚡"
         ]
     },
     {
