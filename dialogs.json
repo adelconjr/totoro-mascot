@@ -4,16 +4,18 @@
         "config": "MORNING",
         "week": "ANY",
         "flower": false,
-        "monster": true,
+        "monster": false,
         "dialogs": [
-            "Tchúúú Tchúúú",
-            "Bom dia senhores passageiros",
-            "O Love's CatTrain deseja a todos uma ótima viagem",
-            "Próxima estação...",
-            "Victor's Jam",
-            "Acesso a linha 1 Ad",
-            "Cuidado para não esquecer de acordá-lo",
-            "Patrocínio: Monster Totoro Edition"
+            "Boom diaa Sr. Victor",
+            "Hoje temos uma missão",
+            "Digamos, não oficial",
+            "Mas você ganha recompensas com o Ad",
+            "A missão é dar um abraço nele",
+            "E dizer que o quanto você o ama",
+            "Em troca ele dirá o mesmo",
+            "E você ganha AdCoins",
+            "Aceita essa missão?",
+            "Bom dia pra vocês"
         ]
     },
     {
