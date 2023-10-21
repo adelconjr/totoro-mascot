@@ -33,7 +33,7 @@
         ]
     },
     {
-        "period": [17, 19],
+        "period": [17, 21],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
@@ -71,7 +71,7 @@
         ]
     },
     {
-        "period": [19, 24],
+        "period": [21, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
