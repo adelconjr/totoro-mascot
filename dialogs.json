@@ -37,7 +37,7 @@
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
-        "monster": false,
+        "monster": true,
         "dialogs": [
             
             "Há exatos 60 dias eu conheci <b>O HOMEM</b> mais perfeitinho desse mundo",
