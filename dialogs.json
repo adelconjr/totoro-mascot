@@ -25,11 +25,12 @@
         "flower": false,
         "monster": true,
         "dialogs": [
-            "Oi Victor",
-            "O Ad disse que vocês vão assitir filmes hoje",
-            "Acho que você vai precisar de um <b class='monster-font'>Monster</b>",
-            "Abra sua latinha e fique só um pouquinho <i>dinâmico</i>",
-            "⚡⚡"
+            "Bom dia, Sr. Victor",
+            "Desejo felicidades ao casal",
+            "Vocês são lindos",
+            "Pra comemorar",
+            "Pegue seu Monster",
+            "E se sinta dinâmico por alguns segundos"
         ]
     },
     {
