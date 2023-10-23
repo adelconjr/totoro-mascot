@@ -35,7 +35,7 @@
         ]
     },
     {
-        "period": [17, 21],
+        "period": [17, 18],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
@@ -53,19 +53,35 @@
         ]
     },
     {
-        "period": [21, 24],
+        "period": [18, 20],
+        "config": "NIGHT",
+        "week": "ANY",
+        "flower": false,
+        "monster": false,
+        "dialogs": [
+            "Boa tarde Sr. Victor",
+            "Já saiu do trabalho?",
+            "Como foi o seu dia?",
+            "Gostaria de te convidar para uma Jam",
+            "Mas eu não consigo criar",
+            "Pode criar pra mim?",
+            "E então vc envia pro Ad pra escutarmos juntos",
+            "O que acha?",
+            "Aliás, vc sabia que o Ad está namorando?"
+        ]
+    },
+    {
+        "period": [20, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
         "monster": false,
         "dialogs": [
-            "Oi Victor",
-            "Já chegou em casa?",
-            "Toma um cházinho",
-            "E vai descansar",
-            "Durma bem",
-            "E antes que eu me esqueça",
-            "Uma florzinha"
+            "Oi oi",
+            "Tem alguém aí?",
+            "Se vc não dormiu ainda",
+            "Tenho uma coisa para te dar",
+            "Uma flor para um homem incrível"
         ]
     },
     {
