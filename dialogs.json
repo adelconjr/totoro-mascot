@@ -26,12 +26,14 @@
         "flower": false,
         "monster": true,
         "dialogs": [
-            "Bom dia, Sr. Victor",
-            "Desejo felicidades ao casal",
-            "Vocês são lindos",
-            "Pra comemorar",
-            "Pegue seu Monster",
-            "E se sinta dinâmico por alguns segundos"
+            "Boa tarde Sr. Victor",
+            "Está almoçando <b><i>namorando<i></b>?",
+            "E como está seu dia?",
+            "Gostaria de um <span class='font-monster'>Monster Energy</span> para te dar um <b>gás</b>?",
+            "Relaxa que eu não conto para ninguém Sr. Victor",
+            "Só não mostre suas recompensas para ninguém",
+            "<s>Nem a correntinha super dinâmica que o Ad te deu</s>",
+            "<div style='width:100px;height:0;padding-bottom:103%;position:relative;'><iframe src='https://giphy.com/embed/atQF1zaSGq8s8' width='100%' height='100%' style='position:absolute' frameBorder='0' class='giphy-embed' allowFullScreen></iframe></div>",
         ]
     },
     {
