@@ -732,7 +732,7 @@ function main() {
 
     h.on('panend', (e) => {
         showSecondImage();
-        var countdownDialog = 2000;
+        var countdownDialog = 3000;
 
         if(dialogs.length > 0) {
             showBaloon(dialogs[indexTxt]);
@@ -740,7 +740,7 @@ function main() {
             console.log(dialogs[indexTxt]);
 
             if(dialogs[indexTxt].length > 20) {
-                countdownDialog = 3000;
+                countdownDialog = 5000;
             }
 
             if(currentDialogConfig.flower && indexTxt == dialogs.length - 1) {
