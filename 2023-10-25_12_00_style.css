@@ -749,8 +749,8 @@ body.is-rain.night #cloud,
 }
 
 .badge-item {
-    max-width: 120px;
-    min-height: 200px;
+    max-width: 100px;
+    min-height: 180px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -770,7 +770,7 @@ body.is-rain.night #cloud,
 }
 
 .badge-item p {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 #btn-badges {
