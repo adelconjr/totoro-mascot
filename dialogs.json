@@ -45,7 +45,7 @@
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
-        "monster": true,
+        "monster": false,
         "showBadge": true,
         "dialogs": [
             "Sr. Victor",
