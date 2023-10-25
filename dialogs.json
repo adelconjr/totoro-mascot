@@ -26,7 +26,7 @@
         ]
     },
     {
-        "period": [11, 16],
+        "period": [11, 17],
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
@@ -41,7 +41,7 @@
         ]
     },
     {
-        "period": [16, 18],
+        "period": [17, 20],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
@@ -54,25 +54,6 @@
             "Então trate de tomar Sr. Victor Levi",
             "E por falar nisso, o Ad quer ir escutando músicas com você",
             "Pede pra ele ta mandar a Jam, e tome seu remédio Sr."
-        ]
-    },
-    {
-        "period": [18, 20],
-        "config": "NIGHT",
-        "week": "ANY",
-        "flower": false,
-        "monster": false,
-        "showBadge": false,
-        "dialogs": [
-            "Boa tarde Sr. Victor",
-            "Já saiu do trabalho?",
-            "Como foi o seu dia?",
-            "Gostaria de te convidar para uma Jam",
-            "Mas eu não consigo criar",
-            "Pode criar pra mim?",
-            "E então vc envia pro Ad pra escutarmos juntos",
-            "O que acha?",
-            "Aliás, vc sabia que o Ad está namorando?"
         ]
     },
     {
