@@ -229,6 +229,25 @@ body.night #cloud {
     }
 }
 
+#special-badge {
+    width: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 400px;
+    z-index: 1001;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: scale(0);
+}
+
+#special-badge.show {
+    opacity: 1;
+    transform: scale(1);
+    animation: monster 1.2s 0.6s infinite;
+}
+
 #loading {
     width: 150px;
     background-color: #FFF;

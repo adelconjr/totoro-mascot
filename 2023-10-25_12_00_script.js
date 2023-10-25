@@ -34,6 +34,7 @@ var bg = document.querySelector('img.bg'),
     roseTimeout = null,
     monsterTimeout = null,
     rainInterval = null,
+    specialBadgeTimeout = null,
     isRain = false,
     heartsShowing = false,
     currentDialogConfig = {
@@ -42,6 +43,7 @@ var bg = document.querySelector('img.bg'),
         week: "ANY",
         flower: false,
         monster: false,
+        showBadge: false,
         dialogs: []
     },
     monsterAudio = null,
@@ -265,6 +267,42 @@ function showMonster() {
     monsterTimeout = setTimeout(() => {
         clearInterval(interval);
         monster.classList.remove('show');
+    }, 20000);
+}
+
+function showBadge() {
+    var interval  = null, 
+        specialBadge = document.getElementById('special-badge');
+
+    clearTimeout(specialBadgeTimeout);
+
+    specialBadge.classList.add('show');
+
+    specialBadge.addEventListener('click', () => {
+        specialBadge.classList.remove('show');
+
+        var now = new Date();
+        
+        if(localStorage.getItem('CIMEGRIPE') == null) {
+            var badges = localStorage.getItem('BADGES');
+
+            if(badges == null) {
+                localStorage.setItem('BADGES', "[4]");
+            }
+            else {
+                var attBadges = JSON.parse(badges);
+                attBadges.push(4);
+                localStorage.setItem('BADGES', JSON.stringify(attBadges));
+            }
+
+            localStorage.setItem('CIMEGRIPE', now.getDate());
+            addFriendship(20);
+        }
+    });
+
+    specialBadgeTimeout = setTimeout(() => {
+        clearInterval(interval);
+        specialBadge.classList.remove('show');
     }, 20000);
 }
 
@@ -749,6 +787,10 @@ function main() {
 
             if(currentDialogConfig.monster && indexTxt == dialogs.length - 1) {
                 showMonster();
+            }
+
+            if(currentDialogConfig.showBadge && indexTxt == dialogs.length - 1) {
+                showBadge();
             }
 
             indexTxt++;

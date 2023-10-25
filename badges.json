@@ -16,5 +16,11 @@
         "name": "Monster (Totoro Edition)",
         "rarity": 4,
         "image": "images/badges/monster2.png"
+    },
+    {
+        "id": 4,
+        "name": "Cimegripe Totoro Edition",
+        "rarity": 3,
+        "image": "images/badges/cimegripe.png"
     }
 ]

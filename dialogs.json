@@ -26,37 +26,34 @@
         ]
     },
     {
-        "period": [11, 17],
+        "period": [11, 16],
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
-        "monster": true,
+        "monster": false,
+        "showBadge": true,
         "dialogs": [
-            "Boa tarde Sr. Victor",
-            "Está almoçando <b><i>namorando<i></b>?",
-            "E como está seu dia?",
-            "Gostaria de um <span class='monster-font'>Monster Energy</span> para te dar um <b>gás</b>?",
-            "Relaxa que eu não conto para ninguém Sr. Victor",
-            "Só não mostre suas recompensas para ninguém",
-            "<s>Nem a correntinha super dinâmica que o Ad te deu</s>"
+            "Boa tarde Sr. Dinâmico, digo, Sr. Victor",
+            "Você já almoçou?",
+            "Já se hidratou?",
+            "O Ad disse que o Sr. não está bem por isso eu trouxe uma coisa para você",
+            "Um cimegripe"
         ]
     },
     {
-        "period": [17, 18],
+        "period": [16, 18],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
         "monster": true,
+        "showBadge": true,
         "dialogs": [
-            "Boa tarde Sr. Victor",
-            "Já saiu do trabalho?",
-            "Como foi o seu dia?",
-            "Gostaria de te convidar para uma Jam",
-            "Mas eu não consigo criar",
-            "Pode criar pra mim?",
-            "E então vc envia pro Ad pra escutarmos juntos",
-            "O que acha?",
-            "Aliás, vc sabia que o Ad está namorando?"
+            "Sr. Victor",
+            "Por acaso o Sr. já tomou o seu remédio?",
+            "Já bebeu água?",
+            "Então trate de tomar Sr. Victor Levi",
+            "E por falar nisso, o Ad quer ir escutando músicas com você",
+            "Pede pra ele ta mandar a Jam, e tome seu remédio Sr."
         ]
     },
     {
@@ -65,6 +62,7 @@
         "week": "ANY",
         "flower": false,
         "monster": false,
+        "showBadge": false,
         "dialogs": [
             "Boa tarde Sr. Victor",
             "Já saiu do trabalho?",
@@ -83,6 +81,7 @@
         "week": "ANY",
         "flower": true,
         "monster": false,
+        "showBadge": false,
         "dialogs": [
             "Oi oi",
             "Tem alguém aí?",
@@ -97,6 +96,7 @@
         "week": "ANY",
         "flower": false,
         "monster": false,
+        "showBadge": false,
         "dialogs": [
             "🎶 And it's no sacrifice",
             "Just a simple word",
