@@ -37,14 +37,26 @@ function showBadge6 () {
 }
 
 function showBadge7 () {
-    showHalloweenAward("images/badges/halloween-valda.png", 7, 10);
+    showHalloweenAward("images/badges/halloween-valda.png", 7, 20);
+}
+
+function showBadge8 () {
+    showHalloweenAward("images/badges/halloween-luacheia.png", 8, 5);
+}
+
+function showBadge9 () {
+    showHalloweenAward("images/badges/halloween-luacheia-morango.png", 9, 10);
+}
+
+function showBadge10 () {
+    showHalloweenAward("images/badges/halloween-luacheia-laranja.png", 10, 15);
 }
 
 window.addEventListener('DOMContentLoaded', () => {
     var intervalKiki = null;
     const kiki = document.getElementById('kiki');
     const kikiDialog = document.getElementById('kiki-dialog');
-    const probabilidade = [0, 5, 6, 7];
+    const probabilidade = [0, 5, 6, 7, 8, 9, 10, 0];
 
     const showKiki = () => {
         intervalKiki = setInterval(() => {
@@ -108,6 +120,18 @@ window.addEventListener('DOMContentLoaded', () => {
 
             case 7:
                 showBadge7();
+                break;
+
+            case 8:
+                showBadge8();
+                break;
+
+            case 9:
+                showBadge9();
+                break;
+
+            case 9:
+                showBadge10();
                 break;
         }
     });

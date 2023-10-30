@@ -399,8 +399,8 @@ body.night .cloud-2 {
     position: absolute;
     background-color: rgb(255, 255, 250);
     z-index: 1;
-    box-shadow: 0 0 50px 20px rgba(255, 255, 250, 0.8);
-    animation: moon 5s infinite;
+    box-shadow: 0 0 50px 21px rgba(255, 255, 250, 0.8);
+    /*animation: moon 5s infinite;*/
     overflow: hidden;
     display: none;
 }

@@ -334,7 +334,7 @@ function animate(sheet) {
 function draw() {
     var sheet = document.createElement('img');
     sheet.classList.add('sheet');
-    sheet.src = "images/folhas.png";
+    sheet.src = "images/folhas-halloween.png";
     var ramdomTop = Math.floor(Math.random() * window.innerHeight + 250);
     sheet.style.top = ramdomTop + "px";
 
@@ -459,39 +459,45 @@ const time = () => {
 
             allDialogs.forEach((dialog) => {
                 if(hour >= dialog.period[0] && hour < dialog.period[1]) {
-                    removeClasses();
-                    currentDialogConfig = dialog;
-                    currentConfig = dialog.config;
-                    dialogs = dialog.dialogs;
-                    hideMoon();
+                    if(currentConfig != dialog.config) {
+                        console.log('loaded',  dialog.config);
+                        removeClasses();
 
-                    switch(dialog.config) {
-                        default:
-                        case CONFIGS.MORNING: 
-                            hideStars();
-                            document.body.classList.add('day');
-                            changeMetaColor("#87CEFA");
-                            break;
+                        switch(dialog.config) {
+                            default:
+                            case CONFIGS.MORNING: 
+                                hideMoon();
+                                hideStars();
+                                document.body.classList.add('day');
+                                changeMetaColor("#87CEFA");
+                                break;
 
-                        case CONFIGS.AFTERNOON_1: 
-                            hideStars();
-                            document.body.classList.add('afternoon1');
-                            changeMetaColor("#4ad1ff");
-                            break;
+                            case CONFIGS.AFTERNOON_1:
+                                hideMoon();
+                                hideStars();
+                                document.body.classList.add('afternoon1');
+                                changeMetaColor("#4ad1ff");
+                                break;
 
-                        case CONFIGS.AFTERNOON_2: 
-                            hideStars();
-                            showStars = false;
-                            document.body.classList.add('afternoon2');
-                            changeMetaColor("#7aa2cb");
-                            break;
+                            case CONFIGS.AFTERNOON_2: 
+                                hideMoon();
+                                hideStars();
+                                showStars = false;
+                                document.body.classList.add('afternoon2');
+                                changeMetaColor("#7aa2cb");
+                                break;
 
-                        case CONFIGS.NIGHT: 
-                            document.body.classList.add('night');
-                            changeMetaColor("#191970");
-                            night();
-                            break;
-                    }                    
+                            case CONFIGS.NIGHT: 
+                                document.body.classList.add('night');
+                                changeMetaColor("#191970");
+                                night();
+                                break;
+                        }
+
+                        currentDialogConfig = dialog;
+                        currentConfig = dialog.config;
+                        dialogs = dialog.dialogs;
+                    }                
                 }
             
             });
@@ -902,10 +908,9 @@ function showMoon() {
 
 function hideMoon () {
     moon.classList.remove('show');
+    console.log('aqui');
 
-    if(!showStars) {
-        document.getElementById('starsSky').innerHTML = "";
-    }    
+    hideStars();
 }
 
 function hideStars () {

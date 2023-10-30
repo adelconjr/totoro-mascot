@@ -40,5 +40,23 @@
         "name": "Valda Totoro Friends",
         "rarity": 5,
         "image": "images/badges/halloween-valda.png"
+    },
+    {
+        "id": 8,
+        "name": "Lua Cheia (Totoro Edition)",
+        "rarity": 5,
+        "image": "images/badges/halloween-luacheia.png"
+    },
+    {
+        "id": 9,
+        "name": "Lua Cheia Morango (Totoro Edition)",
+        "rarity": 5,
+        "image": "images/badges/halloween-luacheia-morango.png"
+    },
+    {
+        "id": 10,
+        "name": "Lua Cheia Laranja (Totoro Edition)",
+        "rarity": 5,
+        "image": "images/badges/halloween-luacheia-laranja.png"
     }
 ]
