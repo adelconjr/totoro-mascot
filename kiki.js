@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 clearInterval(intervalKiki);
                 setTimeout(() => {
                     showKiki();
-                }, 10000);
+                }, 20000);
             }
             else {
                 kiki.style.opacity = 1;
