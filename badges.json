@@ -22,5 +22,23 @@
         "name": "Cimegripe Totoro Edition",
         "rarity": 3,
         "image": "images/badges/cimegripe.png"
+    },
+    {
+        "id": 5,
+        "name": "Bala 7 Totoros",
+        "rarity": 5,
+        "image": "images/badges/halloween-bala7totoros.png"
+    },
+    {
+        "id": 6,
+        "name": "Bala TotoroGurte",
+        "rarity": 5,
+        "image": "images/badges/halloween-totorogurte.png"
+    },
+    {
+        "id": 7,
+        "name": "Valda Totoro Friends",
+        "rarity": 5,
+        "image": "images/badges/halloween-valda.png"
     }
 ]

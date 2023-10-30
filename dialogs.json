@@ -5,24 +5,12 @@
         "week": "ANY",
         "flower": false,
         "monster": false,
+        "showBadge": false,
         "dialogs": [
-            "Bom dia, Sr. Victor",
-            "O Ad pediu pra eu te entregar um bilhete e sair correndo",
-            "Pode ser?",
-            "Ok, só abra quando estiver sozinho",
-            "Estou saindo, calma",
-            "Abra agora Sr.",
-            "Te amo Victor Levi... E amar você é bom demais",
-            "Seu amor é como energético pra mim",
-            "Dá força para o meu dia",
-            "Me deixa eufórico",
-            "Aumenta meus batimentos cardíacos",
-            "Me leva nas alturas e dps me faz descansar tão bem.",
-            "Então quero te fazer sentir amado",
-            "Para ser sua força nos seus dias cansados",
-            "Abra um sorrisão e deixa eu te amar ❤️",
-            "Aliás, ótimo dia pra ti ^^",
-            "Se quiser me convidar pra escutar música eu vou amar"
+            "Bom dia Sr. Victor",
+            "Como estão seus pontos?",
+            "Já testou sua sorte hoje",
+            "Faça travessuras também e mande a Jam para o Ad :P"
         ]
     },
     {
@@ -30,14 +18,15 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
-        "monster": false,
-        "showBadge": true,
+        "monster": true,
+        "showBadge": false,
         "dialogs": [
-            "Boa tarde Sr. Dinâmico, digo, Sr. Victor",
-            "Você já almoçou?",
-            "Já se hidratou?",
-            "O Ad disse que o Sr. não está bem por isso eu trouxe uma coisa para você",
-            "Um cimegripe"
+            "Boa tarde Sr. Victor",
+            "o <b>Halloween do Totoro</b> está um terror",
+            "Tem gente chorando e gritando",
+            "Mas pra animar seu dia tome um monster",
+            "Quem sabe ele te dá um gás",
+            "Ou não HAHAHA"
         ]
     },
     {
@@ -46,29 +35,40 @@
         "week": "ANY",
         "flower": false,
         "monster": false,
-        "showBadge": true,
+        "showBadge": false,
         "dialogs": [
-            "Sr. Victor",
-            "Por acaso o Sr. já tomou o seu remédio?",
-            "Já bebeu água?",
-            "Então trate de tomar Sr. Victor Levi",
-            "E por falar nisso, o Ad quer ir escutando músicas com você",
-            "Pede pra ele ta mandar a Jam, e tome seu remédio Sr."
+            "Oi aqui é a Kiki",
+            "Tenho um recado para você",
+            "Você gosta de travessuras né?",
+            "Pois então quem vai tomar conta agora sou",
+            "O Totoro não vai mais falar com você",
+            "Agora sou eu quem estou no controle",
+            "Tente a sorte e pegue sua balinha",
+            "HAHAHAHAHA"
         ]
     },
     {
         "period": [20, 24],
         "config": "NIGHT",
         "week": "ANY",
-        "flower": true,
+        "flower": false,
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Oi oi",
-            "Tem alguém aí?",
-            "Se vc não dormiu ainda",
-            "Tenho uma coisa para te dar",
-            "Uma flor para um homem incrível"
+            "Sr. Victor quanto tempo",
+            "Doces ou travessuras?",
+            "Vista sua melhor fantasia e venha para o:",
+            "<b>Halloween do Totoro</b>",
+            "Eu já estou no clima",
+            "A Kiki está fazendo entregas durante o Halloween",
+            "Se você quiser interagir com ela",
+            "Vai ter que testar seu humor...",
+            "Ela pode dar vários doces para sua coleção",
+            "Mas também pode fazer bruxarias e reduzir seus pontos",
+            "A magia é tão forte que sua pontuação pode <b>zerar</b>",
+            "Vai testar sua sorte?",
+            "Tente tocar na Kiki e boa sorte",
+            "A bruxa ta solta"
         ]
     },
     {

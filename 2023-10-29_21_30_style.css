@@ -31,6 +31,23 @@ body.night {
     background-color: #191970;  
 }
 
+body.halloween.day {
+    background-color: #191970; 
+    background-image: linear-gradient(180deg, #8585ff,#3c0055);
+}
+
+body.halloween.afternoon1,
+body.halloween.afternoon2 {
+    background-color: #191970;
+    background-image: linear-gradient(180deg, #5555af,#520075);    
+}
+
+body.halloween.night {
+    background-color: #191970;
+    backdrop-filter: grayscale(80%);
+    background-image: linear-gradient(180deg, #0000ff,#b400ff);
+}
+
 body.is-rain {
     backdrop-filter: grayscale(80%);
 }
@@ -131,6 +148,14 @@ body.is-rain {
 }
 
 body.night #cloud {
+    opacity: 0.8;
+}
+
+body.night .cloud-1 {
+    opacity: 0.7;
+}
+
+body.night .cloud-2 {
     opacity: 0.5;
 }
 
@@ -143,7 +168,7 @@ body.night #cloud {
     display: none;
 }
 
-.containerBalloon {
+#containerBalloon {
     width: 180px;
     height: 120px;
     position: absolute;
@@ -153,13 +178,13 @@ body.night #cloud {
     align-items: center;
     justify-content: center;
     z-index: 5001;
+    display: none;
 }
 
 #txtBaloon {
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
-    text-align: center;            
-    display: none;
+    text-align: center;
 }
 
 .star {
@@ -893,54 +918,25 @@ body.is-rain.night #cloud,
     animation: bubble 8s 0s forwards;
 }
 
-.teia-1 {
-    width: 130px;
+
+
+.cloud-1 {
+    width: 400px;
+    left: 150px;
+    top: -100px;
+    opacity: 0.95;
+    filter: brightness(90%); 
     position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    opacity: 0.8;
-    z-index: 20000;
-    transform: rotateY(-180deg) ;
 }
 
-#kiki {
-    width: 70px;
+.cloud-2 {
+    width: 300px;
+    left: -100px;
+    top: 140px;
+    opacity: 0.4;
+    filter: brightness(90%); 
     position: absolute;
-    left: 100%;
-    top: 200px;
-    z-index: 3;
-    transition: left 1s linear;
-    animation: kiki 20s infinite;
-}
-
-@keyframes kiki {
-    0%,
-    100% {
-        top: 50px;
-        
-    }
-
-    0%, 20% {
-
-        transform: rotate(-20deg);
-    }
-
-    40%, 45% {
-        transform: rotate(0deg);
-    }
-
-    60%, 70% {
-        transform: rotate(20deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    } 
-
-    50% {
-        top: 200px;
-    }
+    transform: rotateY(-180deg);
 }
 
 @keyframes monsterscren {

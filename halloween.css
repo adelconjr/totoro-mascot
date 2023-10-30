@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'The Lith';
+    src: url(fonts/TheLithiumShop.ttf) format("TrueType");
+}
+
+#baloon {
+    width: 250px;
+    top: 100px;
+    left: 160px;
+}
+
+#containerBalloon {
+    width: 225px;
+    height: 150px;
+    top: 109px;
+    left: 170px;
+}
+
+.halloween-award {
+    width: 200px;
+    left: 0;
+    right: 0;
+    bottom: 200px;
+    margin: 0 auto;
+    z-index: 50000;
+    position: absolute;
+    opacity: 0;
+    animation: halloween1 0.5s forwards, halloween2 1.2s 0.8s infinite;
+}
+
+#txtBaloon {
+    font-size: 24px;
+    font-family: 'The Lith';
+}
+
+.teia-1 {
+    width: 180px;
+    position: absolute;
+    left: -47px;
+    bottom: 43px;
+    z-index: 6;
+    opacity: 0.8;
+    transform: rotateZ(90deg) rotateY(180deg);
+}
+
+.teia-2 {
+    width: 280px;
+    position: absolute;
+    right: -71px;
+    bottom: 68px;
+    z-index: 1;
+    opacity: 0.8;
+    z-index: 1;
+    transform: rotateZ(-90deg) rotateX(0);
+}
+
+#kiki {
+    width: 70px;
+    position: absolute;
+    left: 100%;
+    top: 160px;
+    z-index: 6;
+    transition: left 1s linear;
+    animation: kiki 20s infinite;
+}
+
+#kiki-dialog {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+    position: absolute;
+    left: 100%;
+    top: 160px;
+    z-index: 6;
+    width: 100px;
+    opacity: 0;
+    transition: left 1s linear;
+    animation: kikiDialog 20s infinite;
+    font-family: 'The Lith';
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#kiki-dialog.show {
+    opacity: 1;
+}
+
+@keyframes kiki {
+    0%,
+    100% {
+        top: 50px;
+        
+    }
+
+    0%, 20% {
+
+        transform: rotate(-20deg);
+    }
+
+    40%, 45% {
+        transform: rotate(0deg);
+    }
+
+    60%, 70% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    } 
+
+    50% {
+        top: 160px;
+    }
+}
+
+@keyframes kikiDialog {
+    0%,
+    100% {
+        top: 50px;
+        
+    }
+
+    50% {
+        top: 160px;
+    }
+}
+
+@keyframes halloween1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes halloween2 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    0% {
+        transform: translateY(0px);
+    }
+}

@@ -24,10 +24,10 @@ var bg = document.querySelector('img.bg'),
     dialogs = []
     hour = 0,
     currentConfig = "",
-    happyImage = "images/new/2023-09-2023_totoro1-2.png",
-    defaultImage = "images/new/2023-09-2023_totoro1.png",
-    rainHappyImage = "images/new/totoro_chuva_sorriso1.png",
-    rainDefaultImage = "images/new/totoro_chuva1.png",
+    happyImage = "images/new/halloween-2.png",
+    defaultImage = "images/new/halloween-1.png",
+    rainHappyImage = "images/new/halloween-2.png",
+    rainDefaultImage = "images/new/halloween-1.png",
     firstImage = defaultImage,
     secondImage = globalConfigs.rain ? rainHappyImage : happyImage,
     heartsInterval = null,
@@ -205,16 +205,7 @@ function showRose() {
         var now = new Date();
         
         if(localStorage.getItem('ROSE') == null) {
-            var badges = localStorage.getItem('BADGES');
-
-            if(badges == null) {
-                localStorage.setItem('BADGES', "[2]");
-            }
-            else {
-                var attBadges = JSON.parse(badges);
-                attBadges.push(2);
-                localStorage.setItem('BADGES', JSON.stringify(attBadges));
-            }
+            addBadge(2);
 
             localStorage.setItem('ROSE', now.getDate());
             showRoseIcon(true);
@@ -227,6 +218,19 @@ function showRose() {
         rose.style.top = `${400}px`;
         rose.classList.remove('show');
     }, 20000);
+}
+
+function addBadge(badge_id) {
+    var badges = localStorage.getItem('BADGES');
+
+    if(badges == null) {
+        localStorage.setItem('BADGES', `[${badge_id}]`);
+    }
+    else {
+        var attBadges = JSON.parse(badges);
+        attBadges.push(badge_id);
+        localStorage.setItem('BADGES', JSON.stringify(attBadges));
+    }
 }
 
 function showMonster() {
@@ -248,16 +252,7 @@ function showMonster() {
         var now = new Date();
         
         if(localStorage.getItem('MONSTER') == null) {
-            var badges = localStorage.getItem('BADGES');
-
-            if(badges == null) {
-                localStorage.setItem('BADGES', "[3]");
-            }
-            else {
-                var attBadges = JSON.parse(badges);
-                attBadges.push(3);
-                localStorage.setItem('BADGES', JSON.stringify(attBadges));
-            }
+            addBadge(3);
 
             localStorage.setItem('MONSTER', now.getDate());
             addFriendship(20);
@@ -284,16 +279,7 @@ function showBadge() {
         var now = new Date();
         
         if(localStorage.getItem('CIMEGRIPE') == null) {
-            var badges = localStorage.getItem('BADGES');
-
-            if(badges == null) {
-                localStorage.setItem('BADGES', "[4]");
-            }
-            else {
-                var attBadges = JSON.parse(badges);
-                attBadges.push(4);
-                localStorage.setItem('BADGES', JSON.stringify(attBadges));
-            }
+            addBadge(4);
 
             localStorage.setItem('CIMEGRIPE', now.getDate());
             addFriendship(20);
@@ -395,18 +381,19 @@ function cloudAnimation() {
 function showBaloon(txt) {
     var balloon = document.getElementById('baloon');
     var p = document.getElementById('txtBaloon');
+    var container = document.getElementById('containerBalloon');
 
     p.innerHTML = txt;
 
     balloon.style.display = 'block';
-    p.style.display = 'block';
+    container.style.display = 'flex';
 }
 
 function hideBaloon() {
     var balloon = document.getElementById('baloon');
-    var p = document.getElementById('txtBaloon');
+    var container = document.getElementById('containerBalloon');
     balloon.style.display = 'none';
-    p.style.display = 'none';
+    container.style.display = 'none';
 }
 
 
@@ -540,7 +527,10 @@ function updateFriendship() {
     var el = document.getElementById('friendship');
     var fStatus = document.getElementById('friendship-status');
 
-    firstImage = globalConfigs.rain ? rainDefaultImage : defaultImage ;
+    if(timeoutDialog == null) {
+        firstImage = globalConfigs.rain ? rainDefaultImage : defaultImage ;
+    }
+
 
     if(statusbar.friendship < 40) {
         color = "#FF0000";
@@ -560,11 +550,13 @@ function updateFriendship() {
         color = "#32CD32";
         fStatus.innerText = "🥰";
 
-        firstImage = globalConfigs.rain ? rainHappyImage : happyImage;
+        //firstImage = globalConfigs.rain ? rainHappyImage : happyImage;
         hearts();
     }
 
-    showFirstImage();
+    if(timeoutDialog == null) {
+        showFirstImage();
+    }
     el.style.background = `linear-gradient(to right, ${color} ${statusbar.friendship}%, transparent 5%)`;
 }
 
@@ -753,6 +745,8 @@ function main() {
     h.on('panmove', (e) => {
         hideBaloon();
 
+        clearTimeout(timeoutDialog);
+
         bg.src = globalConfigs.rain ? rainDefaultImage : defaultImage;
         var x = e.changedPointers[0].x;
         var y = e.changedPointers[0].y;
@@ -805,9 +799,8 @@ function main() {
             }
         }
 
-        clearTimeout(timeoutDialog);
-
         timeoutDialog = setTimeout(() => {
+            console.log('TO', timeoutDialog);
             showFirstImage();
             hideBaloon();
         }, countdownDialog);
@@ -866,7 +859,6 @@ function createHeart() {
     var randomLeft = Math.floor(Math.random() * 300);
 
     heart.style.left = `${randomLeft}px`;
-    console.log(heart);
     document.body.appendChild(heart);
 }
 
