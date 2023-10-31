@@ -250,12 +250,14 @@ function showMonster() {
         monster.classList.remove('show');
 
         var now = new Date();
+
+        subtractFriendship(20);
         
         if(localStorage.getItem('MONSTER') == null) {
             addBadge(3);
 
             localStorage.setItem('MONSTER', now.getDate());
-            addFriendship(20);
+            //addFriendship(20);
         }
     });
 
