@@ -56,7 +56,7 @@ window.addEventListener('DOMContentLoaded', () => {
     var intervalKiki = null;
     const kiki = document.getElementById('kiki');
     const kikiDialog = document.getElementById('kiki-dialog');
-    const probabilidade = [0, 5, 6, 7, 8, 9, 10, 0];
+    const probabilidade = [0, 5, 5, 6, 6,  7, 7, 8, 8, 9, 9, 10, 10, 10, 0];
 
     const showKiki = () => {
         intervalKiki = setInterval(() => {

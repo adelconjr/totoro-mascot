@@ -249,16 +249,10 @@ function showMonster() {
 
         monster.classList.remove('show');
 
-        var now = new Date();
+        //subtractFriendship(20);
 
-        subtractFriendship(20);
-        
-        if(localStorage.getItem('MONSTER') == null) {
-            addBadge(3);
-
-            localStorage.setItem('MONSTER', now.getDate());
-            //addFriendship(20);
-        }
+        addBadge(3);
+        addFriendship(20);
     });
 
     monsterTimeout = setTimeout(() => {
@@ -442,15 +436,6 @@ const time = () => {
         }
         else {
             showRoseIcon(true);
-        }
-    }
-
-    if (localStorage.getItem('MONSTER')) {
-        var lastRose = Number(localStorage.getItem('MONSTER'));
-        var diffRose = Math.abs(lastRose - (new Date()).getDate());
-        
-        if (diffRose > 0) {
-            localStorage.removeItem('MONSTER');
         }
     }
 
