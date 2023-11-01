@@ -130,7 +130,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 showBadge9();
                 break;
 
-            case 9:
+            case 10:
                 showBadge10();
                 break;
         }
