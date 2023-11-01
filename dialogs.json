@@ -14,7 +14,7 @@
         ]
     },
     {
-        "period": [11, 17],
+        "period": [11, 18],
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
@@ -30,45 +30,18 @@
         ]
     },
     {
-        "period": [17, 20],
-        "config": "AFTERNOON_2",
-        "week": "ANY",
-        "flower": false,
-        "monster": false,
-        "showBadge": false,
-        "dialogs": [
-            "Oi aqui é a Kiki",
-            "Tenho um recado para você",
-            "Você gosta de travessuras né?",
-            "Pois então quem vai tomar conta agora sou",
-            "O Totoro não vai mais falar com você",
-            "Agora sou eu quem estou no controle",
-            "Tente a sorte e pegue sua balinha",
-            "HAHAHAHAHA"
-        ]
-    },
-    {
-        "period": [20, 24],
+        "period": [18, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Sr. Victor quanto tempo",
-            "Doces ou travessuras?",
-            "Vista sua melhor fantasia e venha para o:",
-            "<b>Halloween do Totoro</b>",
-            "Eu já estou no clima",
-            "A Kiki está fazendo entregas durante o Halloween",
-            "Se você quiser interagir com ela",
-            "Vai ter que testar seu humor...",
-            "Ela pode dar vários doces para sua coleção",
-            "Mas também pode fazer bruxarias e reduzir seus pontos",
-            "A magia é tão forte que sua pontuação pode <b>zerar</b>",
-            "Vai testar sua sorte?",
-            "Tente tocar na Kiki e boa sorte",
-            "A bruxa ta solta"
+            "Boa noite Sr. V.L",
+            "Quer balinha?",
+            "Sinto sua falta",
+            "Você sabe que eu te amo né?",
+            "Vem aqui deixa eu te dar um abraço"
         ]
     },
     {

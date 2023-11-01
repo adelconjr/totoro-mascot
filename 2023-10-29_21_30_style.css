@@ -138,12 +138,12 @@ body.is-rain {
 }
 
 #cloud {
-    width: 250px;
+    width: 235px;
     position: absolute;
     z-index: 2;
     top: 0;
     opacity: 1;
-    left: -240px;
+    left: -235px;
     opacity: 1;
 }
 
@@ -921,18 +921,18 @@ body.is-rain.night #cloud,
 
 
 .cloud-1 {
-    width: 400px;
-    left: 150px;
-    top: -100px;
+    width: 371px;
+    top: -4px;
+    left: 164px;
     opacity: 0.95;
     filter: brightness(90%); 
     position: absolute;
 }
 
 .cloud-2 {
-    width: 300px;
-    left: -100px;
-    top: 140px;
+    width: 281px;
+    top: 211px;
+    left: -91px;
     opacity: 0.4;
     filter: brightness(90%); 
     position: absolute;
