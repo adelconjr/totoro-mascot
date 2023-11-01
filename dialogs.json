@@ -1,6 +1,6 @@
 [
     {
-        "period": [5, 11],
+        "period": [5, 12],
         "config": "MORNING",
         "week": "ANY",
         "flower": false,
@@ -8,42 +8,50 @@
         "showBadge": false,
         "dialogs": [
             "Bom dia Sr. Victor",
-            "Doces ou travessuras?",
-            "Eu tenho certeza que são travessuras...",
-            "Talvez tenha alguma travessura por ai...",
-            "Jam jam jam jam",
-            "Boa sorte Sr. Victor e muito cuidado :P"
+            "O Ad está aí?",
+            "Dá um abraço nele por mim, por favor?"
         ]
     },
     {
-        "period": [11, 18],
-        "config": "AFTERNOON_1",
+        "period": [12, 17],
+        "config": "NIGHT",
         "week": "ANY",
         "flower": false,
         "monster": true,
         "showBadge": false,
         "dialogs": [
             "Boa tarde Sr. Victor",
-            "o <b>Halloween do y está um terror",
-            "Tem gente chorando e gritando",
-            "Mas pra ccc seu dia tome um monster",
-            "Quem sabe ele te dá um gás",
-            "Ou não HAHAHA"
+            "O <b>Halloween do Totoro</b> está quase acabando",
+            "Vamos até <i>Lo dia de los muertos</i>",
+            "Aproveite para pegar seus doces",
+            "Vejo que o Sr. está cansado",
+            "Hoje não cometerei travessuras pegue seu <b>monster</b> sem problemas"
         ]
     },
     {
-        "period": [18, 24],
+        "period": [17, 22],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
         "monster": false,
+        "showBadge": true,
+        "dialogs": [
+            "Boa noite Sr. V.L",
+            "Quer balinha?"
+        ]
+    },
+    {
+        "period": [22, 24],
+        "config": "NIGHT",
+        "week": "ANY",
+        "flower": true,
+        "monster": false,
         "showBadge": false,
         "dialogs": [
             "Boa noite Sr. V.L",
-            "Quer balinha?",
-            "Sinto sua falta",
-            "Você sabe que eu te amo né?",
-            "Vem aqui deixa eu te dar um abraço"
+            "Durma bem",
+            "Bom descanso",
+            "Amo você"
         ]
     },
     {

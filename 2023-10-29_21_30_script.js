@@ -461,8 +461,10 @@ const time = () => {
 
             allDialogs.forEach((dialog) => {
                 if(hour >= dialog.period[0] && hour < dialog.period[1]) {
+                    dialogs = dialog.dialogs;
+                    currentDialogConfig = dialog;
+
                     if(currentConfig != dialog.config) {
-                        console.log('loaded',  dialog.config);
                         removeClasses();
 
                         switch(dialog.config) {
@@ -496,9 +498,7 @@ const time = () => {
                                 break;
                         }
 
-                        currentDialogConfig = dialog;
                         currentConfig = dialog.config;
-                        dialogs = dialog.dialogs;
                     }                
                 }
             
