@@ -4,13 +4,15 @@
         "config": "MORNING",
         "week": "ANY",
         "flower": false,
-        "monster": false,
+        "monster": true,
         "showBadge": false,
         "dialogs": [
             "Bom dia Sr. Victor",
-            "Como estão seus pontos?",
-            "Já testou sua sorte hoje",
-            "Faça travessuras também e mande a Jam para o Ad :P"
+            "Doces ou travessuras?",
+            "Eu tenho certeza que são travessuras...",
+            "Talvez tenha alguma travessura por ai...",
+            "Jam jam jam jam",
+            "Boa sorte Sr. Victor e muito cuidado :P"
         ]
     },
     {
@@ -22,9 +24,9 @@
         "showBadge": false,
         "dialogs": [
             "Boa tarde Sr. Victor",
-            "o <b>Halloween do Totoro</b> está um terror",
+            "o <b>Halloween do y está um terror",
             "Tem gente chorando e gritando",
-            "Mas pra animar seu dia tome um monster",
+            "Mas pra ccc seu dia tome um monster",
             "Quem sabe ele te dá um gás",
             "Ou não HAHAHA"
         ]
