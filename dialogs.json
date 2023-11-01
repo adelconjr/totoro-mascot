@@ -14,7 +14,7 @@
     },
     {
         "period": [12, 17],
-        "config": "NIGHT",
+        "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
         "monster": true,
@@ -26,6 +26,18 @@
             "Aproveite para pegar seus doces",
             "Vejo que o Sr. está cansado",
             "Hoje não cometerei travessuras pegue seu <b>monster</b> sem problemas"
+        ]
+    },
+    {
+        "period": [17, 18],
+        "config": "AFTERNOON_2",
+        "week": "ANY",
+        "flower": false,
+        "monster": false,
+        "showBadge": true,
+        "dialogs": [
+            "Boa noite Sr. V.L",
+            "Quer balinha?"
         ]
     },
     {
