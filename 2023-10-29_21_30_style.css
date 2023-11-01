@@ -762,7 +762,7 @@ body.is-rain.night #cloud,
 
 #badges {
     width: 100%;
-    max-height: 640px;
+    max-height: 620px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
