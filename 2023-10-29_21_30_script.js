@@ -273,12 +273,12 @@ function showBadge() {
         specialBadge.classList.remove('show');
 
         var now = new Date();
+        addBadge(7);
         
-        if(localStorage.getItem('CIMEGRIPE') == null) {
-            addBadge(4);
-
-            localStorage.setItem('CIMEGRIPE', now.getDate());
+        if(localStorage.getItem('SPECIAL-BADGE') == null) {
+            
             addFriendship(20);
+            localStorage.setItem('SPECIAL-BADGE', now.getDate());
         }
     });
 
@@ -436,6 +436,15 @@ const time = () => {
         }
         else {
             showRoseIcon(true);
+        }
+    }
+
+    if (localStorage.getItem('SPECIAL-BADGE')) {
+        var lastRose = Number(localStorage.getItem('SPECIAL-BADGE'));
+        var diffSpecialBadge = Math.abs(lastRose - (new Date()).getDate());
+        
+        if (diffSpecialBadge > 0) {
+            localStorage.removeItem('SPECIAL-BADGE');
         }
     }
 
