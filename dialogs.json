@@ -13,23 +13,23 @@
         ]
     },
     {
-        "period": [12, 17],
-        "config": "AFTERNOON_1",
+        "period": [12, 19],
+        "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
-        "monster": true,
-        "showBadge": false,
+        "monster": false,
+        "showBadge": true,
         "dialogs": [
-            "Boa tarde Sr. Victor",
-            "O <b>Halloween do Totoro</b> está quase acabando",
-            "Vamos até <i>Lo dia de los muertos</i>",
-            "Aproveite para pegar seus doces",
-            "Vejo que o Sr. está cansado",
-            "Hoje não cometerei travessuras pegue seu <b>monster</b> sem problemas"
+            "Boa tarde Sr. VL",
+            "Voltamos a programação normal",
+            "Conseguiu muitas balinhas?",
+            "O Ad pediu pra avisar que quer ouvir música contigo",
+            "Que tal?",
+            "Quer mais uma balinha?"
         ]
     },
     {
-        "period": [17, 18],
+        "period": [19, 21],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
@@ -37,23 +37,13 @@
         "showBadge": true,
         "dialogs": [
             "Boa noite Sr. V.L",
-            "Quer balinha?"
+            "Já chegou em casa?",
+            "Como foi seu dia",
+            "Espero que descanse bem :)"
         ]
     },
     {
-        "period": [17, 22],
-        "config": "NIGHT",
-        "week": "ANY",
-        "flower": false,
-        "monster": false,
-        "showBadge": true,
-        "dialogs": [
-            "Boa noite Sr. V.L",
-            "Quer balinha?"
-        ]
-    },
-    {
-        "period": [22, 24],
+        "period": [21, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
@@ -63,7 +53,7 @@
             "Boa noite Sr. V.L",
             "Durma bem",
             "Bom descanso",
-            "Amo você"
+            "Amo você, namorado"
         ]
     },
     {

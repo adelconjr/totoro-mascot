@@ -24,10 +24,10 @@ var bg = document.querySelector('img.bg'),
     dialogs = []
     hour = 0,
     currentConfig = "",
-    happyImage = "images/new/halloween-2.png",
-    defaultImage = "images/new/halloween-1.png",
-    rainHappyImage = "images/new/halloween-2.png",
-    rainDefaultImage = "images/new/halloween-1.png",
+    happyImage = "images/new/2023-09-2023_totoro1-2.png",
+    defaultImage = "images/new/2023-09-2023_totoro1.png",
+    rainHappyImage = "images/new/totoro_chuva_sorriso1.png",
+    rainDefaultImage = "images/new/totoro_chuva1.png",
     firstImage = defaultImage,
     secondImage = globalConfigs.rain ? rainHappyImage : happyImage,
     heartsInterval = null,
@@ -330,7 +330,7 @@ function animate(sheet) {
 function draw() {
     var sheet = document.createElement('img');
     sheet.classList.add('sheet');
-    sheet.src = "images/folhas-halloween.png";
+    sheet.src = "images/folhas.png";
     var ramdomTop = Math.floor(Math.random() * window.innerHeight + 250);
     sheet.style.top = ramdomTop + "px";
 
@@ -543,7 +543,7 @@ function updateFriendship() {
         color = "#32CD32";
         fStatus.innerText = "🥰";
 
-        //firstImage = globalConfigs.rain ? rainHappyImage : happyImage;
+        firstImage = globalConfigs.rain ? rainHappyImage : happyImage;
         hearts();
     }
 
