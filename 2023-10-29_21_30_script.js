@@ -343,10 +343,11 @@ function draw() {
 }
 
 function cloudAnimation() {
-    var cloud = document.getElementById('cloud'),
+    var cloud = document.getElementById('cloud-container'),
         randomTop = Math.floor(Math.random() * 200 + 20),
         interval = null;
     
+    console.log(cloud);
 
     const first = () => {
         cloud.style.top = `${randomTop}px`;

@@ -139,12 +139,16 @@ body.is-rain {
 
 #cloud {
     width: 235px;
+    
+    
+}
+
+#cloud-container {
     position: absolute;
     z-index: 2;
     top: 0;
     opacity: 1;
     left: -235px;
-    opacity: 1;
 }
 
 body.night #cloud {
