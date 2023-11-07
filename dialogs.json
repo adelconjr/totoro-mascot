@@ -13,8 +13,8 @@
         ]
     },
     {
-        "period": [12, 19],
-        "config": "AFTERNOON_2",
+        "period": [12, 15],
+        "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
         "monster": false,
@@ -29,17 +29,37 @@
         ]
     },
     {
-        "period": [19, 21],
+        "period": [12, 18],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
-        "monster": false,
-        "showBadge": true,
+        "monster": true,
+        "showBadge": false,
         "dialogs": [
-            "Boa noite Sr. V.L",
+            "Boa tarde Sr. Victor Levi",
+            "Como foi seu dia?",
+            "O Sr. Ad está esperando para acompanhar o Sr até em casa",
+            "Está cansado?",
+            "Faz tempo então...",
+            "Que tal um monster?"
+
+        ]
+    },
+    {
+        "period": [18, 21],
+        "config": "NIGHT",
+        "week": "ANY",
+        "flower": false,
+        "monster": false,
+        "showBadge": false,
+        "dialogs": [
+            "Boa noite Sr. Victor",
             "Já chegou em casa?",
-            "Como foi seu dia",
-            "Espero que descanse bem :)"
+            "O Ad está propondo um uma missão...",
+            "Disse que se você aceitar ele vai te recompensar",
+            "Aceitas?",
+            "Se sim, o desafio é jogar um pouco com ele hoje",
+            "O que acha?"
         ]
     },
     {
