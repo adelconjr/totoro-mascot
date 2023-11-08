@@ -72,7 +72,23 @@
         ]
     },
     {
-        "period": [21, 24],
+        "period": [21, 23],
+        "config": "NIGHT",
+        "week": "ANY",
+        "flower": true,
+        "monster": false,
+        "showBadge": false,
+        "dialogs": [
+            "Sr. Victor",
+            "O Sr. achou mesmo que eu te abandonaria?",
+            "Jamais isso nunca vai acontecer",
+            "Sempre estive aqui",
+            "E vou continuar",
+            "Te amo"
+        ]
+    },
+    {
+        "period": [23, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
