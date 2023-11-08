@@ -38,19 +38,17 @@
         ]
     },
     {
-        "period": [12, 18],
+        "period": [15, 18],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
         "monster": true,
         "showBadge": false,
         "dialogs": [
-            "Boa tarde Sr. Victor Levi",
+            "Boa tarde Sr. Victor Furino",
             "Como foi seu dia?",
-            "O Sr. Ad está esperando para acompanhar o Sr até em casa",
-            "Está cansado?",
-            "Faz tempo então...",
-            "Que tal um monster?"
+            "Gostaria de um energético T5 ?",
+            "Já que o Sr. está com sorte hoje que tal um monster?"
 
         ]
     },
@@ -64,11 +62,9 @@
         "dialogs": [
             "Boa noite Sr. Victor",
             "Já chegou em casa?",
-            "O Ad está propondo um uma missão...",
-            "Disse que se você aceitar ele vai te recompensar",
-            "Aceitas?",
-            "Se sim, o desafio é jogar um pouco com ele hoje",
-            "O que acha?"
+            "Espero que seu dia tenha sido ótimo",
+            "(A missão de ontem vale para hoje",
+            "Se quiser já sabe, o Ad está te esperando)"
         ]
     },
     {
@@ -79,12 +75,10 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Sr. Victor",
-            "O Sr. achou mesmo que eu te abandonaria?",
-            "Jamais isso nunca vai acontecer",
-            "Sempre estive aqui",
-            "E vou continuar",
-            "Te amo"
+            "Sr. Victor, ainda acordado?",
+            "Já que está por aqui, posso te dar uma coisa?",
+            "Não conta pro Ad",
+            "Tome essa flor..."
         ]
     },
     {
@@ -95,10 +89,10 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Boa noite Sr. V.L",
+            "Boa noite amor",
             "Durma bem",
             "Bom descanso",
-            "Amo você, namorado"
+            "Amo você ❤️"
         ]
     },
     {
