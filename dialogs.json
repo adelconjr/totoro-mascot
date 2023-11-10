@@ -20,15 +20,22 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
-        "monster": false,
-        "showBadge": true,
+        "monster": true,
+        "showBadge": false,
         "dialogs": [
-            "Boa tarde Sr. VL",
-            "Voltamos a programação normal",
-            "Conseguiu muitas balinhas?",
-            "O Ad pediu pra avisar que quer ouvir música contigo",
-            "Que tal?",
-            "Quer mais uma balinha?"
+            "Boa tarde Sr. Zzzzz Victor",
+            "Desculpa, é que hoje estou um pouco com sono",
+            "Quer um monster?",
+            "Não posso te dar isso toda hora",
+            "Mas não vai ter jeito",
+            "Se continuarmos assim",
+            "Pelos meus cálulos .... hmmm",
+            "Nos tornaremos dinâmicos em menos de 1 mês",
+            "E isso seria péssimo para o Sr.",
+            "Então tome com moderação",
+            "<span style='font-family: monospace'>Porcentagem de dinâmico subiu 2%</span>",
+            "<span style='font-family: monospace'><b>Porcentagem atual:</b> 21%</span>",
+            "1x _________ MONSTER ENERGY"
         ]
     },
     {
