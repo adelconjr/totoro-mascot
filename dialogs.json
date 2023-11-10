@@ -4,21 +4,15 @@
         "config": "MORNING",
         "week": "ANY",
         "flower": false,
-        "monster": false,
+        "monster": true,
         "showBadge": false,
         "dialogs": [
             "Bom dia Sr. Victor",
-            "Dormiu bem?",
-            "Infelizmente hoje o Ad não conseguiu te acompanhar :(",
-            "Mas ele não vai te deixar sozinho...",
-            "Tem eu aqui para acompanhar o Sr. até o trabalho",
-            "Mas eu acho que ele vai acordar em breve hein...",
-            "O que acha de mandar mensagem pra ele?",
-            "Acho que ele adoraria ser sua companhia",
-            "Até pq, sinceramente, cá entre nós?",
-            "Vocês formam um belo casal ^^",
-            "Aliás recado do Ad, ele acabou de acordar:",
-            "Itaquera, 07/11/2023 Ad diz:<br><b>- Te amo, homem</b>"
+            "...",
+            "Sr. Victor?",
+            "De novo? Bom dia Sr. Victor",
+            "Tá bom não vai ter jeito...",
+            "Tome aqui seu monster"
         ]
     },
     {
