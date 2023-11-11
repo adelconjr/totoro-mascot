@@ -5,14 +5,17 @@
         "week": "ANY",
         "flower": false,
         "monster": true,
-        "showBadge": false,
+        "showBadge": true,
         "dialogs": [
-            "Bom dia Sr. Victor",
-            "...",
-            "Sr. Victor?",
-            "De novo? Bom dia Sr. Victor",
-            "Tá bom não vai ter jeito...",
-            "Tome aqui seu monster"
+            "Bodia bodia",
+            "Sr. Victor hoje é dia se ver o Ad",
+            "Animado?",
+            "Ele disse para o Sr. acordar ele",
+            "Então já sabe né?",
+            "🫡",
+            "ALIÁS",
+            "quer balinha?"
+            
         ]
     },
     {
