@@ -72,31 +72,19 @@
         ]
     },
     {
-        "period": [21, 23],
+        "period": [21, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Sr. Victor, ainda acordado?",
-            "Já que está por aqui, posso te dar uma coisa?",
-            "Não conta pro Ad",
-            "Tome essa flor..."
-        ]
-    },
-    {
-        "period": [23, 24],
-        "config": "NIGHT",
-        "week": "ANY",
-        "flower": true,
-        "monster": false,
-        "showBadge": false,
-        "dialogs": [
-            "Boa noite amor",
-            "Durma bem",
-            "Bom descanso",
-            "Amo você ❤️"
+            "Lonely, i'm Mr. lonely...",
+            "I have nobody",
+            "For my ooooown",
+            "Sr Victor estou abandonado",
+            "Mas já que está aqui",
+            "Tome essa flor 🌹"
         ]
     },
     {
