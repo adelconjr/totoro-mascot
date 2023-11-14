@@ -4,7 +4,7 @@
         "config": "MORNING",
         "week": "ANY",
         "flower": false,
-        "monster": true,
+        "monster": false,
         "showBadge": true,
         "dialogs": [
             "Bom dia Sr. Victor",
