@@ -7,14 +7,16 @@
         "monster": true,
         "showBadge": true,
         "dialogs": [
-            "Bodia bodia",
-            "Sr. Victor hoje é dia se ver o Ad",
-            "Animado?",
-            "Ele disse para o Sr. acordar ele",
-            "Então já sabe né?",
-            "🫡",
-            "ALIÁS",
-            "quer balinha?"
+            "Bom dia Sr. Victor",
+            "O Sr. está bem?",
+            "Pois então prepare-se, Sr.",
+            "Pq o Ad disse que hoje",
+            "Ele quer te fazer companhia",
+            "E eu particularmente acho que vc tá precisando do Ad",
+            "Assim como ele precisa de você, todos os dias",
+            "Bom serviço pra vc hoje Sr. Doctor",
+            "Aliás quer escutar música com o Ad?",
+            "e balinha, quer?"
             
         ]
     },
