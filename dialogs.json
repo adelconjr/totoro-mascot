@@ -44,33 +44,36 @@
         ]
     },
     {
-        "period": [15, 18],
+        "period": [15, 19],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
-        "monster": true,
+        "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Boa tarde Sr. Victor Furino",
+            "Boa tarde Sr. Victor",
             "Como foi seu dia?",
-            "Gostaria de um energético T5 ?",
-            "Já que o Sr. está com sorte hoje que tal um monster?"
-
+            "Fiquei sabendo que o Ad está indo te ver",
+            "Talvez vc diga que não",
+            "Mas eu, Totoro do Clã do Javascript venho pedir",
+            "Que deixe meu nobre Ad te acompanhar, jovem mestre",
+            "🫡",
+            "Não vai recusar né meu senhor?"
         ]
     },
     {
-        "period": [18, 21],
+        "period": [19, 21],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Boa noite Sr. Victor",
-            "Já chegou em casa?",
-            "Espero que seu dia tenha sido ótimo",
-            "(A missão de ontem vale para hoje",
-            "Se quiser já sabe, o Ad está te esperando)"
+            "Fiu fiu",
+            "Que casal bonito hein",
+            "Que alegria ver os dois juntos",
+            "Peço licença para os senhores",
+            "Posso fazer parte da companhia senhores?"
         ]
     },
     {
