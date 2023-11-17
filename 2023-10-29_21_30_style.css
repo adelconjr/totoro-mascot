@@ -949,6 +949,7 @@ body.is-rain.night #cloud,
     width: 100px;
     top: calc(100% + 100px);
     left: 0;
+    z-index: 2;
     position: absolute;
     animation: balloon 40s forwards ease-out;
 }
