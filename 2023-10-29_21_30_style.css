@@ -945,6 +945,20 @@ body.is-rain.night #cloud,
     transform: rotateY(-180deg);
 }
 
+.aniversary-balloon {
+    width: 100px;
+    top: calc(100% + 100px);
+    left: 0;
+    position: absolute;
+    animation: balloon 40s forwards ease-out;
+}
+
+@keyframes balloon {
+    100%{
+        top: -300px;
+    }
+}
+
 @keyframes monsterscren {
     10% {
         bottom: 0;

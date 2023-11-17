@@ -852,6 +852,8 @@ function main() {
             banner.classList.remove('show');
         });
     }
+
+    aniversary();
 }
 
 function createHeart() {
@@ -986,8 +988,50 @@ function updateRain() {
     }
 
     xhr.send();
+}
 
-    
+function createBalloon() {
+    const variants = ['bexiga-1.png', 'bexiga-2.png', 'bexiga-3.png'];
+
+    const randomNumber = Math.floor(Math.random() * 3);
+
+    const src = variants[randomNumber];
+
+    const balloon = document.createElement('img');
+
+    balloon.classList.add('aniversary-balloon');
+
+    const randomLeft = Math.floor(Math.random() * window.innerWidth);
+
+    balloon.style.left = `${randomLeft}px`;
+    balloon.src = `images/${src}`;
+
+    document.body.appendChild(balloon);
+
+    balloon.addEventListener('click', function() {
+        balloon.src = `images/puff.png`;
+
+        balloon.style.transition = "all 5s";
+        balloon.style.transform = "scale(1.5)";
+        balloon.style.opacity = 0;
+
+        setTimeout(() => {
+            balloon.style.opacity = 0;
+        }, 5000);
+    });
+
+    setTimeout(() => {
+        balloon.remove();
+    }, 40000);
+}
+
+function aniversary() {
+    createBalloon();
+    setTimeout(() => createBalloon, 500);
+    setTimeout(() => createBalloon, 1000);
+    setTimeout(() => createBalloon, 1500);
+
+    setInterval(createBalloon, 1500);
 }
 
 main();
