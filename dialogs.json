@@ -8,15 +8,13 @@
         "showBadge": true,
         "dialogs": [
             "Bom dia Sr. Victor",
-            "O Sr. está bem?",
-            "Pois então prepare-se, Sr.",
-            "Pq o Ad disse que hoje",
-            "Ele quer te fazer companhia",
-            "E eu particularmente acho que vc tá precisando do Ad",
-            "Assim como ele precisa de você, todos os dias",
-            "Bom serviço pra vc hoje Sr. Doctor",
-            "Aliás quer escutar música com o Ad?",
-            "e balinha, quer?"
+            "Como está?",
+            "Dormiu bem?",
+            "Espero que seu dia seja lindo como você!",
+            "Posso te acompanhar na viagem?",
+            "Eu fico aqui quietinho",
+            "Obrigado jovem senhor",
+            "Se precisar estou aqui :)"
             
         ]
     },
@@ -49,16 +47,17 @@
         "week": "ANY",
         "flower": false,
         "monster": false,
-        "showBadge": false,
+        "showBadge": true,
         "dialogs": [
             "Boa tarde Sr. Victor",
+            "Já saiu do trabalho?",
             "Como foi seu dia?",
-            "Fiquei sabendo que o Ad está indo te ver",
-            "Talvez vc diga que não",
-            "Mas eu, Totoro do Clã do Javascript venho pedir",
-            "Que deixe meu nobre Ad te acompanhar, jovem mestre",
-            "🫡",
-            "Não vai recusar né meu senhor?"
+            "O Ad hoje está um pouco ausente",
+            "Mas ele me deixou aqui para cuidar do Sr.",
+            "Então não se sinta sozinho na viagem",
+            "Se quiser compartilhe a Jam comigo",
+            "Ele pediu para avisar quando chegar em casa",
+            "Aliás, quer balinha ?"
         ]
     },
     {
@@ -69,11 +68,11 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Fiu fiu",
-            "Que casal bonito hein",
-            "Que alegria ver os dois juntos",
-            "Peço licença para os senhores",
-            "Posso fazer parte da companhia senhores?"
+            "Já chegou em casa Sr. Victor?",
+            "Ok ok",
+            "Vai descansar mocinho",
+            "Aliás, sabia que eu te amo?",
+            "<strong>Muito.</strong>"
         ]
     },
     {
@@ -84,12 +83,12 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Lonely, i'm Mr. lonely...",
-            "I have nobody",
-            "For my ooooown",
-            "Sr Victor estou abandonado",
-            "Mas já que está aqui",
-            "Tome essa flor 🌹"
+            "Oioi",
+            "Tem alguém aí? 👀",
+            "Ainda está acordado Sr. Victor?",
+            "Você merecia um jardim, sabe",
+            "Mas aos poucos a gente monta um",
+            "Tome esta flor meu Sr."
         ]
     },
     {
