@@ -8,6 +8,10 @@
     font-size: 18px;
 }
 
+.monospace {
+    font-family: monospace;
+}
+
 html, body {
     height: 100%;
     min-height: 100%;

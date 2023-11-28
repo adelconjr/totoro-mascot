@@ -7,19 +7,17 @@
         "monster": false,
         "showBadge": true,
         "dialogs": [
-            "Bom dia Sr. Victor Levi",
-            "Atualizando dados...",
-            "Vejo aqui que o Ad está oficialmente com <strong>25 aninhos</strong>",
-            "E também mais uma coisa...",
-            "Hmm deixe-me ver",
-            "Ah, <strong>1 mês</strong> de namoro",
-            "Parabéns Sr. Victor e Sr. Ad",
-            "Foi a melhor decisão que o Sr. tomou Sr. Levi",
-            "Pode ter certeza que eu, junto do Ad...",
-            "Faremos valer a pena todos os dias",
-            "Eu te amo, homem",
-            "Obrigado por ter escolhido me amar ❤️"
-            
+            "Bom dia Sr. Victor",
+            "Como o Sr. está?",
+            "Me conte as novidades?",
+            "Fiquei sabendo que você conheceu sua cunhada",
+            "O que achou dela?",
+            "E o aniversário do Ad como foi?",
+            "Eu também ganho presente?",
+            "Estava com saudades",
+            "Aguarde que em breve teremos novidades",
+            "(Não esquece de acordar o Ad)",
+            "Ótimo dia para o Sr."
         ]
     },
     {
@@ -30,38 +28,34 @@
         "monster": true,
         "showBadge": false,
         "dialogs": [
-            "Boa tarde Sr. Zzzzz Victor",
-            "Desculpa, é que hoje estou um pouco com sono",
-            "Quer um monster?",
-            "Não posso te dar isso toda hora",
-            "Mas não vai ter jeito",
-            "Se continuarmos assim",
-            "Pelos meus cálulos .... hmmm",
-            "Nos tornaremos dinâmicos em menos de 1 mês",
-            "E isso seria péssimo para o Sr.",
-            "Então tome com moderação",
-            "<span style='font-family: monospace'>Porcentagem de dinâmico subiu 2%</span>",
-            "<span style='font-family: monospace'><b>Porcentagem atual:</b> 21%</span>",
-            "1x _________ MONSTER ENERGY"
+            "Boa tardis Sr. Victor já almoçou?",
+            "Muito sono?",
+            "Acho que posso te ajudar",
+            "Mas olha, nossa porcentagem de jovem dinâmico só aumenta",
+            "<span class='monospace'>Nível de dinâmico: [###          ] 30%</span>",
+            "Seu monster Sr. "
         ]
     },
     {
-        "period": [15, 19],
+        "period": [16, 19],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
         "monster": false,
         "showBadge": true,
         "dialogs": [
-            "Boa tarde Sr. Victor",
-            "Já saiu do trabalho?",
-            "Como foi seu dia?",
-            "O Ad hoje está um pouco ausente",
-            "Mas ele me deixou aqui para cuidar do Sr.",
-            "Então não se sinta sozinho na viagem",
-            "Se quiser compartilhe a Jam comigo",
-            "Ele pediu para avisar quando chegar em casa",
-            "Aliás, quer balinha ?"
+            "...",
+            "TSK TSK",
+            "... hmmm",
+            "... AH",
+            "Sr. Victor, me perdoe mas ... estou com pressa",
+            "Preciso me preparar",
+            "Tá logo aí...",
+            "Preciso preparar meus presentes",
+            "Esse vai ser meu primeiro ano",
+            "Mas agora não posso explicar",
+            "Vamos nos falando, até mais tarde...",
+            "Ah o Ad disse pra mandar a Jam pra ele"
         ]
     },
     {
@@ -72,11 +66,16 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Já chegou em casa Sr. Victor?",
-            "Ok ok",
-            "Vai descansar mocinho",
-            "Aliás, sabia que eu te amo?",
-            "<strong>Muito.</strong>"
+            "Boa noite Sr. Victor",
+            "Desculpa acabei me enrolando mais cedo",
+            "Mas logo mais vou poder te contar tudo",
+            "Já chegou em casa Jovem Mestre?",
+            "Se eu não me engano tem uma quest que o Sr não completou, hein?",
+            "TSK TSK Sr. Victor...",
+            "Assim não dá...",
+            "Poxa, vamos dobrar as recompensas",
+            "Se a missão for cumprida irei te dar <b>duas recompensas</b>",
+            "Vai aceitar? <a target='_blank' href='https://wa.me/5511977866277?text=Eu+aceito+a+miss%C3%A3o+do+Totoro+Sr.+e+estou+de+acordo+com+os+termos+e+condi%C3%A7%C3%B5es+do+contrato+%F0%9F%AB%A1'>Sim</a> <a style='font-weight: bold' target='_blank' href='/images/mike.png'>Não</a>"
         ]
     },
     {
@@ -87,12 +86,18 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Oioi",
-            "Tem alguém aí? 👀",
-            "Ainda está acordado Sr. Victor?",
-            "Você merecia um jardim, sabe",
-            "Mas aos poucos a gente monta um",
-            "Tome esta flor meu Sr."
+            "Quero te amar pra sempre",
+            "Ser de novo adolescente",
+            "Fazer planos pra nós dois",
+            "Quero morrer de ciúmes",
+            "Me sentir apaixonado",
+            "Rabiscando guardanapos",
+            "Caprichando nas palavras",
+            "Pra dizer que eu te amo",
+            "Meeeu grande amoor",
+            "Porém eu te garanto que meu amor por você nunca vai morrer...",
+            "Não ficaremos apenas na moldura de um retrato",
+            "Meu desejo é marcar sua vida pra sempre..."
         ]
     },
     {
