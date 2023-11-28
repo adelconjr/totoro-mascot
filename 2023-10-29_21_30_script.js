@@ -355,9 +355,19 @@ function cloudAnimation() {
     }
 
     const animate = () => {
+        if(globalConfigs.rain) {
+            cloud.style.transition = "none";
+            cloud.style.left = '-240px';
+            return;
+        }
+        else {
+            first();
+        }
+
         cloud.style.left = `${cloud.offsetLeft + 50}px`;
 
-        if(cloud.offsetLeft > window.innerWidth || cloud.offsetLeft > 500) {                    
+        if(cloud.offsetLeft > window.innerWidth || cloud.offsetLeft > 500) {
+            randomTop = Math.floor(Math.random() * 200 + 20);                
             clearInterval(interval);
 
             cloud.style.transition = "none";
@@ -964,6 +974,11 @@ function updateRain() {
 
             firstImage = globalConfigs.rain ? rainDefaultImage : defaultImage;
             secondImage = globalConfigs.rain ? rainHappyImage : happyImage;
+
+            if(timeoutDialog == null) {
+                console.log('teste');
+                showFirstImage();
+            }
 
             if(globalConfigs.rain) {
                 if(!isRain) {
