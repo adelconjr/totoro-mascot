@@ -124,7 +124,7 @@
             "Meu desejo é marcar sua vida pra sempre..."
         ]
     },
-    }
+    {
         "period": [3, 5],
         "config": "NIGHT",
         "week": "ANY",
