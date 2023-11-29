@@ -62,24 +62,23 @@
         "period": [19, 21],
         "config": "NIGHT",
         "week": "ANY",
-        "flower": false,
+        "flower": true,
         "monster": false,
         "showBadge": false,
         "dialogs": [
             "Boa noite Sr. Victor",
-            "Desculpa acabei me enrolando mais cedo",
-            "Mas logo mais vou poder te contar tudo",
-            "Já chegou em casa Jovem Mestre?",
-            "Se eu não me engano tem uma quest que o Sr não completou, hein?",
-            "TSK TSK Sr. Victor...",
-            "Assim não dá...",
-            "Poxa, vamos dobrar as recompensas",
-            "Se a missão for cumprida irei te dar <b>duas recompensas</b>",
-            "Vai aceitar? <a target='_blank' href='https://wa.me/5511977866277?text=Eu+aceito+a+miss%C3%A3o+do+Totoro+Sr.+e+estou+de+acordo+com+os+termos+e+condi%C3%A7%C3%B5es+do+contrato+%F0%9F%AB%A1'>Sim</a> <a style='font-weight: bold' target='_blank' href='/images/mike.png'>Não</a>"
+            "Como foi seu dia?",
+            "Muito cansativo?",
+            "Acho que posso me despedir aqui",
+            "Vou deixá-lo descansar",
+            "Amanhã talvez eu volte com novidades",
+            "Mas por agora, deixe-me ir, estou atrasado novamente...",
+            "Ah, antes que eu me esqueça",
+            "Uma flor para o homem mais importante da minha vida"
         ]
     },
     {
-        "period": [21, 24],
+        "period": [0, 5],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
@@ -98,23 +97,6 @@
             "Porém eu te garanto que meu amor por você nunca vai morrer...",
             "Não ficaremos apenas na moldura de um retrato",
             "Meu desejo é marcar sua vida pra sempre..."
-        ]
-    },
-    {
-        "period": [0, 5],
-        "config": "NIGHT",
-        "week": "ANY",
-        "flower": false,
-        "monster": false,
-        "showBadge": false,
-        "dialogs": [
-            "🎶 And it's no sacrifice",
-            "Just a simple word",
-            "It's two hearts living",
-            "In two separate worlds",
-            "But it's no sacrifice",
-            "No sacrifice",
-            "It's no sacrifice at all 🎶"
         ]
     }
 ]
