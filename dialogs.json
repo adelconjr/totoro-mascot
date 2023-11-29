@@ -101,7 +101,29 @@
         ]
     },
     {
-        "period": [0, 5],
+        "period": [0, 3],
+        "config": "NIGHT",
+        "week": "ANY",
+        "flower": true,
+        "monster": false,
+        "showBadge": false,
+        "dialogs": [
+            "Quero te amar pra sempre",
+            "Ser de novo adolescente",
+            "Fazer planos pra nós dois",
+            "Quero morrer de ciúmes",
+            "Me sentir apaixonado",
+            "Rabiscando guardanapos",
+            "Caprichando nas palavras",
+            "Pra dizer que eu te amo",
+            "Meeeu grande amoor",
+            "Porém eu te garanto que meu amor por você nunca vai morrer...",
+            "Não ficaremos apenas na moldura de um retrato",
+            "Meu desejo é marcar sua vida pra sempre..."
+        ]
+    },
+    }
+        "period": [3, 5],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
