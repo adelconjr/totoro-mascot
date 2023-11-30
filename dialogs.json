@@ -112,7 +112,7 @@
         "period": [21, 24],
         "config": "NIGHT",
         "week": "ANY",
-        "flower": false,
+        "flower": true,
         "monster": false,
         "showBadge": false,
         "dialogs": [
