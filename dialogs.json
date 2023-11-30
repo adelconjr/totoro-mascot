@@ -39,7 +39,7 @@
         ]
     },
     {
-        "period": [16, 19],
+        "period": [16, 17],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
@@ -61,22 +61,51 @@
         ]
     },
     {
-        "period": [19, 21],
+        "period": [17, 19],
         "config": "NIGHT",
         "week": "ANY",
-        "flower": true,
+        "flower": false,
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Boa noite Sr. Victor",
+            "... 29, 30 31",
+            "... Ah Sr. Victor?",
+            "Desculpa nem tive tempo de trocar de roupa",
+            "Estava embalando presentes",
+            "Sim, temos muitos pedidos esse ano",
+            "Nem consegui trocar minha roupa",
+            "Muito serviço",
+            "Ufa!",
             "Como foi seu dia?",
-            "Muito cansativo?",
-            "Acho que posso me despedir aqui",
-            "Vou deixá-lo descansar",
-            "Amanhã talvez eu volte com novidades",
-            "Mas por agora, deixe-me ir, estou atrasado novamente...",
-            "Ah, antes que eu me esqueça",
-            "Uma flor para o homem mais importante da minha vida"
+            "Conseguiu descansar?",
+            "Em breve trago mais nóticias",
+            "Mas por enquanto não posso dizer muito",
+            "Deixa eu voltar ao trabalho",
+            "Fuii"
+        ]
+    },
+    {
+        "period": [19, 21],
+        "config": "NIGHT",
+        "week": "ANY",
+        "flower": false,
+        "monster": false,
+        "showBadge": false,
+        "dialogs": [
+            "... 29, 30 31",
+            "... Ah Sr. Victor?",
+            "Desculpa nem tive tempo de trocar de roupa",
+            "Estava embalando presentes",
+            "Sim, temos muitos pedidos esse ano",
+            "Nem consegui trocar minha roupa",
+            "Muito serviço",
+            "Ufa!",
+            "Como foi seu dia?",
+            "Conseguiu descansar?",
+            "Em breve trago mais nóticias",
+            "Mas por enquanto não posso dizer muito",
+            "Deixa eu voltar ao trabalho",
+            "Fuii"
         ]
     },
     {
