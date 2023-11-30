@@ -62,7 +62,7 @@
     },
     {
         "period": [17, 19],
-        "config": "NIGHT",
+        "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
         "monster": false,
