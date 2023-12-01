@@ -5,21 +5,16 @@
         "week": "ANY",
         "flower": false,
         "monster": false,
-        "showBadge": true,
+        "showBadge": false,
         "dialogs": [
-            "UAAAAAAAAAAGH!!",
-            "Bom dia bom dia Sr. Victor Levi",
-            "Ai, ai, essa correria de fim de ano...",
-            "Eu ando bastante cansado",
-            "Tô resolvendo muitas coisas",
-            "Em breve vou poder falar mais",
-            "Mas agora estou atrasado",
-            "Ta ouvindo?",
-            "Não?",
-            "É o som da Jam...",
-            "Ah, vê se não dorme no ônibus Sr. Victor",
-            "Se não terei que mandar meu CatLoves's Train te buscar",
-            "<i>TSK TSK</i> Sr. Victor..."
+            "Bom dia Sr. Victor",
+            "Irei acompanhá-lo até o trab...",
+            "O QUE?",
+            "presentes atrasados?",
+            "Desculpa Sr. Victor...",
+            "Preciso ir agora",
+            "Você pode chamar o Ad para te acompanhar",
+            "Inclusive manda a Jam pra ele"
         ]
     },
     {
