@@ -24,10 +24,10 @@ var bg = document.querySelector('img.bg'),
     dialogs = []
     hour = 0,
     currentConfig = "",
-    happyImage = "images/new/2023-11-30_totoro_noel2.png",
-    defaultImage = "images/new/2023-11-30_totoro_noel.png",
-    rainHappyImage = "images/new/totoro_chuva_sorriso1.png",
-    rainDefaultImage = "images/new/totoro_chuva1.png",
+    happyImage = "images/new/2023-12-01_totoro_noel2.png",
+    defaultImage = "images/new/2023-12-01_totoro_noel.png",
+    rainHappyImage = "images/new/2023-12-01_totoro_noel2.png",
+    rainDefaultImage = "images/new/2023-12-01_totoro_noel.png",
     firstImage = defaultImage,
     secondImage = globalConfigs.rain ? rainHappyImage : happyImage,
     heartsInterval = null,
@@ -926,19 +926,23 @@ function hideStars () {
 }
 
 function makeRain() {
+    const classes = ['snow-1', 'snow-2'];
+    const randomClass = Math.floor(Math.random() * 2);
+
     var el = document.createElement('span');
-    el.classList.add('rain');
+    el.classList.add('snow');
+    el.classList.add(classes[randomClass]);
     el.style.left = `${Math.floor(Math.random() * window.innerWidth)}px`;
 
     document.body.appendChild(el);
 
     setTimeout(() => {
         document.body.removeChild(el);
-    }, 5000);
+    }, 20000);
 }
 
 function playRain() {
-    rainInterval = setInterval(makeRain, 30);
+    rainInterval = setInterval(makeRain, 150);
 
     document.querySelector('.rain-cloud-1').classList.add('show');
     document.querySelector('.rain-cloud-2').classList.add('show');
