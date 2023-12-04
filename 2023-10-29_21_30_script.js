@@ -330,7 +330,8 @@ function animate(sheet) {
 function draw() {
     var sheet = document.createElement('img');
     sheet.classList.add('sheet');
-    sheet.src = "images/folhas.png";
+    //sheet.src = "images/folhas.png";
+    sheet.src = "images/floquinho.png";
     var ramdomTop = Math.floor(Math.random() * window.innerHeight + 250);
     sheet.style.top = ramdomTop + "px";
 

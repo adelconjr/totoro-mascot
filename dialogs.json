@@ -7,14 +7,16 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Bom dia Sr. Victor",
-            "Irei acompanhá-lo até o trab...",
-            "O QUE?",
-            "presentes atrasados?",
-            "Desculpa Sr. Victor...",
-            "Preciso ir agora",
-            "Você pode chamar o Ad para te acompanhar",
-            "Inclusive manda a Jam pra ele"
+            "<b>E mais um dia de clima gélido</b>",
+            "<b>Totoro já não sabia mais o que fazer</b>",
+            "<b>Ele já não tinha muito tempo</b>",
+            "<b>Agora, com isso... seu tempo livre diminuiu</b>",
+            "<b>Ele tinha pouco tempo para resolver o problema na maquina</b>",
+            "<b>Se não resolvessem logo, todo o cenário poderia ficar congelado</b>",
+            "<b>Quem vai salvar o Natal?</b>",
+            "<b>Isso com certeza depende do nosso protagonista</b>",
+            "<i>Músicas natalinas na Jam 🎵</i>",
+            "<b style='font-size: 20px'>Totoro Especial de Natal</b>"
         ]
     },
     {
