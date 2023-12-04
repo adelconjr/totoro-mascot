@@ -27,12 +27,18 @@
         "monster": true,
         "showBadge": false,
         "dialogs": [
-            "Boa tardis Sr. Victor já almoçou?",
-            "Muito sono?",
-            "Acho que posso te ajudar",
-            "Mas olha, nossa porcentagem de jovem dinâmico só aumenta",
-            "<span class='monospace'>Nível de dinâmico: [###&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;] 30%</span>",
-            "Seu monster Sr. "
+            "Boa tarde Sr. Victor",
+            "Muito frio por aí?",
+            "Atualizações para o Sr.",
+            "Não consegui reverter a ação da máquina de resfriamento",
+            "O nosso cenário aos poucos está congelando",
+            "Vamos ter que continuar assim",
+            "Pelo menos até o natal",
+            "Pois estamos ocupados com os presentes...",
+            "Mas não deixaremos de enfeitar o cenário",
+            "Vamos ver o que podemos fazer...",
+            "Por enquanto pegue esse Monster...",
+            "Ops, acho que ele está um pouquinho diferente..."
         ]
     },
     {

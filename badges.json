@@ -58,5 +58,11 @@
         "name": "Lua Cheia Laranja (Totoro Edition)",
         "rarity": 5,
         "image": "images/badges/halloween-luacheia-laranja.png"
+    },
+    {
+        "id": 11,
+        "name": "Monster Freeze (Totoro Edition)",
+        "rarity": 5,
+        "image": "images/badges/monster-congelado.png"
     }
 ]

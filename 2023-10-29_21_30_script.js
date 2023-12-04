@@ -24,10 +24,10 @@ var bg = document.querySelector('img.bg'),
     dialogs = []
     hour = 0,
     currentConfig = "",
-    happyImage = "images/new/2023-12-01_totoro_noel2.png",
-    defaultImage = "images/new/2023-12-01_totoro_noel.png",
-    rainHappyImage = "images/new/2023-12-01_totoro_noel2.png",
-    rainDefaultImage = "images/new/2023-12-01_totoro_noel.png",
+    happyImage = "images/new/2023-12-04_totoro_noel2.png",
+    defaultImage = "images/new/2023-12-04_totoro_noel.png",
+    rainHappyImage = "images/new/2023-12-04_totoro_noel2.png",
+    rainDefaultImage = "images/new/2023-12-04_totoro_noel.png",
     firstImage = defaultImage,
     secondImage = globalConfigs.rain ? rainHappyImage : happyImage,
     heartsInterval = null,
@@ -251,7 +251,7 @@ function showMonster() {
 
         //subtractFriendship(20);
 
-        addBadge(3);
+        addBadge(11);
         addFriendship(20);
     });
 
