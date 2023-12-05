@@ -944,7 +944,7 @@ body.is-rain.night #cloud,
     left: 0;
     z-index: 10000;
     opacity: 0;
-    background-image: linear-gradient(to top, rgba(103, 247, 181, 0.9) 20%, transparent 100%);
+    background-image: linear-gradient(to top, rgba(103, 213, 247, 0.9) 20%, transparent 100%);
     bottom: -100%;
 }
 
@@ -993,6 +993,195 @@ body.is-rain.night #cloud,
     z-index: 2;
     position: absolute;
     animation: balloon 40s forwards ease-out;
+}
+
+/* x-mas update */
+
+.xmas-lights {
+    width: 3px;
+    height: 3px;
+    z-index: 2000;
+    position: fixed;
+    border-radius: 3px;
+}
+
+.light-1 {
+    left: 5px;
+    /*bottom: 164px;*/
+    top: 655px;
+    background-color: #F00;
+    animation: xmas-light-red 1s 0s infinite;
+}
+
+.light-2 {
+    left: 19px;
+    top: 666px;
+    background-color: #e2d600;
+    animation: xmas-light-yellow 1s 0.2s infinite ease-in;
+}
+
+.light-3 {
+    left: 27px;
+    top: 680px;
+    background-color: #00F;
+    animation: xmas-light-blue 1s 0.4s infinite ease-in;
+}
+
+.light-4 {
+    left: 28px;
+    top: 699px;
+    background-color: #F00;
+    animation: xmas-light-red 1s 0.6s infinite ease-in;
+}
+
+.light-5 {
+    left: 15px;
+    top: 708px;
+    background-color: #00F;
+    animation: xmas-light-blue 1s 0.8s infinite ease-in;
+}
+
+.light-6 {
+    left: 43px;
+    top: 655px;
+    background-color: #00F;
+    animation: xmas-light-blue 1s 0.1s infinite ease-in;
+}
+
+.light-7 {
+    left: 50px;
+    top: 674px;
+    background-color: #e2d600;
+    animation: xmas-light-yellow 1s 0.3s infinite ease-in;
+}
+
+.light-8 {
+    left: 49px;
+    top: 695px;
+    background-color: #F00;
+    animation: xmas-light-red 1s 0.5s infinite ease-in;
+}
+
+.light-9 {
+    left: 46px;
+    top: 720px;
+    background-color: #00F;
+    animation: xmas-light-blue 1s 0.7s infinite ease-in;
+}
+
+.light-10 {
+    left: 50px;
+    top: 746px;
+    background-color: #e2d600;
+    animation: xmas-light-yellow 1s 0.9s infinite ease-in;
+}
+
+.light-11 {
+    left: 72px;
+    top: 757px;
+    background-color: #F00;
+    animation: xmas-light-red 1s 1.1s infinite ease-in;
+}
+
+
+.light-12 {
+    left: 306px;
+    top: 675px;
+    background-color: #F00;
+    animation: xmas-light-red 1s 1.1s infinite ease-in;
+}
+
+.light-13 {
+    left: 319px;
+    top: 691px;
+    background-color: #00F;
+    animation: xmas-light-blue 1s 0.7s infinite ease-in;
+}
+
+.light-14 {
+    left: 338px;
+    top: 680px;
+    background-color: #e2d600;
+    animation: xmas-light-yellow 1s 0.9s infinite ease-in;
+}
+
+.light-15 {
+    left: 319px;
+    top: 663px;
+    background-color: #e2d600;
+    animation: xmas-light-yellow 1s 0.9s infinite ease-in;
+}
+
+.light-16 {
+    left: 350px;
+    top: 663px;
+    background-color: #F00;
+    animation: xmas-light-red 1s 1.1s infinite ease-in;
+}
+
+.light-17 {
+    left: 352px;
+    top: 679px;
+    background-color: #00F;
+    animation: xmas-light-blue 1s 0.7s infinite ease-in;
+}
+
+.light-18 {
+    left: 366px;
+    top: 666px;
+    background-color: #e2d600;
+    animation: xmas-light-yellow 1s 0.9s infinite ease-in;
+}
+
+.light-19 {
+    left: 362px;
+    top: 688px;
+    background-color: #F00;
+    animation: xmas-light-red 1s 1.1s infinite ease-in;
+}
+
+
+.light-20 {
+    left: 376px;
+    top: 689px;
+    background-color: #00F;
+    animation: xmas-light-blue 1s 0.7s infinite ease-in;
+}
+
+@keyframes xmas-light-blue {
+    0% {
+        box-shadow: 0 0 0 transparent;
+    }
+    50% {
+        box-shadow: 0 0 10px 5px rgba(0, 0, 255, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 0 transparent;
+    }
+}
+
+@keyframes xmas-light-yellow {
+    0% {
+        box-shadow: 0 0 0 transparent;
+    }
+    50% {
+        box-shadow: 0 0 10px 5px rgba(226, 214, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 0 transparent;
+    }
+}
+
+@keyframes xmas-light-red {
+    0% {
+        box-shadow: 0 0 0 transparent;
+    }
+    50% {
+        box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 0 transparent;
+    }
 }
 
 @keyframes balloon {

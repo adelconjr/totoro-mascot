@@ -24,10 +24,10 @@ var bg = document.querySelector('img.bg'),
     dialogs = []
     hour = 0,
     currentConfig = "",
-    happyImage = "images/new/2023-12-04_totoro_noel2.png",
-    defaultImage = "images/new/2023-12-04_totoro_noel.png",
-    rainHappyImage = "images/new/2023-12-04_totoro_noel2.png",
-    rainDefaultImage = "images/new/2023-12-04_totoro_noel.png",
+    happyImage = "images/new/2023-12-05_totoro_noel2.png",
+    defaultImage = "images/new/2023-12-05_totoro_noel.png",
+    rainHappyImage = "images/new/2023-12-05_totoro_noel2.png",
+    rainDefaultImage = "images/new/2023-12-05_totoro_noel.png",
     firstImage = defaultImage,
     secondImage = globalConfigs.rain ? rainHappyImage : happyImage,
     heartsInterval = null,
@@ -293,6 +293,7 @@ function animate(sheet) {
     var size = window.innerWidth;
     var direction = 'left';
     var defaultTransform = 'rotateX(190deg) rotateZ(10deg)';
+    sheet.style.willChange = 'transform, left, top';
 
     sheet.style.transform = `rotate(-130deg) ${defaultTransform}`;
 
@@ -306,6 +307,8 @@ function animate(sheet) {
             clearInterval(interval1);
             clearInterval(interval2);
             clearInterval(interval3);
+
+            sheet.style.willChange = '';
             document.body.removeChild(sheet);
         }
     }, 500);
