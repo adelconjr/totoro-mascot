@@ -64,5 +64,11 @@
         "name": "Monster Freeze (Totoro Edition)",
         "rarity": 5,
         "image": "images/badges/monster-congelado.png"
+    },
+    {
+        "id": 12,
+        "name": "Bolo 4 meses AJ & VL",
+        "rarity": 5,
+        "image": "images/badges/bolo-4-meses.png"
     }
 ]

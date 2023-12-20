@@ -5,7 +5,7 @@
         "week": "ANY",
         "flower": false,
         "monster": false,
-        "showBadge": false,
+        "showBadge": true,
         "dialogs": [
             "Bom dia Sr. Victor",
             "4 meses",
@@ -21,8 +21,8 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
-        "monster": true,
-        "showBadge": false,
+        "monster": false,
+        "showBadge": true,
         "dialogs": [
             "Boa tarde Sr. Victor",
             "Quer ir andar pelas linhas do metrô?"
@@ -33,8 +33,8 @@
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
-        "monster": true,
-        "showBadge": false,
+        "monster": false,
+        "showBadge": true,
         "dialogs": [
             "Boa tarde Sr. Victor",
             "Posso te dar um abraço?"
@@ -46,7 +46,7 @@
         "week": "ANY",
         "flower": false,
         "monster": false,
-        "showBadge": false,
+        "showBadge": true,
         "dialogs": [
             "Oi Sr. Victor",
             "Parece que no fim acho que o Ad fez um sistema sobre você..."
@@ -56,9 +56,9 @@
         "period": [22, 24],
         "config": "NIGHT",
         "week": "ANY",
-        "flower": true,
+        "flower": false,
         "monster": false,
-        "showBadge": false,
+        "showBadge": true,
         "dialogs": [
             "Passaria a eternidade contigo",
             "Muito obrigado por tudo",

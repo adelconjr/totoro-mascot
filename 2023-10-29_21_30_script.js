@@ -273,7 +273,7 @@ function showBadge() {
         specialBadge.classList.remove('show');
 
         var now = new Date();
-        addBadge(7);
+        addBadge(12);
         
         if(localStorage.getItem('SPECIAL-BADGE') == null) {
             
