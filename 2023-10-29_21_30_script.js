@@ -946,7 +946,7 @@ function makeRain() {
 }
 
 function playRain() {
-    rainInterval = setInterval(makeRain, 150);
+    rainInterval = setInterval(makeRain, 500);
 
     document.querySelector('.rain-cloud-1').classList.add('show');
     document.querySelector('.rain-cloud-2').classList.add('show');
