@@ -7,16 +7,13 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "<b>E mais um dia de clima gélido</b>",
-            "<b>Totoro já não sabia mais o que fazer</b>",
-            "<b>Ele já não tinha muito tempo</b>",
-            "<b>Agora, com isso... seu tempo livre diminuiu</b>",
-            "<b>Ele tinha pouco tempo para resolver o problema na maquina</b>",
-            "<b>Se não resolvessem logo, todo o cenário poderia ficar congelado</b>",
-            "<b>Quem vai salvar o Natal?</b>",
-            "<b>Isso com certeza depende do nosso protagonista</b>",
-            "<i>Músicas natalinas na Jam 🎵</i>",
-            "<b style='font-size: 20px'>Totoro Especial de Natal</b>"
+            "Bom dia Sr. Victor",
+            "4 meses",
+            "Feliz dia 20",
+            "Feliz dia em que o Sr. conheceu o Ad",
+            "Se não fosse por isso, eu nem existiria",
+            "Então sou grato por dia 20/08 vc não ter recusado de ver o Ad Sr.",
+            "Desejo muito amor para vocês"
         ]
     },
     {
@@ -28,22 +25,11 @@
         "showBadge": false,
         "dialogs": [
             "Boa tarde Sr. Victor",
-            "Muito frio por aí?",
-            "Trouxe um presente para o Sr.",
-            "Mesmo com tanta neve espalhada por aí",
-            "E com todo o cenário congelado",
-            "Consegui instalar umas luzes",
-            "Amanhã acho que consigo umas decorações para nossa árvore",
-            "Gostou?",
-            "Espero que sim",
-            "Vejo que o Sr. está cansado",
-            "Tome um energético",
-            "Ele ta um pouquinho diferente",
-            "Mas fica frio aí que logo ele derrete"
+            "Quer ir andar pelas linhas do metrô?"
         ]
     },
     {
-        "period": [17, 20],
+        "period": [17, 21],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
@@ -51,59 +37,33 @@
         "showBadge": false,
         "dialogs": [
             "Boa tarde Sr. Victor",
-            "Muito frio por aí?",
-            "Atualizações para o Sr.",
-            "Não consegui reverter a ação da máquina de resfriamento",
-            "O nosso cenário aos poucos está congelando",
-            "Vamos ter que continuar assim",
-            "Pelo menos até o natal",
-            "Pois estamos ocupados com os presentes...",
-            "Mas não deixaremos de enfeitar o cenário",
-            "Vamos ver o que podemos fazer...",
-            "Você deve estar cansado né?",
-            "Pegue esse Monster...",
-            "Ops, acho que ele está um pouquinho diferente..."
+            "Posso te dar um abraço?"
         ]
     },
     {
-        "period": [20, 21],
+        "period": [21, 22],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "... 29, 30 31",
-            "... Ah Sr. Victor?",
-            "Desculpa nem tive tempo de trocar de roupa",
-            "Estava embalando presentes",
-            "Sim, temos muitos pedidos esse ano",
-            "Nem consegui trocar minha roupa",
-            "Muito serviço",
-            "Ufa!",
-            "Como foi seu dia?",
-            "Conseguiu descansar?",
-            "Em breve trago mais nóticias",
-            "Mas por enquanto não posso dizer muito",
-            "Deixa eu voltar ao trabalho",
-            "Fuii"
+            "Oi Sr. Victor",
+            "Parece que no fim acho que o Ad fez um sistema sobre você..."
         ]
     },
     {
-        "period": [21, 24],
+        "period": [22, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Boa noite Sr. Victor",
-            "Por enquanto é isso que temos aqui no nosso cenário",
-            "Talvez amanhã eu traga presentes",
-            "Agora vamos dormir",
-            "Você deve estar cansado",
-            "Boa noite e bom descanso",
-            "Tome uma florzinha"
+            "Passaria a eternidade contigo",
+            "Muito obrigado por tudo",
+            "Te amo",
+            "Feliz dia 20"
         ]
     },
     {
