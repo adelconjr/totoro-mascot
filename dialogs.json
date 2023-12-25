@@ -53,7 +53,7 @@
         ]
     },
     {
-        "period": [22, 24],
+        "period": [22, 23],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
@@ -67,7 +67,33 @@
         ]
     },
     {
-        "period": [0, 5],
+        "period": [23, 24],
+        "config": "NIGHT",
+        "week": "ANY",
+        "flower": false,
+        "monster": false,
+        "showBadge": true,
+        "dialogs": [
+            "Que a noite natal ilumine nossos corações",
+            "E o amor que fez eu vir a existência aqueça nossos corações",
+            "Um Feliz Natal Sr. Victor"
+        ]
+    },
+    {
+        "period": [0, 3],
+        "config": "NIGHT",
+        "week": "ANY",
+        "flower": false,
+        "monster": false,
+        "showBadge": false,
+        "dialogs": [
+            "Feliz Natal Sr. Victor"
+            "🌟😊🫡"
+        ]
+    },
+    
+    {
+        "period": [3, 5],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
