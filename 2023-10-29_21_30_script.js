@@ -24,10 +24,10 @@ var bg = document.querySelector('img.bg'),
     dialogs = []
     hour = 0,
     currentConfig = "",
-    happyImage = "images/new/2023-12-05_totoro_noel2.png",
-    defaultImage = "images/new/2023-12-05_totoro_noel.png",
-    rainHappyImage = "images/new/2023-12-05_totoro_noel2.png",
-    rainDefaultImage = "images/new/2023-12-05_totoro_noel.png",
+    happyImage = "images/new/2023-12-25_totoro_noel2.png",
+    defaultImage = "images/new/2023-12-25_totoro_noel.png",
+    rainHappyImage = "images/new/2023-12-25_totoro_noel2.png",
+    rainDefaultImage = "images/new/2023-12-25_totoro_noel.png",
     firstImage = defaultImage,
     secondImage = globalConfigs.rain ? rainHappyImage : happyImage,
     heartsInterval = null,
@@ -270,7 +270,7 @@ function showBadge() {
     specialBadge.classList.add('show');
 
     specialBadge.addEventListener('click', () => {
-        specialBadge.classList.remove('show');
+        /*specialBadge.classList.remove('show');
 
         var now = new Date();
         addBadge(12);
@@ -279,7 +279,21 @@ function showBadge() {
             
             addFriendship(20);
             localStorage.setItem('SPECIAL-BADGE', now.getDate());
-        }
+        }*/
+
+        specialBadge.classList.remove('show');
+
+        const giftScreen = document.getElementById('gift-screen');
+
+        giftScreen.classList.add('show');
+
+        giftScreen.addEventListener('click', () => {
+            giftScreen.classList.remove('show');
+        });
+
+        setTimeout(() => {
+            giftScreen.classList.remove('show');
+        }, 15000);
     });
 
     specialBadgeTimeout = setTimeout(() => {
@@ -946,7 +960,7 @@ function makeRain() {
 }
 
 function playRain() {
-    rainInterval = setInterval(makeRain, 500);
+    rainInterval = setInterval(makeRain, 1000);
 
     document.querySelector('.rain-cloud-1').classList.add('show');
     document.querySelector('.rain-cloud-2').classList.add('show');

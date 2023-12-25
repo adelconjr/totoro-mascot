@@ -7,67 +7,42 @@
         "monster": false,
         "showBadge": true,
         "dialogs": [
-            "Bom dia Sr. Victor",
-            "4 meses",
-            "Feliz dia 20",
-            "Feliz dia em que o Sr. conheceu o Ad",
-            "Se não fosse por isso, eu nem existiria",
-            "Então sou grato por dia 20/08 vc não ter recusado de ver o Ad Sr.",
-            "Desejo muito amor para vocês"
+            "ho ho ho",
+            "Feliz Natal Sr. Victor",
+            "Tenho presentes",
+            "Abra e veja qual é meu presente nesse natal"
         ]
     },
     {
-        "period": [12, 17],
+        "period": [12, 15],
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
         "monster": false,
         "showBadge": true,
         "dialogs": [
-            "Boa tarde Sr. Victor",
-            "Quer ir andar pelas linhas do metrô?"
+            "ho ho ho",
+            "Feliz Natal Sr. Victor",
+            "Tenho presentes",
+            "Abra e veja qual é meu presente nesse natal"
         ]
     },
     {
-        "period": [17, 21],
+        "period": [15, 19],
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
         "monster": false,
         "showBadge": true,
         "dialogs": [
-            "Boa tarde Sr. Victor",
-            "Posso te dar um abraço?"
+            "ho ho ho",
+            "Feliz Natal Sr. Victor",
+            "Tenho presentes",
+            "Abra e veja qual é meu presente nesse natal"
         ]
     },
     {
-        "period": [21, 22],
-        "config": "NIGHT",
-        "week": "ANY",
-        "flower": false,
-        "monster": false,
-        "showBadge": true,
-        "dialogs": [
-            "Oi Sr. Victor",
-            "Parece que no fim acho que o Ad fez um sistema sobre você..."
-        ]
-    },
-    {
-        "period": [22, 23],
-        "config": "NIGHT",
-        "week": "ANY",
-        "flower": false,
-        "monster": false,
-        "showBadge": true,
-        "dialogs": [
-            "Passaria a eternidade contigo",
-            "Muito obrigado por tudo",
-            "Te amo",
-            "Feliz dia 20"
-        ]
-    },
-    {
-        "period": [23, 25],
+        "period": [19, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
