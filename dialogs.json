@@ -67,7 +67,7 @@
         ]
     },
     {
-        "period": [23, 24],
+        "period": [23, 25],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
