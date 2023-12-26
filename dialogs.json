@@ -5,12 +5,11 @@
         "week": "ANY",
         "flower": false,
         "monster": false,
-        "showBadge": true,
+        "showBadge": false,
         "dialogs": [
-            "ho ho ho",
-            "Feliz Natal Sr. Victor",
-            "Tenho presentes",
-            "Abra e veja qual é meu presente nesse natal"
+            "Bom dia Sr. Victor já conferiu a nova atualização?",
+            "Se não, pergunte para o Ad ele te explica",
+            "(spoiler) notou algo de diferente na tela?"
         ]
     },
     {
@@ -47,11 +46,18 @@
         "week": "ANY",
         "flower": false,
         "monster": false,
-        "showBadge": true,
+        "showBadge": false,
         "dialogs": [
-            "Que a noite natal ilumine nossos corações",
-            "E o amor que fez eu vir a existência aqueça nossos corações",
-            "Um Feliz Natal Sr. Victor"
+            "Boa noite Sr. Victor",
+            "Trouxe a atualização mais esperada do ano",
+            "Como presente pelo ano",
+            "E por tudo que o Sr. significa para mim",
+            "Reuni todas as atualizações do ano em uma só",
+            "Ta vendo aquele ícone ali no canto direito da tela abaixo das badges?",
+            "Isso mesmo, é o menu das skins",
+            "Agora o Sr. pode escolher qual skin quer usar",
+            "Fique a vontade para me personalizar Sr. Victor",
+            "Espero que se divirta muito :)"
         ]
     },
     {

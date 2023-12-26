@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "Totoro default",
+        "key": "TOTORO_DEFAULT",
+        "icon": "default.jpg",
+        "defaultImage": "2023-09-2023_totoro1.png",
+        "happyImage": "2023-09-2023_totoro1-2.png"
+    },
+    {
+        "id": 2,
+        "name": "Totoro clássico",
+        "key": "TOTORO_RAIN",
+        "icon": "rain.jpg",        
+        "defaultImage": "totoro_chuva1.png",
+        "happyImage": "totoro_chuva_sorriso1.png"
+    },
+    {
+        "id": 3,
+        "name": "Totoro com óculos do Ad",
+        "key": "TOTORO_AD",
+        "icon": "oculos-do-ad.jpg",        
+        "defaultImage": "2023-12-26_totoro_oculos_ad.png",
+        "happyImage": "2023-12-26_totoro_oculos_ad2.png"
+    },
+    {
+        "id": 4,
+        "name": "Totoro Drácula",
+        "key": "TOTORO_DRACULA",
+        "icon": "dracula.jpg",        
+        "defaultImage": "halloween-1.png",
+        "happyImage": "halloween-2.png"
+    },
+    {
+        "id": 5,
+        "name": "Totoro Aniversário",
+        "key": "TOTORO_ANIVERSARIO",
+        "icon": "aniversario.jpg",        
+        "defaultImage": "aniversario_normal.png",
+        "happyImage": "aniversario_happy.png"
+    },
+    {
+        "id": 6,
+        "name": "Totoro elfo ajudante (sem neve)",
+        "key": "TOTORO_ELFO_SEM_NEVE",
+        "icon": "elfo.jpg",        
+        "defaultImage": "2023-12-01_totoro_noel.png",
+        "happyImage": "2023-12-01_totoro_noel2.png"
+    },
+    {
+        "id": 7,
+        "name": "Totoro elfo ajudante (com neve)",
+        "key": "TOTORO_ELFO_COM_NEVE",
+        "icon": "elfo.jpg",        
+        "defaultImage": "2023-12-04_totoro_noel.png",
+        "happyImage": "2023-12-04_totoro_noel2.png"
+    },
+    {
+        "id": 8,
+        "name": "Totoro Noel",
+        "key": "TOTORO_NOEL",
+        "icon": "noel.jpg",        
+        "defaultImage": "2023-12-25_totoro_noel.png",
+        "happyImage": "2023-12-25_totoro_noel2.png"
+    }
+]

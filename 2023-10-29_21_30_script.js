@@ -24,10 +24,10 @@ var bg = document.querySelector('img.bg'),
     dialogs = []
     hour = 0,
     currentConfig = "",
-    happyImage = "images/new/2023-12-25_totoro_noel2.png",
-    defaultImage = "images/new/2023-12-25_totoro_noel.png",
-    rainHappyImage = "images/new/2023-12-25_totoro_noel2.png",
-    rainDefaultImage = "images/new/2023-12-25_totoro_noel.png",
+    happyImage = "images/new/2023-09-2023_totoro1-2.png",
+    defaultImage = "images/new/2023-09-2023_totoro1.png",
+    rainHappyImage = "images/new/totoro_chuva_sorriso1.png",
+    rainDefaultImage = "images/new/totoro_chuva1.png",
     firstImage = defaultImage,
     secondImage = globalConfigs.rain ? rainHappyImage : happyImage,
     heartsInterval = null,
@@ -47,7 +47,9 @@ var bg = document.querySelector('img.bg'),
         dialogs: []
     },
     monsterAudio = null,
-    monsterScreenInterval = null;
+    monsterScreenInterval = null
+    skinUpdated = true,
+    popupLoading = document.getElementById('popup-loading');
 
 const statusbar = {
     friendship: 0,
@@ -72,6 +74,32 @@ canvas1.radius = canvas1.width / 2;
 
 canvas2.center = [canvas2.left + canvas2.width / 2, canvas2.top + canvas2.height / 2];
 canvas2.radius = canvas2.width / 2;
+
+document.getElementById('bg-img').onload = () => {
+    popupLoading.classList.remove('show');
+
+    if(skinUpdated) {
+        skinUpdated = false;
+
+        const popup_img_bg = document.getElementById('popup-loading-bg');
+        popup_img_bg.classList.add('show');
+
+        setTimeout(() => {
+            popup_img_bg.classList.remove('show');
+        }, 3000);
+    }
+}
+
+const setSkinImages = (img1, img2) => {
+    popupLoading.classList.add('show');
+
+    skinUpdated = true;
+
+    defaultImage = img1;
+    happyImage = img2;
+
+    updateFriendship();
+}
 
 function bubbles() {
     const monster = document.getElementById('monster-screen');
@@ -347,8 +375,9 @@ function animate(sheet) {
 function draw() {
     var sheet = document.createElement('img');
     sheet.classList.add('sheet');
-    //sheet.src = "images/folhas.png";
-    sheet.src = "images/floquinho.png";
+    sheet.src = "images/folhas.png";
+    //sheet.src = "images/floquinho.png";
+    sheet.setAttribute('draggable', false);
     var ramdomTop = Math.floor(Math.random() * window.innerHeight + 250);
     sheet.style.top = ramdomTop + "px";
 

@@ -1,0 +1,69 @@
+
+
+
+function main() {
+    const skinsSource = "images/new/";
+    const iconsSource = "images/skins-icons/";
+    const overlay  = document.getElementById('popup-skins-overlay');
+    const popup_skins  = document.getElementById('popup-skins');
+    const btnSkin = document.getElementById('btn-skins');
+    const skin_key = 'SKIN_SELECTED';
+    let skins = [];
+
+    const skinSelected = localStorage.getItem(skin_key);
+    
+    btnSkin.addEventListener('click', () => {
+        console.log('sim');
+        overlay.classList.add('show');
+    });    
+
+
+    const loadSkins = () => {
+        const now = new Date().getTime();
+
+        axios.get(`skins.json?t=${now}`)
+            .then(response => {
+                skins = response.data;
+                listSkins();
+            });
+    }
+
+    const listSkins = () => {
+        skins.map(skin => {
+            
+            const skinItem = document.createElement('div');
+            skinItem.classList.add('skin-item');
+
+            if(skin.key == skinSelected) {
+                skinItem.classList.add('selected');
+                setSkinImages(`${skinsSource}${skin.defaultImage}`, `${skinsSource}${skin.happyImage}`);
+            }
+
+            skinItem.style.backgroundImage = `url(${iconsSource}${skin.icon})`;
+
+            popup_skins.appendChild(skinItem);
+
+            skinItem.addEventListener('click', () => {
+                localStorage.setItem(skin_key, skin.key);
+
+                setSkinImages(`${skinsSource}${skin.defaultImage}`, `${skinsSource}${skin.happyImage}`);
+
+                const selected = document.querySelector('.skin-item.selected');
+                selected.classList.remove('selected');
+
+                skinItem.classList.add('selected');
+
+                overlay.classList.remove('show');
+            });
+        });
+    }
+
+
+
+    loadSkins();
+}
+
+
+main();
+
+

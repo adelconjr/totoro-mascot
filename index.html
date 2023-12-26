@@ -12,16 +12,24 @@
     <meta property="og:image" content="https://adelconjr.github.io/totoro-mascot/cover.png" />
 
     <title>Totoro</title>
-    <link rel="stylesheet" href="2023-10-29_21_30_style.css?t=202312251300">
+    <link rel="stylesheet" href="2023-10-29_21_30_style.css?t=202312262100">
 </head>
 <body>
     <div id="bg">
         <p id="loading">Atualizando dialogos...</p>
-        <img class="bg" src="images/new/2023-09-2023_totoro1.png" alt="">
+        <img id="bg-img" class="bg" src="images/new/2023-09-2023_totoro1.png" alt="">
+
+        <div id="popup-loading-bg">
+            <p>Skin atualizada com sucesso!</p>
+        </div>
+
+        <div id="popup-loading">
+            <p>Carregando...</p>
+        </div>
 
         <img id="rabo" src="images/rabo.png" alt="">
         <img id="sakura" draggable="false" src="images/flor-sakura2.png" alt="">
-        <img id="monster" draggable="false" src="images/badges/monster-congelado.png" alt="">
+        <img id="monster" draggable="false" src="images/badges/monster.png" alt="">
         <img id="special-badge" draggable="false" src="images/presente.png" alt="">
 
         <div id="starsSky"></div>
@@ -30,7 +38,6 @@
         <div class="eyes" id="right-eye"></div>
         <img id="eye1" class="eyes-img" draggable="false" src="images/olho.png" />
         <img id="eye2" class="eyes-img" draggable="false" src="images/olho.png" />
-
 
         <div id="gift-screen">
             <img draggable="false" src="images/presente-victor.jpg" />
@@ -145,6 +152,10 @@
 
         <a href="badges.html" id="btn-badges"  >
             <img src="images/badge-icon.png" />
+        </a>
+
+        <a href="#" id="btn-skins">
+            <img src="images/skin-icon.png" />
         </a>
 
         <span id="more-score"></span>
@@ -263,35 +274,17 @@
         <div id="console"></div>
     </div>
 
-    <span class="xmas-lights light-1"></span>
-    <span class="xmas-lights light-2"></span>
-    <span class="xmas-lights light-3"></span>
-    <span class="xmas-lights light-4"></span>
-    <span class="xmas-lights light-5"></span>
-
-    <span class="xmas-lights light-6"></span>
-    <span class="xmas-lights light-7"></span>
-    <span class="xmas-lights light-8"></span>
-    <span class="xmas-lights light-9"></span>
-    <span class="xmas-lights light-10"></span>
-    <span class="xmas-lights light-11"></span>
-
-    <span class="xmas-lights light-12"></span>
-    <span class="xmas-lights light-13"></span>
-    <span class="xmas-lights light-14"></span>
-    <span class="xmas-lights light-15"></span>
-
-    <span class="xmas-lights light-16"></span>
-    <span class="xmas-lights light-17"></span>
-
-    <span class="xmas-lights light-18"></span>
-    <span class="xmas-lights light-19"></span>
-    <span class="xmas-lights light-20"></span>
-
     <div id="monster-screen"></div>
 
+    <div id="popup-skins-overlay">
+        <div id="popup-skins"></div>
+    </div>
+    
+
+    <script type="text/javascript" src="axios.min.js"></script>
     <script type="text/javascript" src="hammer.min.js"></script>
     <script type="text/javascript" src="moment.js"></script>
-    <script type="text/javascript" src="2023-10-29_21_30_script.js?t=202312251300"></script>
+    <script type="text/javascript" src="2023-10-29_21_30_script.js?t=202312262100"></script>
+    <script type="text/javascript" src="skins.js?t=202312262100"></script>
 </body>
 </html>
