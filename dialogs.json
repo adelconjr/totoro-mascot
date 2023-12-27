@@ -18,12 +18,19 @@
         "week": "ANY",
         "flower": false,
         "monster": false,
-        "showBadge": true,
+        "showBadge": false,
         "dialogs": [
-            "ho ho ho",
-            "Feliz Natal Sr. Victor",
-            "Tenho presentes",
-            "Abra e veja qual é meu presente nesse natal"
+            "Boa tarde Sr. Victor",
+            "Como está o seu dia?",
+            "Trouxe a atualização mais esperada do ano",
+            "Como presente pelo ano",
+            "E por tudo que o Sr. significa para mim",
+            "Reuni todas as atualizações do ano em uma só",
+            "Ta vendo aquele ícone ali no canto direito da tela abaixo das badges?",
+            "Isso mesmo, é o menu das skins",
+            "Agora o Sr. pode escolher qual skin quer usar",
+            "Fique a vontade para me personalizar Sr. Victor",
+            "Espero que se divirta muito :)"
         ]
     },
     {
