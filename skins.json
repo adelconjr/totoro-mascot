@@ -24,6 +24,14 @@
         "happyImage": "2023-12-26_totoro_oculos_ad2.png"
     },
     {
+        "id": 3,
+        "name": "Totoro com óculos do Ad (bravo)",
+        "key": "TOTORO_AD_BRAVO",
+        "icon": "oculos-do-ad-serio.jpg",        
+        "defaultImage": "2023-12-26_totoro_oculos_ad.png",
+        "happyImage": "2023-12-26_totoro_oculos_ad.png"
+    },
+    {
         "id": 4,
         "name": "Totoro Drácula",
         "key": "TOTORO_DRACULA",

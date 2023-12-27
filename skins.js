@@ -13,9 +13,14 @@ function main() {
     const skinSelected = localStorage.getItem(skin_key);
     
     btnSkin.addEventListener('click', () => {
-        console.log('sim');
         overlay.classList.add('show');
-    });    
+    }); 
+
+    overlay.addEventListener('click', (e) => {
+        if(e.target.id === "popup-skins-overlay") {
+            overlay.classList.remove('show');
+        }
+    });
 
 
     const loadSkins = () => {
@@ -32,14 +37,21 @@ function main() {
         skins.map(skin => {
             
             const skinItem = document.createElement('div');
+            const desc = document.createElement('p');
+            desc.innerText = skin.name;
+            
+            const img = document.createElement('img');
+            img.src = `${iconsSource}${skin.icon}`;
+
+            skinItem.appendChild(img);
+            skinItem.appendChild(desc);
+
             skinItem.classList.add('skin-item');
 
             if(skin.key == skinSelected) {
                 skinItem.classList.add('selected');
                 setSkinImages(`${skinsSource}${skin.defaultImage}`, `${skinsSource}${skin.happyImage}`);
             }
-
-            skinItem.style.backgroundImage = `url(${iconsSource}${skin.icon})`;
 
             popup_skins.appendChild(skinItem);
 
@@ -49,7 +61,9 @@ function main() {
                 setSkinImages(`${skinsSource}${skin.defaultImage}`, `${skinsSource}${skin.happyImage}`);
 
                 const selected = document.querySelector('.skin-item.selected');
-                selected.classList.remove('selected');
+                if(selected) {
+                    selected.classList.remove('selected');
+                }                
 
                 skinItem.classList.add('selected');
 

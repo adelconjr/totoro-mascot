@@ -91,6 +91,10 @@ document.getElementById('bg-img').onload = () => {
 }
 
 const setSkinImages = (img1, img2) => {
+    hideBaloon();
+    clearTimeout(timeoutDialog);
+    timeoutDialog = null;
+
     popupLoading.classList.add('show');
 
     skinUpdated = true;
@@ -156,17 +160,17 @@ function showMonsterScreen() {
     setTimeout(reset, 7000);
 }
 
-function playMonsterAudio() {
+const playMonsterAudio = () => {
     if(monsterAudio && monsterAudio.paused) {
         monsterAudio.play();
     }
 }
 
-function showFirstImage() {
+const showFirstImage = () => {
     bg.src = firstImage;
 }
 
-function showSecondImage() {
+const showSecondImage = () => {
     bg.src = secondImage;
 }
 
@@ -393,8 +397,6 @@ function cloudAnimation() {
     var cloud = document.getElementById('cloud-container'),
         randomTop = Math.floor(Math.random() * 200 + 20),
         interval = null;
-    
-    console.log(cloud);
 
     const first = () => {
         cloud.style.top = `${randomTop}px`;
@@ -587,10 +589,11 @@ function updateFriendship() {
     var el = document.getElementById('friendship');
     var fStatus = document.getElementById('friendship-status');
 
+    secondImage = globalConfigs.rain ? rainHappyImage : happyImage;
+
     if(timeoutDialog == null) {
         firstImage = globalConfigs.rain ? rainDefaultImage : defaultImage ;
     }
-
 
     if(statusbar.friendship < 40) {
         color = "#FF0000";
@@ -680,7 +683,6 @@ function gameStatus() {
     
     if(localStorage.getItem('LAST_SEEN') != null) {
         lastSeen = new Date(localStorage.getItem('LAST_SEEN'));
-        console.log(localStorage.getItem('LAST_SEEN'));
 
         var diffMinutes = Math.floor(Math.abs(lastSeen.getTime() - now.getTime()) / 60000);        
         var diffHours = Math.floor(Math.abs((lastSeen.getTime() - now.getTime()) / 3600000));
@@ -829,8 +831,6 @@ function main() {
         if(dialogs.length > 0) {
             showBaloon(dialogs[indexTxt]);
 
-            console.log(dialogs[indexTxt]);
-
             if(dialogs[indexTxt].length > 20) {
                 countdownDialog = 5000;
             }
@@ -860,7 +860,6 @@ function main() {
         }
 
         timeoutDialog = setTimeout(() => {
-            console.log('TO', timeoutDialog);
             showFirstImage();
             hideBaloon();
         }, countdownDialog);
@@ -962,7 +961,6 @@ function showMoon() {
 
 function hideMoon () {
     moon.classList.remove('show');
-    console.log('aqui');
 
     hideStars();
 }
@@ -1027,7 +1025,6 @@ function updateRain() {
             secondImage = globalConfigs.rain ? rainHappyImage : happyImage;
 
             if(timeoutDialog == null) {
-                console.log('teste');
                 showFirstImage();
             }
 
