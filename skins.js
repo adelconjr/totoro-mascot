@@ -59,12 +59,13 @@ function main() {
                 const now = new Date().getTime();
 
                 if(skin.id == 2) {
-                    axios.get(`update-config.php?rain=on&t=${now}`).then(() => updateRain());
+                    localStorage.setItem('RAIN', 'ON');
                 }
                 else {
-                    axios.get(`update-config.php?rain=off&t=${now}`).then(() => updateRain());
+                    localStorage.setItem('RAIN', 'OFF');
                 }
-
+                
+                updateRain();
                 localStorage.setItem(skin_key, skin.key);
 
                 setSkinImages(`${skinsSource}${skin.defaultImage}`, `${skinsSource}${skin.happyImage}`);

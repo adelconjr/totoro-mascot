@@ -92,7 +92,7 @@ document.getElementById('bg-img').onload = () => {
 
 const setSkinImages = (img1, img2) => {
     globalConfigs.rain = false;
-    
+
     hideBaloon();
     clearTimeout(timeoutDialog);
     timeoutDialog = null;
@@ -1006,6 +1006,8 @@ function updateVersion() {
 }
 
 function updateRain() {
+    const rainStore = localStorage.getItem('RAIN');
+
     var date = new Date();
     var xhr = new XMLHttpRequest();
 
@@ -1015,7 +1017,8 @@ function updateRain() {
         if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
             var configs = JSON.parse(this.responseText);
 
-            globalConfigs.rain = configs.rain;
+            //globalConfigs.rain = configs.rain;
+            globalConfigs.rain = rainStore == "ON" ? true : false;
             globalConfigs.version = configs.version;
             updateVersion();
 
