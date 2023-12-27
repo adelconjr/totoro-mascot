@@ -91,6 +91,8 @@ document.getElementById('bg-img').onload = () => {
 }
 
 const setSkinImages = (img1, img2) => {
+    globalConfigs.rain = false;
+    
     hideBaloon();
     clearTimeout(timeoutDialog);
     timeoutDialog = null;
@@ -971,12 +973,8 @@ function hideStars () {
 }
 
 function makeRain() {
-    const classes = ['snow-1', 'snow-2'];
-    const randomClass = Math.floor(Math.random() * 2);
-
     var el = document.createElement('span');
-    el.classList.add('snow');
-    el.classList.add(classes[randomClass]);
+    el.classList.add('rain');
     el.style.left = `${Math.floor(Math.random() * window.innerWidth)}px`;
 
     document.body.appendChild(el);
@@ -987,7 +985,7 @@ function makeRain() {
 }
 
 function playRain() {
-    rainInterval = setInterval(makeRain, 1000);
+    rainInterval = setInterval(makeRain, 200);
 
     document.querySelector('.rain-cloud-1').classList.add('show');
     document.querySelector('.rain-cloud-2').classList.add('show');

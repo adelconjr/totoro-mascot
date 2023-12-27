@@ -851,6 +851,7 @@ body.is-rain.night #cloud,
     right: 10px;
     top: 10px;
     display: block;
+    z-index: 2000;
 }
 #btn-badges img {
     width: 100%;
@@ -1033,6 +1034,7 @@ body.is-rain.night #cloud,
     right: 10px;
     top: 50px;
     display: block;
+    z-index: 2000;
 }
 
 #btn-skins img {
@@ -1082,9 +1084,10 @@ body.is-rain.night #cloud,
 }
 
 #popup-skins {
-    width: 80%;
+    width: 90%;
     height: auto;
     box-sizing: border-box;
+    overflow-x: auto;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -1093,9 +1096,14 @@ body.is-rain.night #cloud,
     padding: 10px;
     position: absolute;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+#popup-skins > img {
+    position: fixed;
+    right: 5%;
+
 }
 
 #popup-skins > .skin-item {
@@ -1105,8 +1113,12 @@ body.is-rain.night #cloud,
     background-position: center;
     background-size: cover;
     border: 3px solid #b9b07a;
-    margin: 2px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
     background-color: #b9b07a;
+    flex-basis: 110px;
+    flex-shrink: 0;
 }
 
 #popup-skins > .skin-item p {

@@ -56,6 +56,15 @@ function main() {
             popup_skins.appendChild(skinItem);
 
             skinItem.addEventListener('click', () => {
+                const now = new Date().getTime();
+
+                if(skin.id == 2) {
+                    axios.get(`update-config.php?rain=on&t=${now}`).then(() => updateRain());
+                }
+                else {
+                    axios.get(`update-config.php?rain=off&t=${now}`).then(() => updateRain());
+                }
+
                 localStorage.setItem(skin_key, skin.key);
 
                 setSkinImages(`${skinsSource}${skin.defaultImage}`, `${skinsSource}${skin.happyImage}`);
