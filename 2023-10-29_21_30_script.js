@@ -304,6 +304,7 @@ function showBadge() {
     specialBadge.classList.add('show');
 
     specialBadge.addEventListener('click', () => {
+        addBadge(13);
         /*specialBadge.classList.remove('show');
 
         var now = new Date();

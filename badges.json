@@ -70,5 +70,11 @@
         "name": "Bolo 4 meses AJ & VL",
         "rarity": 5,
         "image": "images/badges/bolo-4-meses.png"
+    },
+    {
+        "id": 13,
+        "name": "Presente da TARDIS",
+        "rarity": 5,
+        "image": "images/presente.png"
     }
 ]
