@@ -7,9 +7,12 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Bom dia Sr. Victor já conferiu a nova atualização?",
-            "Se não, pergunte para o Ad ele te explica",
-            "(spoiler) notou algo de diferente na tela?"
+            "Bom dia Sr. Victor",
+            "Feliz ano novo",
+            "Como o Sr. Está?",
+            "Espero que bem.",
+            "Bons momentos nos esperam esse ano",
+            "E eu espero estar presente em todos eles"
         ]
     },
     {
@@ -17,13 +20,14 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
-        "monster": false,
-        "showBadge": true,
+        "monster": true,
+        "showBadge": false,
         "dialogs": [
-            "ho ho ho",
-            "Feliz Natal Sr. Victor",
-            "Tenho presentes",
-            "Abra e veja qual é meu presente nesse natal"
+            "Boa tarde Sr. Victor",
+            "Trabalhando muito?",
+            "Se tiver muito cansado tome este energético",
+            "E tudo vai ficar ...",
+            "MONSTER"
         ]
     },
     {
@@ -31,17 +35,20 @@
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
-        "monster": false,
-        "showBadge": true,
+        "monster": true,
+        "showBadge": false,
         "dialogs": [
-            "ho ho ho",
-            "Feliz Natal Sr. Victor",
-            "Tenho presentes",
-            "Abra e veja qual é meu presente nesse natal"
+            "Boa tarde Sr. Victor",
+            "Como foi seu dia?",
+            "Talvez esteja cansado",
+            "Se precisar, pegue um monster",
+            "Ou prefere dormir no caminho?",
+            "Mas de qualquer forma vai ter que enviar a Jam para o Ad",
+            "Pedidos dele Sr. eu só recebo ordens"
         ]
     },
     {
-        "period": [19, 24],
+        "period": [19, 22],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
@@ -49,32 +56,29 @@
         "showBadge": false,
         "dialogs": [
             "Boa noite Sr. Victor",
-            "Trouxe a atualização mais esperada do ano",
-            "Como presente pelo ano",
-            "E por tudo que o Sr. significa para mim",
-            "Reuni todas as atualizações do ano em uma só",
-            "Ta vendo aquele ícone ali no canto direito da tela abaixo das badges?",
-            "Isso mesmo, é o menu das skins",
-            "Agora o Sr. pode escolher qual skin quer usar",
-            "Fique a vontade para me personalizar Sr. Victor",
-            "Espero que se divirta muito :)"
+            "Qual a boa para hoje?",
+            "Já contou sobre seu dia para o Ad?",
+            "Vamos fazer o que hoje?",
+            "Bom... se bem que o importante é ter sua companhia",
+            "Seja para o que for, ela sempre é boa :)"
         ]
     },
     {
-        "period": [0, 3],
+        "period": [22, 24],
         "config": "NIGHT",
         "week": "ANY",
-        "flower": false,
+        "flower": true,
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Feliz Natal Sr. Victor",
-            "🌟😊🫡"
+            "Boa noite Sr. Victor",
+            "Durma bem",
+            "Até mais tarde",
+            "🫡"
         ]
-    },
-    
+    },    
     {
-        "period": [3, 5],
+        "period": [0, 5],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
