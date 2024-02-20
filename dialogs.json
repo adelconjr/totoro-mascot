@@ -8,11 +8,12 @@
         "showBadge": false,
         "dialogs": [
             "Bom dia Sr. Victor",
-            "Feliz ano novo",
-            "Como o Sr. Está?",
-            "Espero que bem.",
-            "Bons momentos nos esperam esse ano",
-            "E eu espero estar presente em todos eles"
+            "Mais um dia 20",
+            "E com isso são <strong>6 MESES</strong>",
+            "Quase um ano e contando...",
+            "...",
+            "...",
+            "PAPAPUPU 🎆 🎇 PAPUL 🎆 🎇 🎇 🎆 FIIILLL PUUUUU POW POW POW POW"
         ]
     },
     {
@@ -20,14 +21,16 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
-        "monster": true,
+        "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Boa tarde Sr. Victor",
-            "Trabalhando muito?",
-            "Se tiver muito cansado tome este energético",
-            "E tudo vai ficar ...",
-            "MONSTER"
+            "Feliz 6 meses com Ad, Sr. Victor",
+            "São 182 dias e meio!",
+            "Muita coisa não é mesmo?",
+            "3",
+            "2",
+            "1",
+            "PAPAPUPU 🎆 🎇 PAPUL 🎆 🎇 🎇 🎆 FIIILLL PUUUUU POW POW POW POW"
         ]
     },
     {
@@ -35,20 +38,20 @@
         "config": "AFTERNOON_2",
         "week": "ANY",
         "flower": false,
-        "monster": true,
+        "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Boa tarde Sr. Victor",
-            "Como foi seu dia?",
-            "Talvez esteja cansado",
-            "Se precisar, pegue um monster",
-            "Ou prefere dormir no caminho?",
-            "Mas de qualquer forma vai ter que enviar a Jam para o Ad",
-            "Pedidos dele Sr. eu só recebo ordens"
+            "Feliz 6 meses com Ad, Sr. Victor",
+            "São 182 dias e meio!",
+            "Muita coisa não é mesmo?",
+            "3",
+            "2",
+            "1",
+            "PAPAPUPU 🎆 🎇 PAPUL 🎆 🎇 🎇 🎆 FIIILLL PUUUUU POW POW POW POW"
         ]
     },
     {
-        "period": [19, 22],
+        "period": [19, 20],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
@@ -56,15 +59,16 @@
         "showBadge": false,
         "dialogs": [
             "Boa noite Sr. Victor",
-            "Qual a boa para hoje?",
-            "Já contou sobre seu dia para o Ad?",
-            "Vamos fazer o que hoje?",
-            "Bom... se bem que o importante é ter sua companhia",
-            "Seja para o que for, ela sempre é boa :)"
+            "Se 182 dias juntos foram bons, pq não uma vida inteira?",
+            "Eu topo e o Sr. ?",
+            "3",
+            "2",
+            "1",
+            "PAPAPUPU 🎆 🎇 PAPUL 🎆 🎇 🎇 🎆 FIIILLL PUUUUU POW POW POW POW"
         ]
     },
     {
-        "period": [22, 24],
+        "period": [20, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
@@ -72,9 +76,12 @@
         "showBadge": false,
         "dialogs": [
             "Boa noite Sr. Victor",
-            "Durma bem",
-            "Até mais tarde",
-            "🫡"
+            "Posso te dar um abraço?",
+            "Te amo viu?",
+            "3",
+            "2",
+            "1",
+            "PAPAPUPU 🎆 🎇 PAPUL 🎆 🎇 🎇 🎆 FIIILLL PUUUUU POW POW POW POW"
         ]
     },    
     {

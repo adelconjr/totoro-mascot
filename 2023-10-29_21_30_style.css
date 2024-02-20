@@ -502,8 +502,8 @@ body.night .cloud-2 {
 #img-collected {
     position: absolute;
     right: 15px;
-    top: 50px;
-    display: none;
+    top: 100px;
+    display: block;
 }
 
 #img-collected.show {
@@ -1135,6 +1135,43 @@ body.is-rain.night #cloud,
 
 #popup-skins > .skin-item.selected {
     border: 3px solid #22F;
+}
+
+
+#six-months-balloon {
+    width: 400px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 400px;
+    position: absolute;
+    z-index: 3000;
+    animation: sixballoon 5s infinite linear, sixBalloonTop 25s infinite linear;
+
+}
+
+@keyframes sixBalloonTop {
+    0% {
+        top: 100%;
+    }
+    100% {
+        top: -500px;
+    }
+}
+
+@keyframes sixballoon {
+    0% {
+        translate: -15px;
+        transform: rotateZ(5deg);
+    }
+    50% {
+        translate: 15px;
+        transform: rotateZ(-5deg);
+    }
+    100% {
+        translate: -15px;
+        transform: rotateZ(5deg);
+    }
 }
 
 @keyframes gift {

@@ -802,6 +802,27 @@ function quest() {
 
 }
 
+var movementsCount = 0;
+var sixMonthsBalloonAnimation = false;
+
+function animateSixMonthsBalloon() {
+    var el = document.createElement("img");
+    el.setAttribute("src", "images/6-meses.png");
+    el.setAttribute("id", "six-months-balloon");
+
+    console.log(el);
+
+    document.body.appendChild(el);
+
+    sixMonthsBalloonAnimation = true;
+
+    setTimeout(() => {
+        sixMonthsBalloonAnimation = false;
+        movementsCount = 0;
+        document.body.removeChild(el);
+    }, 25000);
+}
+
 function main() {
     var h = new Hammer(area);
 
@@ -830,6 +851,16 @@ function main() {
     h.on('panend', (e) => {
         showSecondImage();
         var countdownDialog = 3000;
+
+        movementsCount++;
+
+        if(movementsCount == 6) {
+            movementsCount = 0;
+
+            if(!sixMonthsBalloonAnimation) {
+                animateSixMonthsBalloon();
+            }
+        }
 
         if(dialogs.length > 0) {
             showBaloon(dialogs[indexTxt]);
