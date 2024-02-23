@@ -804,6 +804,7 @@ function quest() {
 
 var movementsCount = 0;
 var sixMonthsBalloonAnimation = false;
+var balloonTimeout = null;
 
 function animateSixMonthsBalloon() {
     var el = document.createElement("img");
@@ -814,13 +815,22 @@ function animateSixMonthsBalloon() {
 
     document.body.appendChild(el);
 
-    sixMonthsBalloonAnimation = true;
-
-    setTimeout(() => {
+    const removeBaloon = () => {
         sixMonthsBalloonAnimation = false;
         movementsCount = 0;
         document.body.removeChild(el);
-    }, 25000);
+    }
+
+    el.addEventListener('click', () => {
+        removeBaloon();
+
+        addBadge(14);
+        addFriendship(50);
+        clearTimeout(balloonTimeout);
+    });
+
+    sixMonthsBalloonAnimation = true;
+    balloonTimeout = setTimeout(removeBaloon, 25000);
 }
 
 function main() {

@@ -76,5 +76,11 @@
         "name": "Presente da TARDIS",
         "rarity": 5,
         "image": "images/presente.png"
+    },
+    {
+        "id": 14,
+        "name": "Balão de Totoros 6 mêses AJ & VL",
+        "rarity": 5,
+        "image": "images/6-meses.png"
     }
 ]

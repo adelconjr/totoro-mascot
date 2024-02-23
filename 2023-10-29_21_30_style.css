@@ -503,7 +503,7 @@ body.night .cloud-2 {
     position: absolute;
     right: 15px;
     top: 100px;
-    display: block;
+    display: none;
 }
 
 #img-collected.show {
