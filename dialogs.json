@@ -67,8 +67,8 @@
         "period": [19, 24],
         "config": "NIGHT",
         "week": "ANY",
-        "flower": true,
-        "monster": false,
+        "flower": false,
+        "monster": true,
         "showBadge": false,
         "dialogs": [
             "Teste,testando",
@@ -77,6 +77,8 @@
             "Não sei se ta certo kkk",
             "Pode colocar virgula nisso daqui?",
             "Oi, oi? Funcionou? rs",
+            "Te amo, viu?",
+            "Sei que o Sr. trabalhou muito hoje, por favor tome aqui esse monster, rs",
             "Enfim, sendo assim sim. Se é que funciou kkk"   
        ]
     },    
