@@ -47,7 +47,7 @@
         ]
     },
     {
-        "period": [19, 20],
+        "period": [18, 19],
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
@@ -64,7 +64,7 @@
         ]
     },
     {
-        "period": [20, 24],
+        "period": [19, 24],
         "config": "NIGHT",
         "week": "ANY",
         "flower": true,
