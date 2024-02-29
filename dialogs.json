@@ -71,14 +71,13 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Boa noite Sr. Victor",
-            "Posso te dar um abraço?",
-            "Te amo viu?",
-            "3",
-            "2",
-            "1",
-            "PAPAPUPU 🎆 🎇 PAPUL 🎆 🎇 🎇 🎆 FIIILLL PUUUUU POW POW POW POW"
-        ]
+            "Teste testando",
+            "Cof cof",
+            "Primeira vez fazendo isso",
+            "Não sei se ta certo kkk",
+            "Pode colocar virgula nisso daqui?",
+            "Oi oi? Funcionou?",
+            "Enfim sendo assim sim Se é que funciou kkk"
     },    
     {
         "period": [0, 5],
