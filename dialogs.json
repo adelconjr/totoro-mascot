@@ -71,13 +71,14 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Teste testando",
-            "Cof cof",
+            "Teste,testando",
+            "Cof, cof",
             "Primeira vez fazendo isso",
             "Não sei se ta certo kkk",
             "Pode colocar virgula nisso daqui?",
-            "Oi oi? Funcionou?",
-            "Enfim sendo assim sim Se é que funciou kkk"   
+            "Oi, oi? Funcionou? rs",
+            "Enfim sendo assim sim. 
+Se é que funciou kkk"   
        ]
     },    
     {
