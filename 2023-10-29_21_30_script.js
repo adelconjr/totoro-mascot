@@ -824,7 +824,7 @@ function animateSixMonthsBalloon() {
     el.addEventListener('click', () => {
         removeBaloon();
 
-        addBadge(14);
+        addBadge(15);
         addFriendship(50);
         clearTimeout(balloonTimeout);
     });
