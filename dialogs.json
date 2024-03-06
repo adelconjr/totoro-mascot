@@ -62,7 +62,7 @@
         "config": "NIGHT",
         "week": "ANY",
         "flower": false,
-        "monster": true,
+        "monster": false,
         "showBadge": false,
         "dialogs": [
             "Boa noite novamente, Sr Ad",
@@ -71,7 +71,7 @@
             "Ouvi dizer que logo mais o hub dele vai chegar",
             "Vocês vão poder jogar Minecraft",
             "Talvez ele consiga jogar até o Genshin, legal né?",
-            "Espero não ter ficado tão robótico conversando, kk. É a minha primeira vez."
+            "Espero não ter ficado tão robótico conversando, kk. É a minha primeira vez.",
             "Espero que não, se não vou tentar melhorar na próxima vez, viu. Boa noite! Até amanhã Sr."   
        ]
     },    
