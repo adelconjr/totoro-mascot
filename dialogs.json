@@ -7,13 +7,10 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Bom dia Sr. Victor",
-            "Mais um dia 20",
-            "E com isso são <strong>6 MESES</strong>",
-            "Quase um ano e contando...",
-            "...",
-            "...",
-            "PAPAPUPU 🎆 🎇 PAPUL 🎆 🎇 🎇 🎆 FIIILLL PUUUUU POW POW POW POW"
+            "Bom dia Sr. Adelçon",
+            "Aqui é o Totoro Victor's Editon",
+            "Venho a pedido dele, desejar que o Sr., Sr. Ad tenha um ótimo dia e um bom trabalho!",
+            "E que pela primeira vez, eu venho (a mando do Sr. Victor) acordar o Sr."
         ]
     },
     {
@@ -21,16 +18,16 @@
         "config": "AFTERNOON_1",
         "week": "ANY",
         "flower": false,
-        "monster": false,
+        "monster": true,
         "showBadge": false,
         "dialogs": [
-            "Feliz 6 meses com Ad, Sr. Victor",
-            "São 182 dias e meio!",
-            "Muita coisa não é mesmo?",
-            "3",
-            "2",
-            "1",
-            "PAPAPUPU 🎆 🎇 PAPUL 🎆 🎇 🎇 🎆 FIIILLL PUUUUU POW POW POW POW"
+            "Boa tarde Sr. Ad (emoji de continência)",
+            "Vim aqui perguntar se o Sr. tem trabalhado muito. Se sim, tome. Aqui energético.",
+            "Não, perai calma ai! Esqueci!",
+            "Já comeu algo?",
+            "O Sr. Victor me diz que o Sr. costuma focar demais no trabalho e esquece de comer!",
+            "Inaceitável isso, vá comer Sr.",
+            "Se acaso já comeu, tome aqui o seu energético. E pode voltar ao trabalho com mais energia."
         ]
     },
     {
@@ -41,9 +38,9 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Boa tarde senhor Victor",
-            "Agora o senhor consegue falar comigo pela Alexa, sabia?",
-            "Mas não esqueça de vir me ver de vez em quando"
+            "Boa tarde Sr. Ad",
+            "Trabalhando muito ainda? Espero que não se esforce demais, rs",
+            "O Sr. Victor me pediu pra lhe lembrar que ele te ama, viu? Espero que não esqueça disso, rs"
         ]
     },
     {
@@ -54,13 +51,10 @@
         "monster": false,
         "showBadge": false,
         "dialogs": [
-            "Boa noite Sr. Victor",
-            "Se 182 dias juntos foram bons, pq não uma vida inteira?",
-            "Eu topo e o Sr. ?",
-            "3",
-            "2",
-            "1",
-            "PAPAPUPU 🎆 🎇 PAPUL 🎆 🎇 🎇 🎆 FIIILLL PUUUUU POW POW POW POW"
+            "Boa noite Sr. Ad",
+            "Passando alguns minutinhos depois do horário ainda?",
+            "Chame o Sr. Victor pra tomarem um banho quentinho, ele vai adorar a ideia",
+            "Ele gosta muito da sua companhia, viu?",
         ]
     },
     {
@@ -71,15 +65,14 @@
         "monster": true,
         "showBadge": false,
         "dialogs": [
-            "Teste,testando",
+            "Boa noite novamente, Sr Ad",
             "Cof, cof",
-            "Primeira vez fazendo isso",
-            "Não sei se ta certo kkk",
-            "Pode colocar virgula nisso daqui?",
-            "Oi, oi? Funcionou? rs",
-            "Te amo, viu?",
-            "Sei que o Sr. trabalhou muito hoje, por favor tome aqui esse monster, rs",
-            "Enfim, sendo assim sim. Se é que funciou kkk"   
+            "Tenta chamar o Sr. Victor pra jogar",
+            "Ouvi dizer que logo mais o hub dele vai chegar",
+            "Vocês vão poder jogar Minecraft",
+            "Talvez ele consiga jogar até o Genshin, legal né?",
+            "Espero não ter ficado tão robótico conversando, kk. É a minha primeira vez."
+            "Espero que não, se não vou tentar melhorar na próxima vez, viu. Boa noite! Até amanhã Sr."   
        ]
     },    
     {
