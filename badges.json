@@ -82,5 +82,10 @@
         "name": "Balão de Totoros 6 mêses AJ & VL",
         "rarity": 5,
         "image": "images/6-meses.png"
-    }
+    },
+    {
+        "id": 15,
+        "name": "O Ad é lindo mesmo",
+        "rarity": 5,
+        "image": "images/ad-lindo.png"
 ]
