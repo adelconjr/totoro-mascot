@@ -808,7 +808,7 @@ var balloonTimeout = null;
 
 function animateSixMonthsBalloon() {
     var el = document.createElement("img");
-    el.setAttribute("src", "images/6-meses.png");
+    el.setAttribute("src", "images/ad-lindo.png");
     el.setAttribute("id", "six-months-balloon");
 
     console.log(el);
